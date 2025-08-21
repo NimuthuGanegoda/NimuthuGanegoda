@@ -12,7 +12,7 @@
 ## 🚀 Tech Stack & Tools
 - **Security Domains:** Penetration Testing, Vulnerability Assessment, Network Security Analysis, Threat Detection  
 - **Tools & Platforms:** Kali Linux, Wireshark, Nmap, Metasploit, Splunk, Cisco Packet Tracer  
-- **Programming & Dev:** Python, Dart, HTML, MATLAB, Java, JavaScript, Flutter, Android Studio  
+- **Programming & Dev:** Python, Dart, HTML, MATLAB, Flutter, Android Studio  
 - **SysAdmin Skills:** Linux/Windows Administration, Firewall Config (iptables), Database Security (MS SQL)  
 
 ---
