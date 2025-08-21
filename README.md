@@ -3,30 +3,33 @@
 # 👋 Hi, I'm Nimuthu Ganegoda  
 
 🎓 Computer Science Student (Cybersecurity Major) @ ECU Sri Lanka  
-🔐 Passionate about Cybersecurity, Computer Forensics & Secure Development  
-📱 Currently learning Flutter & Dart for cross-platform mobile apps  
-✨ Anime, Japanese music & tech culture inspire my journey — dream destination: Japan 🇯🇵  
+🔐 Aspiring Cybersecurity Specialist | Penetration Testing | Threat Analysis  
+📱 Exploring secure app development with Flutter & Android Studio  
+✨ Anime, Japanese music & tech culture keep me inspired — dream: study & work in Japan 🇯🇵  
 
 ---
 
-## 🚀 Tech Stack
-- **Languages:** Python, Dart, Java, JavaScript  
-- **Frameworks & Tools:** Flutter, Node.js, Git, Docker  
-- **Cybersecurity Tools:** Wireshark, Burp Suite, Kali Linux  
+## 🚀 Tech Stack & Tools
+- **Security Domains:** Penetration Testing, Vulnerability Assessment, Network Security Analysis, Threat Detection  
+- **Tools & Platforms:** Kali Linux, Wireshark, Nmap, Metasploit, Splunk, Cisco Packet Tracer  
+- **Programming & Dev:** Python, Dart, HTML, MATLAB, Java, JavaScript, Flutter, Android Studio  
+- **SysAdmin Skills:** Linux/Windows Administration, Firewall Config (iptables), Database Security (MS SQL)  
 
 ---
 
 ## 📖 Currently Learning
+- Preparing for **CompTIA Security+** certification  
+- Advanced Cybersecurity & Computer Forensics  
 - Flutter app development with Dart  
-- Cybersecurity & Computer Forensics techniques  
-- Exploring ways to combine **security + mobile app dev**  
+- AI-powered security tools  
 
 ---
 
 ## 🎯 Goals
 - Upload my first **Flutter app repo** soon  
-- Share **cybersecurity labs & scripts** as I build them  
-- Collaborate on projects that bridge **security + real-world applications**  
+- Share **cybersecurity labs, tools & scripts**  
+- Collaborate on projects that merge **security + real-world applications**  
+- Build my portfolio for a **cybersecurity internship**  
 
 ---
 
@@ -38,8 +41,8 @@
 
 ## 🌸 A Little About Me
 - 🎶 Big fan of **Vtuber music & Japanese/Korean tracks**  
-- 📺 Currently watching **Solo Leveling** (and rewatching some classics 👀)  
-- 🌏 Exploring tech, culture & the path from **Sri Lanka → Japan**  
+- 📺 Currently watching **Solo Leveling** (and yes, rewatching some classics 👀)  
+- 🌏 From **Sri Lanka → Japan**: blending **tech + culture** into my journey  
 
 ---
 
