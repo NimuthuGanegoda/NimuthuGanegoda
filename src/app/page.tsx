@@ -39,15 +39,15 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-4 mb-6">
             <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
               <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Focus</p>
-              <p className="text-xs leading-relaxed">Building performant, accessible web applications and data-driven platforms.</p>
+              <p className="text-xs leading-relaxed">Mobile App Security, Network Protocols, and Secure Coding Practices.</p>
             </div>
             <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
               <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Strengths</p>
-              <p className="text-xs leading-relaxed">TypeScript architecture, UI/UX detail, automation, mentoring.</p>
+              <p className="text-xs leading-relaxed">Flutter Development, Python Scripting, Debugging & Troubleshooting.</p>
             </div>
             <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
               <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Currently</p>
-              <p className="text-xs leading-relaxed">Exploring edge runtimes & real-time collaboration patterns.</p>
+              <p className="text-xs leading-relaxed">Preparing for CompTIA Security+ and exploring AI in Cybersecurity.</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-3">

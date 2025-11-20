@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s | Nimuthu Ganegoda'
   },
   description: 'Official portfolio and CV site for Nimuthu Ganegoda.',
-  keywords: ['Nimuthu', 'Ganegoda', 'Software Engineer', 'Portfolio', 'CV'],
+  keywords: ['Nimuthu', 'Ganegoda', 'Cybersecurity', 'Student', 'Portfolio', 'CV', 'Flutter', 'Python'],
   authors: [{ name: 'Nimuthu Ganegoda' }],
   creator: 'Nimuthu Ganegoda',
   // Update to actual deployment URL (GitHub Pages project path)
