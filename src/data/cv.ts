@@ -52,67 +52,51 @@ export interface CVData {
 
 export const cv: CVData = {
   name: 'Nimuthu Ganegoda',
-  title: 'Software Engineer',
-  location: 'City, Country',
-  email: 'email@example.com',
-  website: 'https://example.com',
-  photo: '/images/profile.jpg',
-  summary: 'Add a concise professional summary here describing core strengths, domain expertise and career focus.',
+  title: 'Computer Science Undergraduate (Cybersecurity Major)',
+  location: 'Sri Lanka',
+  email: 'NimuthuGanegoda@gmail.com',
+  website: 'https://nimuthuganegoda.github.io/NimuthuGanegoda/',
+  photo: '/images/profile.svg',
+  summary: 'Computer Science Undergraduate (Cybersecurity Major) at Edith Cowan University. Cybersecurity Enthusiast, Developer, and Tech Explorer. Passionate about building secure mobile apps with Flutter & Android Studio. Strong foundation in software development, mobile app security, and network protocols.',
   experiences: [
     {
-      role: 'Senior Developer',
-      company: 'Company Name',
-      period: '2023 - Present',
-      summary: 'Lead development of scalable web applications and services.',
+      role: 'Computer Science Student',
+      company: 'Edith Cowan University',
+      period: 'Present',
+      summary: 'Pursuing BSc in Computer Science (Cybersecurity).',
       achievements: [
-        'Designed and implemented feature X improving Y by 30%',
-        'Optimized build pipeline reducing deployment time',
-        'Mentored junior engineers in TypeScript and architecture'
+        'Developing secure mobile apps with Flutter & Android Studio',
+        'Exploring AI-powered security tools and automation scripts',
+        'Building reusable components and CI/CD pipelines'
       ],
-      tech: ['TypeScript', 'Next.js', 'Node.js']
+      tech: ['Python', 'Dart', 'Flutter', 'Cybersecurity']
     }
   ],
   projects: [
     {
-      name: 'Project Alpha',
-      description: 'Platform solving problem A with approach B (scalable, modular).',
-      link: 'https://github.com/username/project-alpha',
-      demo: 'https://example.com/alpha',
+      name: 'GitHub Portfolio',
+      description: 'A collection of my open source projects and contributions.',
+      link: 'https://github.com/NimuthuGanegoda',
+      demo: 'https://nimuthuganegoda.github.io/NimuthuGanegoda/',
       image: '/images/projects/placeholder.svg',
-      stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
-      highlights: ['Modular design', 'High test coverage', 'Responsive UI'],
-      tags: ['web', 'platform', 'scalability']
-    },
-    {
-      name: 'Project Beta',
-      description: 'Data processing pipeline optimizing ETL throughput.',
-      link: 'https://github.com/username/project-beta',
-      demo: 'https://example.com/beta',
-      image: '/images/projects/placeholder.svg',
-      stack: ['Node.js', 'TypeScript', 'Redis'],
-      highlights: ['Streaming ETL', 'Auto-scaling workers', 'Robust monitoring'],
-      tags: ['etl', 'backend', 'performance']
-    },
-    {
-      name: 'Project Gamma',
-      description: 'Lightweight analytics dashboard with real-time charts.',
-      link: 'https://github.com/username/project-gamma',
-      demo: 'https://example.com/gamma',
-      image: '/images/projects/placeholder.svg',
-      stack: ['React', 'WebSockets', 'D3.js'],
-      highlights: ['Real-time updates', 'Interactive charts', 'Exportable reports'],
-      tags: ['frontend', 'analytics', 'realtime']
+      stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+      highlights: ['Portfolio Website', 'Automated Repo Fetching', 'CI/CD Deployment'],
+      tags: ['portfolio', 'web', 'react']
     }
   ],
   education: [
-    { institution: 'University Name', degree: 'B.Sc. in Computer Science', period: '2018 - 2022' }
+    { institution: 'Edith Cowan University, Rajagiriya', degree: 'BSc in Computer Science (Cybersecurity)', period: '3rd Year' },
+    { institution: 'Edith Cowan College, Rajagiriya', degree: 'Diploma in Computer Science', period: 'Completed' },
+    { institution: 'Australian College of Business and Technology, Kandy', degree: 'Foundation of Computing', period: 'Completed' },
+    { institution: 'Lyceum International School', degree: 'Cambridge A-Level & O-Level', period: 'Completed' }
   ],
   skills: [
-    { category: 'Languages', items: ['TypeScript', 'JavaScript', 'Python'] },
-    { category: 'Frameworks', items: ['Next.js', 'React', 'Node.js'] },
-    { category: 'Tools', items: ['Git', 'Docker', 'CI/CD'] }
+    { category: 'Languages', items: ['Python', 'Dart', 'HTML', 'MATLAB', 'C++', 'C#', 'Bash'] },
+    { category: 'Mobile Development', items: ['Flutter', 'Android Studio', 'Firebase'] },
+    { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk'] },
+    { category: 'Infrastructure & Tools', items: ['Linux', 'Git', 'GitHub Actions', 'Azure', 'Docker'] }
   ],
   certifications: [
-    { name: 'Certification Name', issuer: 'Issuer', year: 2024 }
+    { name: 'CompTIA Security+ (Preparation)', issuer: 'CompTIA', year: 2024 }
   ]
 };
