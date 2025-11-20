@@ -32,10 +32,10 @@ export default function NavBar() {
             className="px-2 py-1 rounded-lg bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 text-xs font-medium cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
             aria-label="Select language"
           >
-            <option value="en">🇬🇧 EN</option>
-            <option value="si">🇱🇰 SI</option>
-            <option value="ja">🇯🇵 JA</option>
-            <option value="de">🇩🇪 DE</option>
+            <option value="en">🇬🇧 ENG</option>
+            <option value="si">🇱🇰 SIN</option>
+            <option value="ja">🇯🇵 JPN</option>
+            <option value="de">🇩🇪 DEU</option>
           </select>
         </div>
         <button aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} aria-controls="mobile-menu" className="md:hidden text-gray-900 dark:text-gray-100" onClick={() => setOpen(o => !o)}>
