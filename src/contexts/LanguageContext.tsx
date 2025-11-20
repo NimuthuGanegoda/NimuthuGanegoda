@@ -38,6 +38,19 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     localStorage.setItem('language', lang);
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = lang === 'si' ? 'si' : lang === 'ja' ? 'ja' : lang === 'de' ? 'de' : 'en';
+    
+    // Trigger browser translation prompt or reload
+    if (lang !== 'en') {
+      // Add translate attribute to trigger browser translation
+      document.documentElement.removeAttribute('translate');
+      document.documentElement.classList.remove('notranslate');
+    } else {
+      document.documentElement.setAttribute('translate', 'no');
+      document.documentElement.classList.add('notranslate');
+    }
   };
 
   const t = (key: string): string => {

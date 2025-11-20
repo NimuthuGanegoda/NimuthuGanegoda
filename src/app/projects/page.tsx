@@ -1,8 +1,10 @@
+'use client';
 import Section from '../../components/Section';
 import { cv } from '../../data/cv';
 import Link from 'next/link';
 import Image from 'next/image';
 import githubRepos from '../../data/github_repos.json';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 // Language to icon/emoji mapping
 const languageIcons: Record<string, string> = {
@@ -32,10 +34,12 @@ export default function ProjectsPage() {
   const filteredRepos = githubRepos.filter(repo => 
     repo.name !== 'NimuthuGanegoda'
   );
+  
+  const { t } = useLanguage();
 
   return (
     <>
-      <Section title="Projects">
+      <Section title={t('projects.title')}>
         <div className="grid md:grid-cols-2 gap-6">
           {cv.projects.map(p => (
             <div key={p.name} className="card flex flex-col">
@@ -61,14 +65,14 @@ export default function ProjectsPage() {
                 {p.tags?.map(t => <span key={t} className="px-2 py-1 bg-purple-100 dark:bg-purple-900/40 rounded-md">#{t}</span>)}
               </div>
               <div className="mt-auto flex flex-wrap gap-3">
-                {p.link && <Link href={p.link} target="_blank" rel="noopener" className="btn-primary text-center">Source</Link>}
-                {p.demo && <Link href={p.demo} target="_blank" rel="noopener" className="btn-secondary text-center">Live Demo</Link>}
+                {p.link && <Link href={p.link} target="_blank" rel="noopener" className="btn-primary text-center">{t('projects.source')}</Link>}
+                {p.demo && <Link href={p.demo} target="_blank" rel="noopener" className="btn-secondary text-center">{t('projects.liveDemo')}</Link>}
               </div>
             </div>
           ))}
         </div>
       </Section>
-      <Section title="All GitHub Repos">
+      <Section title={t('projects.allRepos')}>
         <div className="grid md:grid-cols-2 gap-6">
           {filteredRepos.map(r => (
             <div key={r.name} className="card flex flex-col">
@@ -78,14 +82,14 @@ export default function ProjectsPage() {
                   <h3 className="font-semibold text-lg">{r.name}</h3>
                 </div>
               </div>
-              <p className="text-sm leading-relaxed mb-3">{r.description || 'No description provided'}</p>
+              <p className="text-sm leading-relaxed mb-3">{r.description || t('projects.noDescription')}</p>
               <div className="flex flex-wrap gap-2 text-xs mb-3">
                 {r.language && <span className="px-2 py-1 bg-brand-100 dark:bg-gray-800 rounded-md">{r.language}</span>}
                 {r.topics?.map(t => <span key={t} className="px-2 py-1 bg-purple-100 dark:bg-purple-900/40 rounded-md">#{t}</span>)}
               </div>
               <div className="mt-auto flex gap-3">
-                <Link href={r.url} target="_blank" rel="noopener" className="btn-primary">Repo</Link>
-                {r.homepage && <Link href={r.homepage} target="_blank" rel="noopener" className="btn-secondary">Live</Link>}
+                <Link href={r.url} target="_blank" rel="noopener" className="btn-primary">{t('projects.repo')}</Link>
+                {r.homepage && <Link href={r.homepage} target="_blank" rel="noopener" className="btn-secondary">{t('projects.live')}</Link>}
               </div>
             </div>
           ))}

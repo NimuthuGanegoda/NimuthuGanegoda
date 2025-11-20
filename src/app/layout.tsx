@@ -33,11 +33,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="notranslate" translate="no">
       <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="preload" as="image" href="/NimuthuGanegoda/images/profile.jpg" fetchPriority="high" />
+        <meta name="google" content="notranslate" />
       </head>
       <body className={`min-h-screen flex flex-col bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100 transition-colors ${inter.variable} font-sans`}>
         <LanguageProvider>

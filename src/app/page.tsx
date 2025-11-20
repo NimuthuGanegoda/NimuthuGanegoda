@@ -1,5 +1,6 @@
 'use client';
 import Section from '../components/Section';
+import TranslationNotice from '../components/TranslationNotice';
 import { cv } from '../data/cv';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -9,6 +10,7 @@ export default function HomePage() {
   
   return (
     <>
+      <TranslationNotice />
       {/* Hero Section - Apple Style */}
       <section className="hero-section fade-in">
         <div className="max-w-5xl mx-auto text-center px-6">

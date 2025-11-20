@@ -22,7 +22,8 @@
     "repo": "Repo",
     "live": "Live",
     "source": "Source",
-    "liveDemo": "Live Demo"
+    "liveDemo": "Live Demo",
+    "noDescription": "No description provided"
   },
   "cv": {
     "summary": "Summary",
@@ -36,5 +37,8 @@
     "socials": "Socials",
     "references": "References",
     "print": "Print / Save as PDF"
+  },
+  "meta": {
+    "autoTranslateNotice": "This page can be auto-translated by your browser. Enable translation in your browser settings."
   }
 }
