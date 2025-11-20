@@ -82,10 +82,13 @@ export default function AboutPage() {
         </div>
       </Section>
       <Section title="A Little About Me">
-        <div className="card text-xs space-y-1">
-          <p>Fan of Vtuber music, Japanese & Korean tracks.</p>
-          <p>Watching Solo Leveling & revisiting classics.</p>
-          <p>From Sri Lanka → aspiring journey to Japan blending tech & culture.</p>
+        <div className="card text-xs space-y-2">
+          <p>🌍 Love traveling and exploring new cultures and places.</p>
+          <p>📚 Passionate about historical research – studying world history outside of my course just because I find it fascinating.</p>
+          <p>🎮 Avid gamer: Playing Genshin Impact, Wuthering Waves, Zenless Zone Zero, and Honkai Star Rail.</p>
+          <p>🎶 Fan of VTuber music, Japanese & Korean tracks.</p>
+          <p>📺 Watching Solo Leveling & revisiting anime classics.</p>
+          <p>🌏 From Sri Lanka → aspiring journey to Japan, blending tech & culture.</p>
         </div>
       </Section>
       <Section title="Contact & Socials">

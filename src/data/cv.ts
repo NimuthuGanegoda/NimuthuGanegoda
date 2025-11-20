@@ -51,6 +51,7 @@ export interface CVData {
   goals?: string[];
   currentlyLearning?: string[];
   socials?: { name: string; url: string }[];
+  interests?: string[];
 }
 
 export const cv: CVData = {
@@ -124,5 +125,12 @@ export const cv: CVData = {
     { name: 'Reddit', url: 'https://reddit.com/user/Efficient_Sir_4576' },
     { name: 'Twitch', url: 'https://www.twitch.tv/nimnosekai' },
     { name: 'Email', url: 'mailto:nimuthuganegoda@gmail.com' }
+  ],
+  interests: [
+    'Traveling and exploring new places',
+    'Historical research and studying world history',
+    'Gaming: Genshin Impact, Wuthering Waves, Zenless Zone Zero, Honkai Star Rail',
+    'Japanese culture and anime',
+    'VTuber music and Japanese/Korean music'
   ]
 };

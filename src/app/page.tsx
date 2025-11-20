@@ -78,6 +78,19 @@ export default function HomePage() {
           ))}
         </div>
       </Section>
+
+      {/* Interests & Hobbies */}
+      {cv.interests && cv.interests.length > 0 && (
+        <Section title="Beyond Code">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {cv.interests.map((interest, idx) => (
+              <div key={idx} className="card text-center">
+                <p className="text-base text-gray-700 dark:text-gray-300">{interest}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
     </>
   );
 }
