@@ -87,6 +87,22 @@ export const cv: CVData = {
   ],
   projects: [
     {
+      name: 'Multi-Service Linux Server',
+      description: 'A comprehensive home server running multiple network services with remote access capabilities and performance optimizations.',
+      stack: ['Linux', 'Tailscale', 'SSH', 'RDP', 'Liquorix Kernel', 'Zram-swap'],
+      highlights: [
+        'Network printing via CUPS server',
+        'File sharing with Samba (SMB)',
+        'Network scanning using SANE daemon',
+        'AirPlay audio streaming with Shairport-sync',
+        'Bluetooth speaker integration',
+        'VS Code Server for remote development',
+        'Secure remote access via Tailscale VPN, SSH, and RDP',
+        'Performance tuning with Liquorix Kernel and Zram-swap'
+      ],
+      tags: ['linux', 'server', 'networking', 'homelab']
+    },
+    {
       name: 'GitHub Portfolio',
       description: 'A collection of my open source projects and contributions.',
       link: 'https://github.com/NimuthuGanegoda',
