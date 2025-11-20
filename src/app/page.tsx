@@ -51,10 +51,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link href="/experience" className="btn-primary">Experience</Link>
-            <Link href="/projects" className="btn-primary">Projects</Link>
-            <Link href="/cv" className="btn-secondary">View CV</Link>
-            <Link href="/contact" className="btn-secondary">Contact</Link>
+            <Link href="/cv" className="btn-primary">View CV</Link>
           </div>
           {cv.projects[0] && (
             <div className="mt-8 text-xs">
