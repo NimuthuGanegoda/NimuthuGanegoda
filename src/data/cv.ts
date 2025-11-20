@@ -59,8 +59,7 @@ export const cv: CVData = {
   location: 'Sri Lanka',
   email: 'NimuthuGanegoda@gmail.com',
   website: 'https://nimuthuganegoda.github.io/NimuthuGanegoda/',
-  // Use relative path so it works with GitHub Pages basePath
-  photo: 'images/profile.svg',
+  photo: 'images/profile.jpg',
   summary: 'Computer Science Undergraduate (Cybersecurity Major) at Edith Cowan University. Cybersecurity Enthusiast, Developer, and Tech Explorer. Passionate about building secure mobile apps with Flutter & Android Studio. Strong foundation in software development, mobile app security, and network protocols.',
   experiences: [
     {
