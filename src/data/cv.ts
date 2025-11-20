@@ -96,7 +96,7 @@ export const cv: CVData = {
   skills: [
     { category: 'Languages', items: ['Python', 'Dart', 'HTML', 'MATLAB', 'C++', 'C#', 'Bash'] },
     { category: 'Mobile Development', items: ['Flutter', 'Android Studio', 'Firebase'] },
-    { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk'] },
+    { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk', 'Autopsy', 'FTK Imager', 'SANS Workstation'] },
     { category: 'Infrastructure & Tools', items: ['Linux', 'Git', 'GitHub Actions', 'Azure', 'Docker'] }
   ],
   certifications: [
