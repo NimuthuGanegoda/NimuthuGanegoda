@@ -15,5 +15,18 @@
     <p>The page you were looking for does not exist.</p>
     <a href="./">Return Home</a>
   </div>
+  <script>
+    (function () {
+      try {
+        var l = window.location;
+        var last = l.pathname.split('/').pop();
+        var looksLikeFile = last && last.indexOf('.') !== -1;
+        if (!looksLikeFile && !l.pathname.endsWith('/')) {
+          var dest = l.pathname + '/' + l.search + l.hash;
+          window.location.replace(dest);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </body>
 </html>
