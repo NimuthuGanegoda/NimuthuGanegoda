@@ -40,7 +40,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={`min-h-screen flex flex-col bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100 transition-colors ${inter.variable} font-sans`}>
         <LanguageProvider>
-          <div id="google_translate_element" style={{ display: 'none' }}></div>
           <SkipLink />
           <NavBar />
           <main id="main" className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
