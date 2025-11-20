@@ -1,7 +1,7 @@
 'use client';
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
-type Language = 'en' | 'si' | 'ja' | 'de';
+type Language = 'en' | 'ja' | 'de';
 
 interface LanguageContextType {
   language: Language;
@@ -11,7 +11,6 @@ interface LanguageContextType {
 
 const translations: Record<Language, Record<string, any>> = {
   en: require('../../messages/en.json'),
-  si: require('../../messages/si.json'),
   ja: require('../../messages/ja.json'),
   de: require('../../messages/de.json'),
 };
@@ -26,8 +25,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const browserLang = navigator.language.toLowerCase();
     let detectedLang: Language = 'en';
     
-    if (browserLang.startsWith('si')) detectedLang = 'si';
-    else if (browserLang.startsWith('ja')) detectedLang = 'ja';
+    if (browserLang.startsWith('ja')) detectedLang = 'ja';
     else if (browserLang.startsWith('de')) detectedLang = 'de';
     
     // Check localStorage for saved preference

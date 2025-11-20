@@ -33,7 +33,6 @@ export default function NavBar() {
             aria-label="Select language"
           >
             <option value="en">🇬🇧 ENG</option>
-            <option value="si">🇱🇰 SIN</option>
             <option value="ja">🇯🇵 JPN</option>
             <option value="de">🇩🇪 DEU</option>
           </select>
@@ -56,7 +55,6 @@ export default function NavBar() {
                 aria-label="Select language"
               >
                 <option value="en">🇬🇧 English</option>
-                <option value="si">🇱🇰 සිංහල</option>
                 <option value="ja">🇯🇵 日本語</option>
                 <option value="de">🇩🇪 Deutsch</option>
               </select>
