@@ -33,15 +33,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className="notranslate" translate="no">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="preload" as="image" href="/NimuthuGanegoda/images/profile.jpg" fetchPriority="high" />
-        <meta name="google" content="notranslate" />
       </head>
       <body className={`min-h-screen flex flex-col bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100 transition-colors ${inter.variable} font-sans`}>
         <LanguageProvider>
+          <div id="google_translate_element" style={{ display: 'none' }}></div>
           <SkipLink />
           <NavBar />
           <main id="main" className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
