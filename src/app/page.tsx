@@ -1,8 +1,12 @@
+'use client';
 import Section from '../components/Section';
 import { cv } from '../data/cv';
 import Link from 'next/link';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function HomePage() {
+  const { t } = useLanguage();
+  
   return (
     <>
       {/* Hero Section - Apple Style */}
@@ -27,15 +31,15 @@ export default function HomePage() {
             {cv.summary}
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Link href="/cv" className="btn-primary">View CV</Link>
-            <Link href="/projects" className="btn-secondary">See Projects</Link>
+            <Link href="/cv" className="btn-primary">{t('home.viewCV')}</Link>
+            <Link href="/projects" className="btn-secondary">{t('home.seeProjects')}</Link>
           </div>
         </div>
       </section>
 
       {/* Currently Learning */}
       {cv.currentlyLearning && cv.currentlyLearning.length > 0 && (
-        <Section title="Currently Learning">
+        <Section title={t('home.currentlyLearning')}>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {cv.currentlyLearning.map((item, idx) => (
               <div key={idx} className="card text-center">
@@ -48,7 +52,7 @@ export default function HomePage() {
 
       {/* Goals */}
       {cv.goals && cv.goals.length > 0 && (
-        <Section title="Developer Goals">
+        <Section title={t('home.developerGoals')}>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {cv.goals.map((goal, idx) => (
               <div key={idx} className="card">
@@ -61,7 +65,7 @@ export default function HomePage() {
       )}
 
       {/* Skills Grid */}
-      <Section title="Technical Skills">
+      <Section title={t('home.technicalSkills')}>
         <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {cv.skills.map(group => (
             <div key={group.category} className="card">
@@ -81,7 +85,7 @@ export default function HomePage() {
 
       {/* Interests & Hobbies */}
       {cv.interests && cv.interests.length > 0 && (
-        <Section title="Beyond Code">
+        <Section title={t('home.beyondCode')}>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {cv.interests.map((interest, idx) => (
               <div key={idx} className="card text-center">
