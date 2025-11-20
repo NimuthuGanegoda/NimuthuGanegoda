@@ -19,7 +19,7 @@ export default function HomePage() {
             <div className="mb-8 flex justify-center">
               <img
                 src={cv.photo}
-                alt={`${cv.name} profile photo`}
+                alt={`${t('profile.name')} profile photo`}
                 width={180}
                 height={180}
                 className="rounded-full object-cover ring-4 ring-gray-200 dark:ring-gray-800 shadow-2xl"
@@ -28,10 +28,10 @@ export default function HomePage() {
               />
             </div>
           )}
-          <h1 className="apple-headline mb-6">{cv.name}</h1>
-          <p className="apple-subheadline mb-12">{cv.title}</p>
+          <h1 className="apple-headline mb-6">{t('profile.name')}</h1>
+          <p className="apple-subheadline mb-12">{t('profile.title')}</p>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-            {cv.summary}
+            {t('profile.summary')}
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Link href="/cv" className="btn-primary">{t('home.viewCV')}</Link>

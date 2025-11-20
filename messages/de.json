@@ -85,6 +85,12 @@
     "note": "Hinweis",
     "noteText": "Diese Seite spiegelt README-Inhalte wider. Für vollständige CV-Details aus der bereitgestellten PDF stellen Sie bitte den Rohtext bereit, damit er strukturell in das Website-Datenmodell integriert werden kann (Bildungsgeschichte, Erfolge usw.)."
   },
+  "profile": {
+    "name": "Nimuthu Ganegoda",
+    "title": "Informatikstudent (Cybersecurity-Schwerpunkt)",
+    "location": "Sri Lanka",
+    "summary": "Angehender Cybersecurity-Spezialist mit praktischer Erfahrung in Penetrationstests, Schwachstellenbewertung und Netzwerksicherheitsanalyse. Versiert in Kali Linux, Wireshark und Metasploit, mit nachgewiesener Fähigkeit zur Identifizierung und Minderung von Sicherheitsbedrohungen. Derzeit im 3. Jahr des Bachelor of Computer Science (Cybersecurity) an der Edith Cowan University. Auf der Suche nach einem Cybersecurity-Praktikum, um technische Fähigkeiten zum Schutz der digitalen Infrastruktur und zur Entwicklung proaktiver Sicherheitslösungen anzuwenden."
+  },
   "meta": {
     "autoTranslateNotice": "Diese Seite kann automatisch übersetzt werden."
   }

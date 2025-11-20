@@ -85,6 +85,12 @@
     "note": "Note",
     "noteText": "This page mirrors README content. For full CV details from the provided PDF, please supply the raw text so it can be integrated structurally into the site data model (education history, achievements, etc.)."
   },
+  "profile": {
+    "name": "Nimuthu Ganegoda",
+    "title": "Computer Science Undergraduate (Cybersecurity Major)",
+    "location": "Sri Lanka",
+    "summary": "Aspiring Cybersecurity Specialist with hands-on experience in penetration testing, vulnerability assessment, and network security analysis. Proficient in Kali Linux, Wireshark, and Metasploit, with a demonstrated ability to identify and mitigate security threats. Currently in 3rd year of Bachelor of Computer Science (Cybersecurity) at Edith Cowan University. Seeking a cybersecurity internship to apply technical skills in protecting digital infrastructure and developing proactive security solutions."
+  },
   "meta": {
     "autoTranslateNotice": "This page can be auto-translated by your browser. Enable translation in your browser settings."
   }
