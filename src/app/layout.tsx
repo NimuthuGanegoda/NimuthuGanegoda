@@ -4,7 +4,6 @@ import NavBar from '../components/NavBar';
 import SkipLink from '../components/SkipLink';
 import Footer from '../components/Footer';
 import ThemeToggle from '../components/ThemeToggle';
-import LanguageSelector from '../components/LanguageSelector';
 import { LanguageProvider } from '../contexts/LanguageContext';
 import StructuredData from '../components/StructuredData';
 import Analytics from '../components/Analytics';
@@ -49,7 +48,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <Footer />
           <ThemeToggle />
-          <LanguageSelector />
           <StructuredData />
           <Analytics />
         </LanguageProvider>
