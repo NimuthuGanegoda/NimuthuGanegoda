@@ -80,6 +80,18 @@ export default function CVPage() {
           </p>
         </section>
       )}
+      {cv.references && cv.references.length > 0 && (
+        <section className="mb-8">
+          <h2>References</h2>
+          {cv.references.map(ref => (
+            <div key={ref.email} className="mb-3 text-sm">
+              <strong>{ref.name}</strong><br />
+              {ref.title}, {ref.organization}<br />
+              Email: <a href={`mailto:${ref.email}`}>{ref.email}</a> | Phone: {ref.phone}
+            </div>
+          ))}
+        </section>
+      )}
       <button onClick={() => window.print()} className="btn-primary print:hidden">Print / Save as PDF</button>
     </div>
   );

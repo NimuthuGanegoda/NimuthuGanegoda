@@ -35,6 +35,14 @@ export interface CertificationItem {
   year: number;
 }
 
+export interface ReferenceItem {
+  name: string;
+  title: string;
+  organization: string;
+  email: string;
+  phone: string;
+}
+
 export interface CVData {
   name: string;
   title: string;
@@ -52,6 +60,7 @@ export interface CVData {
   currentlyLearning?: string[];
   socials?: { name: string; url: string }[];
   interests?: string[];
+  references?: ReferenceItem[];
 }
 
 export const cv: CVData = {
@@ -61,7 +70,7 @@ export const cv: CVData = {
   email: 'NimuthuGanegoda@gmail.com',
   website: 'https://nimuthuganegoda.github.io/NimuthuGanegoda/',
   photo: 'images/profile.jpg',
-  summary: 'Computer Science Undergraduate (Cybersecurity Major) at Edith Cowan University. Cybersecurity Enthusiast, Developer, and Tech Explorer. Passionate about building secure mobile apps with Flutter & Android Studio. Strong foundation in software development, mobile app security, and network protocols.',
+  summary: 'Aspiring Cybersecurity Specialist with hands-on experience in penetration testing, vulnerability assessment, and network security analysis. Proficient in Kali Linux, Wireshark, and Metasploit, with a demonstrated ability to identify and mitigate security threats. Currently in 3rd year of Bachelor of Computer Science (Cybersecurity) at Edith Cowan University. Seeking a cybersecurity internship to apply technical skills in protecting digital infrastructure and developing proactive security solutions.',
   experiences: [
     {
       role: 'Computer Science Student',
@@ -89,10 +98,12 @@ export const cv: CVData = {
     }
   ],
   education: [
-    { institution: 'Edith Cowan University, Rajagiriya', degree: 'BSc in Computer Science (Cybersecurity)', period: '3rd Year' },
-    { institution: 'Edith Cowan College, Rajagiriya', degree: 'Diploma in Computer Science', period: 'Completed' },
-    { institution: 'Australian College of Business and Technology, Kandy', degree: 'Foundation of Computing', period: 'Completed' },
-    { institution: 'Lyceum International School', degree: 'Cambridge A-Level & O-Level', period: 'Completed' }
+    { institution: 'Edith Cowan University, Rajagiriya', degree: 'Bachelor of Computer Science (Cybersecurity) - 3rd Year', period: 'July 2025 – Present' },
+    { institution: 'Edith Cowan University, Rajagiriya', degree: 'Bachelor of Computer Science (Cybersecurity) - 2nd Year', period: 'November 2024 – May 2025' },
+    { institution: 'Edith Cowan College, Rajagiriya', degree: 'Diploma of Computer Science', period: 'January 2024 – September 2024' },
+    { institution: 'Australian College of Business and Technology, Kandy', degree: 'Foundation of Computing', period: 'October 2022 – September 2023' },
+    { institution: 'Lyceum International School, Nugegoda & Wattala', degree: 'Cambridge A-Level', period: 'June 2021 – August 2022' },
+    { institution: 'Lyceum International School, Gampaha', degree: 'Cambridge O-Level', period: 'September 2011 – June 2021' }
   ],
   skills: [
     { category: 'Languages', items: ['Python', 'Dart', 'HTML', 'MATLAB', 'C++', 'C#', 'Bash'] },
@@ -134,5 +145,21 @@ export const cv: CVData = {
     'Gaming: Genshin Impact, Wuthering Waves, Zenless Zone Zero, Honkai Star Rail',
     'Japanese culture and anime',
     'VTuber music and Japanese/Korean music'
+  ],
+  references: [
+    {
+      name: 'Dr. Viduranga Waisundara',
+      title: 'Lecturer',
+      organization: 'Edith Cowan University',
+      email: 'viduranga.waisundara@ecu.ecu.lk',
+      phone: '+94 (077) 6762290'
+    },
+    {
+      name: 'Mr. Ganaka Nagasinghe',
+      title: 'Security Consultant',
+      organization: 'Turner Construction International',
+      email: 'gnagasinghe@icco.com',
+      phone: '+971 (55) 5783160'
+    }
   ]
 };
