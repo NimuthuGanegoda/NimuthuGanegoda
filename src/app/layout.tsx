@@ -1,6 +1,7 @@
 import './globals.css';
 import { Metadata } from 'next';
 import NavBar from '../components/NavBar';
+import SkipLink from '../components/SkipLink';
 import Footer from '../components/Footer';
 import ThemeToggle from '../components/ThemeToggle';
 import StructuredData from '../components/StructuredData';
@@ -34,8 +35,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </head>
       <body className={`min-h-screen flex flex-col bg-white text-gray-800 dark:bg-gray-950 dark:text-gray-100 transition-colors ${inter.variable} font-sans`}>
+        <SkipLink />
         <NavBar />
-        <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
+        <main id="main" className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
           {children}
         </main>
         <Footer />

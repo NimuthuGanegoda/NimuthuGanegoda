@@ -6,10 +6,12 @@ const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID;
 
 export default function ContactPage() {
   const [status, setStatus] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus(null);
+    setLoading(true);
     const form = e.currentTarget;
     const data = new FormData(form);
     const name = data.get('name')?.toString().trim();
@@ -35,13 +37,16 @@ export default function ContactPage() {
         }
         setStatus('Message sent (Formspree).');
         form.reset();
+        setLoading(false);
       } catch {
         setStatus('Network error contacting Formspree.');
+        setLoading(false);
       }
       return;
     } else if (isStatic) {
       setStatus('Static version: server submission disabled. Add NEXT_PUBLIC_FORMSPREE_ID to enable.');
       form.reset();
+      setLoading(false);
       return;
     }
     try {
@@ -57,8 +62,10 @@ export default function ContactPage() {
       }
       setStatus('Message sent successfully (logged server-side).');
       form.reset();
+      setLoading(false);
     } catch (err) {
       setStatus('Network error. Try again later.');
+      setLoading(false);
     }
   }
 
@@ -78,7 +85,7 @@ export default function ContactPage() {
             <label className="block text-sm font-medium mb-1" htmlFor="message">Message</label>
             <textarea id="message" name="message" rows={5} className="input" required />
           </div>
-          <button className="btn-primary" type="submit">Send</button>
+          <button className="btn-primary" type="submit" disabled={loading}>{loading ? 'Sending…' : 'Send'}</button>
           {status && <p className="text-xs mt-2" aria-live="polite">{status}</p>}
           <p className="text-[10px] text-gray-500 dark:text-gray-400 mt-1">Static build: set NEXT_PUBLIC_FORMSPREE_ID for external submission.</p>
         </form>
