@@ -1,6 +1,5 @@
+"use client";
 import { cv } from '../../data/cv';
-
-export const metadata = { title: 'Printable CV' };
 
 export default function CVPage() {
   return (
