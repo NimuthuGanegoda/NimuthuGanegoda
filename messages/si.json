@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "ගෙදර",
+    "about": "ගැන",
+    "experience": "අත්දැකීම්",
+    "projects": "ව්‍යාපෘති",
+    "skills": "කුසලතා",
+    "contact": "සම්බන්ධ වන්න",
+    "privacy": "රහස්‍යතා"
+  },
+  "home": {
+    "viewCV": "CV බලන්න",
+    "seeProjects": "ව්‍යාපෘති බලන්න",
+    "currentlyLearning": "දැනට ඉගෙන ගනිමින්",
+    "developerGoals": "සංවර්ධක ඉලක්ක",
+    "technicalSkills": "තාක්ෂණික කුසලතා",
+    "beyondCode": "කේතයෙන් ඔබ්බට"
+  },
+  "projects": {
+    "title": "ව්‍යාපෘති",
+    "allRepos": "සියලුම GitHub Repos",
+    "repo": "Repo",
+    "live": "සජීවී",
+    "source": "මූලාශ්‍රය",
+    "liveDemo": "සජීවී Demo"
+  },
+  "cv": {
+    "summary": "සාරාංශය",
+    "experience": "අත්දැකීම්",
+    "projects": "ව්‍යාපෘති",
+    "skills": "කුසලතා",
+    "education": "අධ්‍යාපනය",
+    "certifications": "සහතික",
+    "currentlyLearning": "දැනට ඉගෙන ගනිමින්",
+    "developerGoals": "සංවර්ධක ඉලක්ක",
+    "socials": "සමාජ",
+    "references": "යොමු",
+    "print": "මුද්‍රණය / PDF ලෙස සුරකින්න"
+  }
+}

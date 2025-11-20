@@ -4,6 +4,8 @@ import NavBar from '../components/NavBar';
 import SkipLink from '../components/SkipLink';
 import Footer from '../components/Footer';
 import ThemeToggle from '../components/ThemeToggle';
+import LanguageSelector from '../components/LanguageSelector';
+import { LanguageProvider } from '../contexts/LanguageContext';
 import StructuredData from '../components/StructuredData';
 import Analytics from '../components/Analytics';
 import { Inter } from 'next/font/google';
@@ -38,15 +40,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preload" as="image" href="/NimuthuGanegoda/images/profile.jpg" fetchPriority="high" />
       </head>
       <body className={`min-h-screen flex flex-col bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100 transition-colors ${inter.variable} font-sans`}>
-        <SkipLink />
-        <NavBar />
-        <main id="main" className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
-          {children}
-        </main>
-        <Footer />
-        <ThemeToggle />
-        <StructuredData />
-        <Analytics />
+        <LanguageProvider>
+          <SkipLink />
+          <NavBar />
+          <main id="main" className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
+            {children}
+          </main>
+          <Footer />
+          <ThemeToggle />
+          <LanguageSelector />
+          <StructuredData />
+          <Analytics />
+        </LanguageProvider>
       </body>
     </html>
   );

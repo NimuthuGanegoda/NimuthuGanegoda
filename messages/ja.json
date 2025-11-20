@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "について",
+    "experience": "経験",
+    "projects": "プロジェクト",
+    "skills": "スキル",
+    "contact": "連絡先",
+    "privacy": "プライバシー"
+  },
+  "home": {
+    "viewCV": "履歴書を見る",
+    "seeProjects": "プロジェクトを見る",
+    "currentlyLearning": "現在学習中",
+    "developerGoals": "開発者の目標",
+    "technicalSkills": "技術スキル",
+    "beyondCode": "コードを超えて"
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "allRepos": "すべてのGitHubリポジトリ",
+    "repo": "リポジトリ",
+    "live": "ライブ",
+    "source": "ソース",
+    "liveDemo": "ライブデモ"
+  },
+  "cv": {
+    "summary": "概要",
+    "experience": "経験",
+    "projects": "プロジェクト",
+    "skills": "スキル",
+    "education": "学歴",
+    "certifications": "認定",
+    "currentlyLearning": "現在学習中",
+    "developerGoals": "開発者の目標",
+    "socials": "ソーシャル",
+    "references": "参考文献",
+    "print": "印刷 / PDFとして保存"
+  }
+}

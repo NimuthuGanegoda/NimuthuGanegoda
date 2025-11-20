@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz"
+  },
+  "home": {
+    "viewCV": "Lebenslauf ansehen",
+    "seeProjects": "Projekte ansehen",
+    "currentlyLearning": "Derzeit lerne ich",
+    "developerGoals": "Entwicklerziele",
+    "technicalSkills": "Technische Fähigkeiten",
+    "beyondCode": "Jenseits des Codes"
+  },
+  "projects": {
+    "title": "Projekte",
+    "allRepos": "Alle GitHub-Repos",
+    "repo": "Repo",
+    "live": "Live",
+    "source": "Quelle",
+    "liveDemo": "Live-Demo"
+  },
+  "cv": {
+    "summary": "Zusammenfassung",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "education": "Ausbildung",
+    "certifications": "Zertifizierungen",
+    "currentlyLearning": "Derzeit lerne ich",
+    "developerGoals": "Entwicklerziele",
+    "socials": "Soziale Medien",
+    "references": "Referenzen",
+    "print": "Drucken / Als PDF speichern"
+  }
+}
