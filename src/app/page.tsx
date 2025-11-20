@@ -11,10 +11,10 @@ export default function HomePage() {
           {cv.photo && (
             <div className="mb-6 flex items-center gap-4">
               <Image
-                src={cv.photo.endsWith('.jpg') || cv.photo.endsWith('.png') ? cv.photo : '/images/profile.svg'}
-                alt="Profile photo"
-                width={96}
-                height={96}
+                src={cv.photo}
+                alt={`${cv.name} profile photo`}
+                width={128}
+                height={128}
                 className="rounded-full object-cover ring-2 ring-brand-200 dark:ring-brand-800"
                 priority
               />
