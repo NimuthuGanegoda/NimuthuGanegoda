@@ -141,8 +141,7 @@ export const cv: CVData = {
   currentlyLearning: [
     'Advanced Flutter development with Dart',
     'AI in cybersecurity and secure app architecture',
-    'Building reusable components and CI/CD pipelines',
-    'Network security fundamentals and best practices'
+    'Building reusable components and CI/CD pipelines'
   ],
   socials: [
     { name: 'LinkedIn', url: 'https://linkedin.com/in/nimuthu-ganegoda' },

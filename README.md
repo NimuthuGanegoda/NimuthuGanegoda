@@ -40,7 +40,6 @@
 
 ## 📚 Currently Learning
 
-- 📘 **CompTIA Security+** certification prep
 - 📱 Advanced **Flutter development** with Dart
 - 🤖 **AI in cybersecurity** and secure app architecture
 - 🧰 Building reusable components and CI/CD pipelines
