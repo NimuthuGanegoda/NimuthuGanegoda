@@ -25,7 +25,7 @@ async function run() {
 
     // Map to minimal shape used by the site
     const mapped = repos
-      .filter(r => !r.private)
+      .filter(r => !r.private && !r.fork) // Exclude private repos and forks
       .map(r => ({
         name: r.name,
         description: r.description,
@@ -33,7 +33,9 @@ async function run() {
         homepage: r.homepage,
         language: r.language,
         updated_at: r.updated_at,
-        topics: r.topics || []
+        topics: r.topics || [],
+        stargazers_count: r.stargazers_count,
+        forks_count: r.forks_count
       }));
 
     const outPath = path.join(__dirname, '..', 'src', 'data', 'github_repos.json');

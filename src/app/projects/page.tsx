@@ -5,9 +5,8 @@ import Image from 'next/image';
 import githubRepos from '../../data/github_repos.json';
 
 export default function ProjectsPage() {
-  // Filter out Flutter (not my work) and NimuthuGanegoda profile repo (this website)
+  // Filter out NimuthuGanegoda profile repo (this website)
   const filteredRepos = githubRepos.filter(repo => 
-    repo.name !== 'flutter' && 
     repo.name !== 'NimuthuGanegoda'
   );
 
