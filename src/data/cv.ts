@@ -102,8 +102,9 @@ export const cv: CVData = {
     { category: 'Infrastructure & Tools', items: ['Linux', 'Git', 'GitHub Actions', 'Azure', 'Docker'] }
   ],
   certifications: [
-    { name: 'CompTIA Security+ (Preparation)', issuer: 'CompTIA', year: 2024 }
+    { name: 'IT Security Foundations: Network Security', issuer: 'LinkedIn Learning', year: 2024 }
   ],
+
   goals: [
     'Upload first Flutter app repository',
     'Share security-focused developer tools and scripts',
@@ -111,10 +112,10 @@ export const cv: CVData = {
     'Build portfolio for developer internship with security edge'
   ],
   currentlyLearning: [
-    'CompTIA Security+ certification prep',
     'Advanced Flutter development with Dart',
     'AI in cybersecurity and secure app architecture',
-    'Building reusable components and CI/CD pipelines'
+    'Building reusable components and CI/CD pipelines',
+    'Network security fundamentals and best practices'
   ],
   socials: [
     { name: 'LinkedIn', url: 'https://linkedin.com/in/nimuthu-ganegoda' },
