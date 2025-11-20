@@ -6,6 +6,18 @@ html { scroll-behavior: smooth; }
 
 body { font-family: system-ui, sans-serif; }
 
+/* Sakura background (subtle) */
+body.sakura-bg {
+  background-image: url('/images/sakura-tree.svg'), linear-gradient(to bottom, #fdf2f8, #fff);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 900px auto, 100% 100%;
+}
+@media (min-width: 768px) {
+  body.sakura-bg { background-size: 1200px auto, 100% 100%; }
+}
+body.dark.sakura-bg { background-image: url('/images/sakura-tree.svg'), linear-gradient(to bottom, #2d0a2d, #0d0d17); }
+
 .dark .gradient-bg {
   background: radial-gradient(circle at 30% 30%, rgba(13,141,255,0.35), transparent);
 }
