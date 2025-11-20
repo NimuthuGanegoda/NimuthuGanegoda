@@ -35,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="preload" as="image" href="/NimuthuGanegoda/images/profile.jpg" fetchPriority="high" />
       </head>
       <body className={`min-h-screen flex flex-col bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100 transition-colors ${inter.variable} font-sans`}>
         <SkipLink />
