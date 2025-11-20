@@ -5,6 +5,12 @@ import Image from 'next/image';
 import githubRepos from '../../data/github_repos.json';
 
 export default function ProjectsPage() {
+  // Filter out Flutter (not my work) and NimuthuGanegoda profile repo (this website)
+  const filteredRepos = githubRepos.filter(repo => 
+    repo.name !== 'flutter' && 
+    repo.name !== 'NimuthuGanegoda'
+  );
+
   return (
     <>
       <Section title="Projects">
@@ -42,7 +48,7 @@ export default function ProjectsPage() {
       </Section>
       <Section title="All GitHub Repos">
         <div className="grid md:grid-cols-2 gap-6">
-          {githubRepos.map(r => (
+          {filteredRepos.map(r => (
             <div key={r.name} className="card flex flex-col">
               <h3 className="font-semibold text-lg mb-1">{r.name}</h3>
               <p className="text-sm leading-relaxed mb-3">{r.description}</p>
