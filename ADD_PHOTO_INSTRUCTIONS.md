@@ -3,6 +3,7 @@
 Your graduation photo needs to be saved to this repository. Here are the steps:
 
 ## Quick Method (Drag & Drop in VS Code):
+
 1. Save your graduation photo to your computer
 2. In VS Code file explorer (left sidebar), navigate to `public/images/`
 3. Drag and drop your photo into that folder
@@ -20,6 +21,7 @@ git push origin main
 ```
 
 ## Alternative: GitHub Web Upload
+
 1. Go to: https://github.com/NimuthuGanegoda/NimuthuGanegoda/tree/main/public/images
 2. Click "Add file" → "Upload files"
 3. Upload your photo and name it `profile.jpg`

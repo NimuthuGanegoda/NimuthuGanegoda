@@ -47,7 +47,7 @@ export default function HomePage() {
             </div>
             <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
               <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Learning</p>
-              <p className="text-xs leading-relaxed">{cv.currentlyLearning?.slice(0,2).join(' • ')}</p>
+              <p className="text-xs leading-relaxed">{cv.currentlyLearning?.slice(0, 2).join(' • ')}</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-3">
@@ -57,7 +57,7 @@ export default function HomePage() {
             <div className="mt-8 text-xs">
               <p className="font-semibold mb-1">Goals:</p>
               <ul className="list-disc list-inside space-y-1">
-                {cv.goals.slice(0,3).map(g => <li key={g}>{g}</li>)}
+                {cv.goals.slice(0, 3).map(g => <li key={g}>{g}</li>)}
               </ul>
             </div>
           )}
