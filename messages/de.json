@@ -36,7 +36,10 @@
     "developerGoals": "Entwicklerziele",
     "socials": "Soziale Medien",
     "references": "Referenzen",
-    "print": "Drucken / Als PDF speichern"
+    "print": "Drucken / Als PDF speichern",
+    "repo": "Repo",
+    "email": "E-Mail:",
+    "phone": "Telefon:"
   },
   "about": {
     "title": "Hallo, ich bin Nimuthu",
@@ -134,5 +137,13 @@
   },
   "footer": {
     "allRightsReserved": "Alle Rechte vorbehalten."
+  },
+  "aria": {
+    "toggleTheme": "Dunkles Thema umschalten",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "selectLanguage": "Sprache auswählen",
+    "mainNavigation": "Hauptnavigation",
+    "mobileNavigation": "Mobile Navigation"
   }
 }

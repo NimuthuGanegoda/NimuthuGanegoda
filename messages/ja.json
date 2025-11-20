@@ -36,7 +36,10 @@
     "developerGoals": "開発者の目標",
     "socials": "ソーシャル",
     "references": "参照",
-    "print": "印刷 / PDFとして保存"
+    "print": "印刷 / PDFとして保存",
+    "repo": "リポジトリ",
+    "email": "メール：",
+    "phone": "電話："
   },
   "about": {
     "title": "こんにちは、私はニムトゥです",
@@ -134,5 +137,13 @@
   },
   "footer": {
     "allRightsReserved": "無断転載を禁じます。"
+  },
+  "aria": {
+    "toggleTheme": "ダークテーマを切り替え",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "selectLanguage": "言語を選択",
+    "mainNavigation": "メインナビゲーション",
+    "mobileNavigation": "モバイルナビゲーション"
   }
 }

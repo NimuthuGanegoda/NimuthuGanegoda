@@ -32,7 +32,7 @@ export default function CVPage() {
         <h2>{t('cv.projects')}</h2>
         {cv.projects.filter(p => p.link).map(p => (
           <div key={p.name} className="mb-3">
-            <strong>{p.name}</strong>{p.link && <> – <a href={p.link}>Repo</a></>}<br />
+            <strong>{p.name}</strong>{p.link && <> – <a href={p.link}>{t('cv.repo')}</a></>}<br />
             <span className="text-sm">{p.description}</span>
           </div>
         ))}
@@ -90,7 +90,7 @@ export default function CVPage() {
             <div key={ref.email} className="mb-3 text-sm">
               <strong>{ref.name}</strong><br />
               {ref.title}, {ref.organization}<br />
-              Email: <a href={`mailto:${ref.email}`}>{ref.email}</a> | Phone: {ref.phone}
+              {t('cv.email')} <a href={`mailto:${ref.email}`}>{ref.email}</a> | {t('cv.phone')} {ref.phone}
             </div>
           ))}
         </section>

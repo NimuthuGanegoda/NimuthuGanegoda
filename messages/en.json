@@ -36,7 +36,10 @@
     "developerGoals": "Developer Goals",
     "socials": "Socials",
     "references": "References",
-    "print": "Print / Save as PDF"
+    "print": "Print / Save as PDF",
+    "repo": "Repo",
+    "email": "Email:",
+    "phone": "Phone:"
   },
   "about": {
     "title": "Hi, I'm Nimuthu",
@@ -134,5 +137,13 @@
   },
   "footer": {
     "allRightsReserved": "All rights reserved."
+  },
+  "aria": {
+    "toggleTheme": "Toggle dark theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "selectLanguage": "Select language",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation"
   }
 }

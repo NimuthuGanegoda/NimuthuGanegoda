@@ -1,7 +1,9 @@
 "use client";
 import { useEffect, useState } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function ThemeToggle() {
+  const { t } = useLanguage();
   const [mounted, setMounted] = useState(false);
   const [dark, setDark] = useState(false);
 
@@ -15,7 +17,7 @@ export default function ThemeToggle() {
 
   return (
     <button
-      aria-label="Toggle dark theme"
+      aria-label={t('aria.toggleTheme')}
       className="fixed bottom-4 right-4 btn-primary shadow-lg"
       onClick={() => {
         const next = !dark;
