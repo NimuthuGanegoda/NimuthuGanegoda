@@ -27,7 +27,7 @@ export default function CVPage() {
       </section>
       <section className="mb-6">
         <h2>Projects</h2>
-        {cv.projects.map(p => (
+        {cv.projects.filter(p => p.link).map(p => (
           <div key={p.name} className="mb-3">
             <strong>{p.name}</strong>{p.link && <> – <a href={p.link}>Repo</a></>}<br />
             <span className="text-sm">{p.description}</span>
