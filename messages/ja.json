@@ -34,7 +34,10 @@
     "currentlyLearning": "現在学習中",
     "developerGoals": "開発者の目標",
     "socials": "ソーシャル",
-    "references": "参考文献",
+    "references": "参照",
     "print": "印刷 / PDFとして保存"
+  },
+  "meta": {
+    "autoTranslateNotice": "このページは自動翻訳できます。"
   }
 }

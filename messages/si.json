@@ -22,7 +22,8 @@
     "repo": "Repo",
     "live": "සජීවී",
     "source": "මූලාශ්‍රය",
-    "liveDemo": "සජීවී Demo"
+    "liveDemo": "සජීවී Demo",
+    "noDescription": "විස්තරයක් ලබා දී නැත"
   },
   "cv": {
     "summary": "සාරාංශය",
@@ -36,5 +37,8 @@
     "socials": "සමාජ",
     "references": "යොමු",
     "print": "මුද්‍රණය / PDF ලෙස සුරකින්න"
+  },
+  "meta": {
+    "autoTranslateNotice": "මෙම පිටුව ස්වයංක්‍රීයව පරිවර්තනය කළ හැක."
   }
 }
