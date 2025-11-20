@@ -10,13 +10,9 @@ export default function ExperiencePage() {
           <div key={exp.company + exp.role} className="card">
             <div className="flex items-start gap-4 mb-4">
               {exp.company === 'Edith Cowan University' && (
-                <Image 
-                  src="/NimuthuGanegoda/images/ecu-logo.png" 
-                  alt="Edith Cowan University Logo"
-                  width={60}
-                  height={60}
-                  className="rounded-lg"
-                />
+                <div className="w-16 h-16 rounded-lg bg-[#512F7C] flex items-center justify-center text-white font-bold text-xl">
+                  ECU
+                </div>
               )}
               <div className="flex-1">
                 <h3 className="text-lg font-semibold">{exp.role} – {exp.company}</h3>
