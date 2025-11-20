@@ -62,7 +62,6 @@ export default function AboutPage() {
       </Section>
       <Section title="Currently Learning">
         <div className="card text-xs space-y-1">
-          <p>CompTIA Security+ certification prep</p>
           <p>Advanced Flutter with Dart</p>
           <p>AI in cybersecurity & secure app architecture</p>
           <p>Reusable components & CI/CD pipelines</p>
