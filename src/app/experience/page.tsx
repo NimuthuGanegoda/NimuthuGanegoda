@@ -1,10 +1,12 @@
+"use client";
 import Section from '../../components/Section';
 import { cv } from '../../data/cv';
-import Image from 'next/image';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export default function ExperiencePage() {
+  const { t } = useLanguage();
   return (
-    <Section title="Experience">
+    <Section title={t('experience.title')}>
       <div className="space-y-6">
         {cv.experiences.map(exp => (
           <div key={exp.company + exp.role} className="card">

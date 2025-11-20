@@ -93,5 +93,46 @@
   },
   "meta": {
     "autoTranslateNotice": "This page can be auto-translated by your browser. Enable translation in your browser settings."
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending…",
+    "fillAllFields": "Please fill all fields.",
+    "messageSent": "Message sent successfully (logged server-side).",
+    "messageSentFormspree": "Message sent (Formspree).",
+    "formspreeError": "Formspree submission failed.",
+    "networkError": "Network error. Try again later.",
+    "networkErrorFormspree": "Network error contacting Formspree.",
+    "staticNote": "Static build: set NEXT_PUBLIC_FORMSPREE_ID for external submission.",
+    "staticDisabled": "Static version: server submission disabled. Add NEXT_PUBLIC_FORMSPREE_ID to enable.",
+    "validationError": "Validation failed."
+  },
+  "skills": {
+    "title": "Skills",
+    "filterLabel": "Filter Skills",
+    "filterPlaceholder": "Type to filter (e.g. react)",
+    "filterHelp": "Filtering is client-side; clear input to reset.",
+    "noMatch": "No skills match"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "Intro:",
+    "introText": "This placeholder privacy policy describes how user data is handled on the site. Replace with your real policy before launch.",
+    "contactForm": "Contact Form:",
+    "contactFormText": "Messages submitted are not persisted now. If you add a backend or third-party form service, update this section.",
+    "analytics": "Analytics:",
+    "analyticsText": "No analytics tools integrated. If adding Google Analytics or similar, disclose collection details.",
+    "cookies": "Cookies:",
+    "cookiesText": "Site currently sets no cookies except potential theme preference in localStorage (not a cookie)."
+  },
+  "footer": {
+    "allRightsReserved": "All rights reserved."
   }
 }

@@ -93,5 +93,46 @@
   },
   "meta": {
     "autoTranslateNotice": "Diese Seite kann automatisch übersetzt werden."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden",
+    "sending": "Wird gesendet…",
+    "fillAllFields": "Bitte füllen Sie alle Felder aus.",
+    "messageSent": "Nachricht erfolgreich gesendet (serverseitig protokolliert).",
+    "messageSentFormspree": "Nachricht gesendet (Formspree).",
+    "formspreeError": "Formspree-Übermittlung fehlgeschlagen.",
+    "networkError": "Netzwerkfehler. Versuchen Sie es später erneut.",
+    "networkErrorFormspree": "Netzwerkfehler beim Kontaktieren von Formspree.",
+    "staticNote": "Statischer Build: Setzen Sie NEXT_PUBLIC_FORMSPREE_ID für externe Übermittlung.",
+    "staticDisabled": "Statische Version: Serverübermittlung deaktiviert. Fügen Sie NEXT_PUBLIC_FORMSPREE_ID hinzu, um es zu aktivieren.",
+    "validationError": "Validierung fehlgeschlagen."
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "filterLabel": "Fähigkeiten filtern",
+    "filterPlaceholder": "Zum Filtern eingeben (z.B. react)",
+    "filterHelp": "Filterung erfolgt clientseitig; Eingabe löschen zum Zurücksetzen.",
+    "noMatch": "Keine Fähigkeiten entsprechen"
+  },
+  "experience": {
+    "title": "Erfahrung"
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "intro": "Einführung:",
+    "introText": "Diese Platzhalter-Datenschutzrichtlinie beschreibt, wie Benutzerdaten auf der Website verarbeitet werden. Ersetzen Sie sie vor dem Start durch Ihre echte Richtlinie.",
+    "contactForm": "Kontaktformular:",
+    "contactFormText": "Übermittelte Nachrichten werden derzeit nicht gespeichert. Wenn Sie ein Backend oder einen Drittanbieter-Formulardienst hinzufügen, aktualisieren Sie diesen Abschnitt.",
+    "analytics": "Analytics:",
+    "analyticsText": "Keine Analytics-Tools integriert. Wenn Sie Google Analytics oder Ähnliches hinzufügen, geben Sie die Sammlungsdetails an.",
+    "cookies": "Cookies:",
+    "cookiesText": "Die Website setzt derzeit keine Cookies, außer möglicherweise der Themenpräferenz in localStorage (kein Cookie)."
+  },
+  "footer": {
+    "allRightsReserved": "Alle Rechte vorbehalten."
   }
 }

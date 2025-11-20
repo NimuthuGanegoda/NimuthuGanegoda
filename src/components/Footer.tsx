@@ -1,6 +1,9 @@
+"use client";
 import { cv } from '../data/cv';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Footer() {
+  const { t } = useLanguage();
   const socials = cv.socials || [];
 
   return (
@@ -18,7 +21,7 @@ export default function Footer() {
           </a>
         ))}
       </div>
-      <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Nimuthu Ganegoda. All rights reserved.</p>
+      <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Nimuthu Ganegoda. {t('footer.allRightsReserved')}</p>
     </footer>
   );
 }

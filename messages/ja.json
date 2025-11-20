@@ -93,5 +93,46 @@
   },
   "meta": {
     "autoTranslateNotice": "このページは自動翻訳できます。"
+  },
+  "contact": {
+    "title": "連絡先",
+    "name": "名前",
+    "email": "メール",
+    "message": "メッセージ",
+    "send": "送信",
+    "sending": "送信中…",
+    "fillAllFields": "すべてのフィールドに入力してください。",
+    "messageSent": "メッセージが正常に送信されました（サーバー側でログに記録されました）。",
+    "messageSentFormspree": "メッセージが送信されました（Formspree）。",
+    "formspreeError": "Formspreeの送信に失敗しました。",
+    "networkError": "ネットワークエラー。後でもう一度お試しください。",
+    "networkErrorFormspree": "Formspreeへの接続中にネットワークエラーが発生しました。",
+    "staticNote": "静的ビルド：外部送信を有効にするには NEXT_PUBLIC_FORMSPREE_ID を設定してください。",
+    "staticDisabled": "静的バージョン：サーバー送信が無効です。有効にするには NEXT_PUBLIC_FORMSPREE_ID を追加してください。",
+    "validationError": "検証に失敗しました。"
+  },
+  "skills": {
+    "title": "スキル",
+    "filterLabel": "スキルをフィルタリング",
+    "filterPlaceholder": "フィルタリングするために入力してください（例：react）",
+    "filterHelp": "フィルタリングはクライアント側で行われます。入力をクリアしてリセットします。",
+    "noMatch": "一致するスキルがありません"
+  },
+  "experience": {
+    "title": "経験"
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "intro": "はじめに：",
+    "introText": "このプレースホルダープライバシーポリシーは、サイトでユーザーデータがどのように処理されるかを説明しています。起動前に実際のポリシーに置き換えてください。",
+    "contactForm": "お問い合わせフォーム：",
+    "contactFormText": "送信されたメッセージは現在保存されていません。バックエンドまたはサードパーティのフォームサービスを追加する場合は、このセクションを更新してください。",
+    "analytics": "分析：",
+    "analyticsText": "分析ツールは統合されていません。Google Analyticsなどを追加する場合は、収集の詳細を開示してください。",
+    "cookies": "Cookie：",
+    "cookiesText": "サイトは現在、localStorageのテーマ設定の可能性を除いて、Cookieを設定していません（Cookieではありません）。"
+  },
+  "footer": {
+    "allRightsReserved": "無断転載を禁じます。"
   }
 }

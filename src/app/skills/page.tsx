@@ -2,8 +2,10 @@
 import Section from '../../components/Section';
 import { cv } from '../../data/cv';
 import { useState, useMemo } from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export default function SkillsPage() {
+  const { t } = useLanguage();
   const [query, setQuery] = useState('');
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -17,18 +19,18 @@ export default function SkillsPage() {
   }, [query]);
 
   return (
-    <Section title="Skills">
+    <Section title={t('skills.title')}>
       <div className="mb-6 flex flex-col gap-2 max-w-sm">
-        <label className="text-xs font-medium" htmlFor="skill-filter">Filter Skills</label>
+        <label className="text-xs font-medium" htmlFor="skill-filter">{t('skills.filterLabel')}</label>
         <input
           id="skill-filter"
           className="input"
-          placeholder="Type to filter (e.g. react)"
+          placeholder={t('skills.filterPlaceholder')}
           value={query}
           onChange={e => setQuery(e.target.value)}
           aria-describedby="skill-filter-help"
         />
-        <span id="skill-filter-help" className="text-[10px] text-gray-500 dark:text-gray-400">Filtering is client-side; clear input to reset.</span>
+        <span id="skill-filter-help" className="text-[10px] text-gray-500 dark:text-gray-400">{t('skills.filterHelp')}</span>
       </div>
       <div className="grid md:grid-cols-3 gap-6">
         {filtered.map(group => (
@@ -40,7 +42,7 @@ export default function SkillsPage() {
           </div>
         ))}
         {filtered.length === 0 && (
-          <p className="text-sm col-span-full">No skills match "{query}".</p>
+          <p className="text-sm col-span-full">{t('skills.noMatch')} "{query}".</p>
         )}
       </div>
     </Section>

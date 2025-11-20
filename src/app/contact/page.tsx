@@ -1,10 +1,12 @@
 "use client";
 import Section from '../../components/Section';
 import { useState } from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID;
 
 export default function ContactPage() {
+  const { t } = useLanguage();
   const [status, setStatus] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -18,7 +20,8 @@ export default function ContactPage() {
     const email = data.get('email')?.toString().trim();
     const message = data.get('message')?.toString().trim();
     if (!name || !email || !message) {
-      setStatus('Please fill all fields.');
+      setStatus(t('contact.fillAllFields'));
+      setLoading(false);
       return;
     }
     // Disable API usage when running on GitHub Pages (static export with no server)
@@ -32,19 +35,20 @@ export default function ContactPage() {
           body: JSON.stringify({ name, email, message })
         });
         if (!res.ok) {
-          setStatus('Formspree submission failed.');
+          setStatus(t('contact.formspreeError'));
+          setLoading(false);
           return;
         }
-        setStatus('Message sent (Formspree).');
+        setStatus(t('contact.messageSentFormspree'));
         form.reset();
         setLoading(false);
       } catch {
-        setStatus('Network error contacting Formspree.');
+        setStatus(t('contact.networkErrorFormspree'));
         setLoading(false);
       }
       return;
     } else if (isStatic) {
-      setStatus('Static version: server submission disabled. Add NEXT_PUBLIC_FORMSPREE_ID to enable.');
+      setStatus(t('contact.staticDisabled'));
       form.reset();
       setLoading(false);
       return;
@@ -57,37 +61,38 @@ export default function ContactPage() {
       });
       const json = await res.json();
       if (!res.ok) {
-        setStatus(typeof json.error === 'string' ? json.error : 'Validation failed.');
+        setStatus(typeof json.error === 'string' ? json.error : t('contact.validationError'));
+        setLoading(false);
         return;
       }
-      setStatus('Message sent successfully (logged server-side).');
+      setStatus(t('contact.messageSent'));
       form.reset();
       setLoading(false);
     } catch (err) {
-      setStatus('Network error. Try again later.');
+      setStatus(t('contact.networkError'));
       setLoading(false);
     }
   }
 
   return (
-    <Section title="Contact">
+    <Section title={t('contact.title')}>
       <div className="card max-w-xl">
         <form onSubmit={handleSubmit} className="space-y-4" noValidate>
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="name">Name</label>
+            <label className="block text-sm font-medium mb-1" htmlFor="name">{t('contact.name')}</label>
             <input id="name" name="name" className="input" required />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="email">Email</label>
+            <label className="block text-sm font-medium mb-1" htmlFor="email">{t('contact.email')}</label>
             <input id="email" name="email" type="email" className="input" required />
           </div>
             <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="message">Message</label>
+            <label className="block text-sm font-medium mb-1" htmlFor="message">{t('contact.message')}</label>
             <textarea id="message" name="message" rows={5} className="input" required />
           </div>
-          <button className="btn-primary" type="submit" disabled={loading}>{loading ? 'Sending…' : 'Send'}</button>
+          <button className="btn-primary" type="submit" disabled={loading}>{loading ? t('contact.sending') : t('contact.send')}</button>
           {status && <p className="text-xs mt-2" aria-live="polite">{status}</p>}
-          <p className="text-[10px] text-gray-500 dark:text-gray-400 mt-1">Static build: set NEXT_PUBLIC_FORMSPREE_ID for external submission.</p>
+          <p className="text-[10px] text-gray-500 dark:text-gray-400 mt-1">{t('contact.staticNote')}</p>
         </form>
       </div>
     </Section>
