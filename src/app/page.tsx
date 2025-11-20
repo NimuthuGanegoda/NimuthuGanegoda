@@ -12,7 +12,7 @@ export default function HomePage() {
           {cv.photo && (
             <div className="mb-8 flex justify-center">
               <Image
-                src={`/${cv.photo}`}
+                src={cv.photo}
                 alt={`${cv.name} profile photo`}
                 width={180}
                 height={180}
