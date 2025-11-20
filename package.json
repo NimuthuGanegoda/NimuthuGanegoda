@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
+    "deploy": "GITHUB_PAGES=true next build && next export",
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
