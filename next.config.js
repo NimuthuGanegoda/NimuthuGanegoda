@@ -8,4 +8,9 @@ module.exports = {
   // If deploying to GitHub Pages with repository name root path
   assetPrefix: isGh && repo ? `/${repo}/` : undefined,
   basePath: isGh && repo ? `/${repo}` : undefined,
+  // Performance optimizations
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
 };
