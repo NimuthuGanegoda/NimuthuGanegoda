@@ -5,76 +5,79 @@ import Image from 'next/image';
 
 export default function HomePage() {
   return (
-    <div className="space-y-12">
-      <Section title="Welcome">
-        <div className="card">
+    <>
+      {/* Hero Section - Apple Style */}
+      <section className="hero-section fade-in">
+        <div className="max-w-5xl mx-auto text-center px-6">
           {cv.photo && (
-            <div className="mb-6 flex items-center gap-4">
+            <div className="mb-8 flex justify-center">
               <Image
                 src={cv.photo}
                 alt={`${cv.name} profile photo`}
-                width={128}
-                height={128}
-                className="rounded-full object-cover ring-2 ring-brand-200 dark:ring-brand-800"
+                width={180}
+                height={180}
+                className="rounded-full object-cover ring-4 ring-gray-200 dark:ring-gray-800 shadow-2xl"
                 priority
               />
-              <div>
-                <h1 className="text-3xl md:text-4xl font-bold m-0">{cv.name}</h1>
-                <p className="text-lg font-medium m-0">{cv.title}</p>
-              </div>
             </div>
           )}
-          {!cv.photo && (
-            <>
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">{cv.name}</h1>
-              <p className="text-lg font-medium mb-4">{cv.title}</p>
-            </>
-          )}
-          <p className="max-w-2xl mb-4 text-sm leading-relaxed">{cv.summary}</p>
-          <div className="flex flex-wrap gap-3 text-sm mb-4">
-            <span className="px-3 py-1 rounded-full bg-brand-100 dark:bg-gray-800">{cv.location}</span>
-            <a href={`mailto:${cv.email}`} className="px-3 py-1 rounded-full bg-brand-100 dark:bg-gray-800">{cv.email}</a>
-            {cv.website && <a href={cv.website} target="_blank" rel="noopener" className="px-3 py-1 rounded-full bg-brand-100 dark:bg-gray-800">Website</a>}
-          </div>
-          <div className="grid md:grid-cols-3 gap-4 mb-6">
-            <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-              <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Focus</p>
-              <p className="text-xs leading-relaxed">Mobile App Security, Network Protocols, Secure Coding Practices.</p>
-            </div>
-            <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-              <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Strengths</p>
-              <p className="text-xs leading-relaxed">Flutter, Python, Debugging & Troubleshooting.</p>
-            </div>
-            <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-              <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Learning</p>
-              <p className="text-xs leading-relaxed">{cv.currentlyLearning?.slice(0, 2).join(' • ')}</p>
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-3">
+          <h1 className="apple-headline mb-6">{cv.name}</h1>
+          <p className="apple-subheadline mb-12">{cv.title}</p>
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
+            {cv.summary}
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Link href="/cv" className="btn-primary">View CV</Link>
+            <Link href="/projects" className="btn-secondary">See Projects</Link>
           </div>
-          {cv.goals && (
-            <div className="mt-8 text-xs">
-              <p className="font-semibold mb-1">Goals:</p>
-              <ul className="list-disc list-inside space-y-1">
-                {cv.goals.slice(0, 3).map(g => <li key={g}>{g}</li>)}
-              </ul>
-            </div>
-          )}
         </div>
-      </Section>
-      <Section title="Key Skills">
-        <div className="grid md:grid-cols-3 gap-4">
+      </section>
+
+      {/* Currently Learning */}
+      {cv.currentlyLearning && cv.currentlyLearning.length > 0 && (
+        <Section title="Currently Learning">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {cv.currentlyLearning.map((item, idx) => (
+              <div key={idx} className="card text-center">
+                <p className="text-lg font-medium text-gray-900 dark:text-gray-100">{item}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {/* Goals */}
+      {cv.goals && cv.goals.length > 0 && (
+        <Section title="Developer Goals">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {cv.goals.map((goal, idx) => (
+              <div key={idx} className="card">
+                <div className="text-4xl mb-4">🎯</div>
+                <p className="text-base text-gray-700 dark:text-gray-300">{goal}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {/* Skills Grid */}
+      <Section title="Technical Skills">
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {cv.skills.map(group => (
             <div key={group.category} className="card">
-              <h3 className="font-semibold mb-2">{group.category}</h3>
-              <ul className="text-sm space-y-1 list-disc list-inside">
-                {group.items.map(item => <li key={item}>{item}</li>)}
+              <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">{group.category}</h3>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                {group.items.map(item => (
+                  <li key={item} className="flex items-center gap-2">
+                    <span className="text-blue-600 dark:text-blue-400">●</span>
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
           ))}
         </div>
       </Section>
-    </div>
+    </>
   );
 }

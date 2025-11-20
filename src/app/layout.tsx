@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </head>
-      <body className={`min-h-screen flex flex-col bg-white text-gray-800 dark:bg-gray-950 dark:text-gray-100 transition-colors ${inter.variable} font-sans`}>
+      <body className={`min-h-screen flex flex-col bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100 transition-colors ${inter.variable} font-sans`}>
         <SkipLink />
         <NavBar />
         <main id="main" className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
