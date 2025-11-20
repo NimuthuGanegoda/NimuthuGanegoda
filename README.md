@@ -1,16 +1,15 @@
 ## 👋 Hi, I'm Nimuthu Ganegoda
 
-
 # 💫 About Me:
 
 💻 **Computer Science Undergraduate** (Cybersecurity Major) @ Edith Cowan University, Sri Lanka  
 🔐 Cybersecurity Enthusiast | Developer | Tech Explorer  
 📱 Building secure mobile apps with **Flutter & Android Studio**  
 🌸 Passionate about **anime, Japanese music**, and tech culture — dream: **study & work in Japan 🇯🇵**
+
 ---
 
 ## 🧑‍💻 Developer Profile
-
 
 - 💡 Strong foundation in **software development**, **mobile app security**, and **network protocols**
 - 🛠️ Experienced with **Flutter**, **Python**, **Dart**, **MATLAB**, and **Android Studio**
@@ -21,60 +20,55 @@
 
 ## 🚀 Tech Stack & Tools
 
-
-- **Languages & Frameworks:** Python, Dart, HTML, MATLAB, Flutter  
-- **Mobile Dev Tools:** Android Studio, Firebase  
-- **Security Tools:** Kali Linux, Wireshark, Nmap, Metasploit, Splunk  
-- **SysAdmin & Infra:** Linux/Windows Admin, iptables, MS SQL, Cisco Packet Tracer  
+- **Languages & Frameworks:** Python, Dart, HTML, MATLAB, Flutter
+- **Mobile Dev Tools:** Android Studio, Firebase
+- **Security Tools:** Kali Linux, Wireshark, Nmap, Metasploit, Splunk
+- **SysAdmin & Infra:** Linux/Windows Admin, iptables, MS SQL, Cisco Packet Tracer
 - **AI & Automation:** Exploring AI-powered security tools and automation scripts
 
 ---
 
 ## 🎓 Education
 
-
-- 🎓 **Edith Cowan University, Rajagiriya** – BSc in Computer Science (Cybersecurity), 3rd Year  
-- 🎓 **Edith Cowan College, Rajagiriya** – Diploma in Computer Science  
-- 🎓 **Australian College of Business and Technology, Kandy** – Foundation of Computing  
-- 🎓 **Lyceum International School** – Cambridge A-Level (Nugegoda & Wattala), O-Level (Gampaha)  
+- 🎓 **Edith Cowan University, Rajagiriya** – BSc in Computer Science (Cybersecurity), 3rd Year
+- 🎓 **Edith Cowan College, Rajagiriya** – Diploma in Computer Science
+- 🎓 **Australian College of Business and Technology, Kandy** – Foundation of Computing
+- 🎓 **Lyceum International School** – Cambridge A-Level (Nugegoda & Wattala), O-Level (Gampaha)
 - 🎓 **ECC Kandy** – Former student
 
 ---
 
 ## 📚 Currently Learning
 
-
-- 📘 **CompTIA Security+** certification prep  
-- 📱 Advanced **Flutter development** with Dart  
-- 🤖 **AI in cybersecurity** and secure app architecture  
+- 📘 **CompTIA Security+** certification prep
+- 📱 Advanced **Flutter development** with Dart
+- 🤖 **AI in cybersecurity** and secure app architecture
 - 🧰 Building reusable components and CI/CD pipelines
 
 ---
 
 ## 🎯 Developer Goals
 
-
-- 🚀 Upload my first **Flutter app repository**  
-- 🧪 Share **security-focused developer tools and scripts**  
-- 🤝 Collaborate on **open-source projects** with real-world impact  
+- 🚀 Upload my first **Flutter app repository**
+- 🧪 Share **security-focused developer tools and scripts**
+- 🤝 Collaborate on **open-source projects** with real-world impact
 - 💼 Build a portfolio for a **developer internship** with a security edge
 
 ---
 
 ## 📊 GitHub Stats
 
-
 ![](https://github-readme-stats.vercel.app/api?username=NimuthuGanegoda&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=NimuthuGanegoda&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=NimuthuGanegoda&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ---
+
 [![](https://visitcount.itsvg.in/api?id=NimuthuGanegoda&icon=0&color=0)](https://visitcount.itsvg.in)
 
 ---
 
 ## 🧠 Skill Badges
-
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
@@ -129,29 +123,24 @@
 
 ## 🐍 Contribution Snake
 
-
 ![Snake animation](https://github.com/NimuthuGanegoda/NimuthuGanegoda/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
 ## 🌸 A Little About Me
 
-
-- 🎶 Fan of **Vtuber music**, Japanese & Korean tracks  
-- 📺 Watching **Solo Leveling** (and rewatching some anime classics 👀)  
+- 🎶 Fan of **Vtuber music**, Japanese & Korean tracks
+- 📺 Watching **Solo Leveling** (and rewatching some anime classics 👀)
 - 🌏 From **Sri Lanka → Japan**: blending **tech + culture** into my journey
 
 ---
 
 ## 📬 Contact Me
 
-
 📧 Email: **NimuthuGanegoda@gmail.com**
 
 ---
 
-
 ## 🌐 Socials:
 
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/ZdbHjfsvKg) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/nimuthumethsenganegoda) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/nimuthu-ganegoda) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/Efficient_Sir_4576) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/22270128) [![Twitch](https://img.shields.io/badge/Twitch-%239146FF.svg?logo=Twitch&logoColor=white)](https://www.twitch.tv/nimnosekai) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/NimuthuG) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:nimuthuganegoda@gmail.com) 
-
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/ZdbHjfsvKg) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/nimuthumethsenganegoda) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/nimuthu-ganegoda) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/Efficient_Sir_4576) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/22270128) [![Twitch](https://img.shields.io/badge/Twitch-%239146FF.svg?logo=Twitch&logoColor=white)](https://www.twitch.tv/nimnosekai) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/NimuthuG) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:nimuthuganegoda@gmail.com)
