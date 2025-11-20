@@ -71,11 +71,19 @@
 
   /* Buttons - Apple blue */
   .btn-primary { 
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 text-white px-6 py-3 font-medium hover:bg-blue-700 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 text-white px-6 py-3 font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-primary:hover {
+    @apply bg-blue-700 shadow-lg scale-105 -translate-y-0.5;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 px-6 py-3 font-medium hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-200;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 px-6 py-3 font-medium transition-all duration-300;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-blue-50 dark:bg-blue-950 shadow-lg scale-105 -translate-y-0.5;
   }
 
   /* Inputs */
