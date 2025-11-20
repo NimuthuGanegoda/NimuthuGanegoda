@@ -1,7 +1,6 @@
 import Section from '../components/Section';
 import { cv } from '../data/cv';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function HomePage() {
   return (
@@ -11,15 +10,14 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto text-center px-6">
           {cv.photo && (
             <div className="mb-8 flex justify-center">
-              <Image
+              <img
                 src={cv.photo}
                 alt={`${cv.name} profile photo`}
                 width={180}
                 height={180}
                 className="rounded-full object-cover ring-4 ring-gray-200 dark:ring-gray-800 shadow-2xl"
-                priority
-                fetchPriority="high"
                 loading="eager"
+                fetchPriority="high"
               />
             </div>
           )}
