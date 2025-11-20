@@ -41,6 +41,7 @@ export interface CVData {
   location: string;
   email: string;
   website?: string;
+  photo?: string; // path under /public
   summary: string;
   experiences: ExperienceItem[];
   projects: ProjectItem[];
@@ -55,6 +56,7 @@ export const cv: CVData = {
   location: 'City, Country',
   email: 'email@example.com',
   website: 'https://example.com',
+  photo: '/images/profile.jpg',
   summary: 'Add a concise professional summary here describing core strengths, domain expertise and career focus.',
   experiences: [
     {

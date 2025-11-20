@@ -11,7 +11,8 @@ export default function StructuredData() {
     email: `mailto:${cv.email}`,
     knowsAbout: cv.skills.flatMap(s => s.items),
     worksFor: cv.experiences[0]?.company,
-    alumniOf: cv.education.map(e => e.institution)
+    alumniOf: cv.education.map(e => e.institution),
+    image: cv.photo ? `${typeof window === 'undefined' ? 'https://nimuthuganegoda.github.io/NimuthuGanegoda' : ''}${cv.photo}` : undefined
   };
   return (
     <script
