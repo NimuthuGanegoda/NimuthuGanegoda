@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace BASE_URL with your deployed GitHub Pages URL if using custom domain -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://nimuthuganegoda.github.io/NimuthuGanegoda/</loc></url>
+  <url><loc>https://nimuthuganegoda.github.io/NimuthuGanegoda/experience/</loc></url>
+  <url><loc>https://nimuthuganegoda.github.io/NimuthuGanegoda/projects/</loc></url>
+  <url><loc>https://nimuthuganegoda.github.io/NimuthuGanegoda/skills/</loc></url>
+  <url><loc>https://nimuthuganegoda.github.io/NimuthuGanegoda/contact/</loc></url>
+  <url><loc>https://nimuthuganegoda.github.io/NimuthuGanegoda/privacy/</loc></url>
+</urlset>
