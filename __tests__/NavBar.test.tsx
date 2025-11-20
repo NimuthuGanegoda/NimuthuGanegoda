@@ -7,11 +7,10 @@ jest.mock('next/link', () => {
 });
 
 describe('NavBar', () => {
-  it('renders site title and links', () => {
+  it('renders navigation links', () => {
     render(<NavBar />);
     expect(screen.getByRole('banner')).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Nimuthu Ganegoda' })).toBeInTheDocument();
-    const links = ['Home', 'Experience', 'Projects', 'Skills', 'Contact', 'Privacy'];
+    const links = ['Home', 'About', 'Experience', 'Projects', 'Skills', 'Contact', 'Privacy'];
     links.forEach(label => {
       expect(screen.getByText(label)).toBeInTheDocument();
     });
