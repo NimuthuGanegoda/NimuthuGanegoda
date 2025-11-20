@@ -11,8 +11,11 @@ export interface ProjectItem {
   name: string;
   description: string;
   link?: string;
+  demo?: string;
+  image?: string; // relative path under public/images/projects
   stack: string[];
   highlights: string[];
+  tags?: string[];
 }
 
 export interface EducationItem {
@@ -70,10 +73,33 @@ export const cv: CVData = {
   projects: [
     {
       name: 'Project Alpha',
-      description: 'An innovative platform solving problem A with approach B.',
+      description: 'Platform solving problem A with approach B (scalable, modular).',
       link: 'https://github.com/username/project-alpha',
+      demo: 'https://example.com/alpha',
+      image: '/images/projects/placeholder.svg',
       stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
-      highlights: ['Modular design', 'High test coverage', 'Responsive UI']
+      highlights: ['Modular design', 'High test coverage', 'Responsive UI'],
+      tags: ['web', 'platform', 'scalability']
+    },
+    {
+      name: 'Project Beta',
+      description: 'Data processing pipeline optimizing ETL throughput.',
+      link: 'https://github.com/username/project-beta',
+      demo: 'https://example.com/beta',
+      image: '/images/projects/placeholder.svg',
+      stack: ['Node.js', 'TypeScript', 'Redis'],
+      highlights: ['Streaming ETL', 'Auto-scaling workers', 'Robust monitoring'],
+      tags: ['etl', 'backend', 'performance']
+    },
+    {
+      name: 'Project Gamma',
+      description: 'Lightweight analytics dashboard with real-time charts.',
+      link: 'https://github.com/username/project-gamma',
+      demo: 'https://example.com/gamma',
+      image: '/images/projects/placeholder.svg',
+      stack: ['React', 'WebSockets', 'D3.js'],
+      highlights: ['Real-time updates', 'Interactive charts', 'Exportable reports'],
+      tags: ['frontend', 'analytics', 'realtime']
     }
   ],
   education: [

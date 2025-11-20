@@ -8,17 +8,39 @@ export default function HomePage() {
       <Section title="Welcome">
         <div className="card">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">{cv.name}</h1>
-          <p className="text-lg font-medium mb-2">{cv.title}</p>
+          <p className="text-lg font-medium mb-4">{cv.title}</p>
           <p className="max-w-2xl mb-4 text-sm leading-relaxed">{cv.summary}</p>
-          <div className="flex flex-wrap gap-3 text-sm">
+          <div className="flex flex-wrap gap-3 text-sm mb-4">
             <span className="px-3 py-1 rounded-full bg-brand-100 dark:bg-gray-800">{cv.location}</span>
             <a href={`mailto:${cv.email}`} className="px-3 py-1 rounded-full bg-brand-100 dark:bg-gray-800">{cv.email}</a>
             {cv.website && <a href={cv.website} target="_blank" rel="noopener" className="px-3 py-1 rounded-full bg-brand-100 dark:bg-gray-800">Website</a>}
           </div>
-          <div className="mt-6 flex gap-3">
-            <Link href="/experience" className="btn-primary">View Experience</Link>
-            <Link href="/projects" className="btn-primary">Projects</Link>
+          <div className="grid md:grid-cols-3 gap-4 mb-6">
+            <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+              <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Focus</p>
+              <p className="text-xs leading-relaxed">Building performant, accessible web applications and data-driven platforms.</p>
+            </div>
+            <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+              <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Strengths</p>
+              <p className="text-xs leading-relaxed">TypeScript architecture, UI/UX detail, automation, mentoring.</p>
+            </div>
+            <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+              <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Currently</p>
+              <p className="text-xs leading-relaxed">Exploring edge runtimes & real-time collaboration patterns.</p>
+            </div>
           </div>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/experience" className="btn-primary">Experience</Link>
+            <Link href="/projects" className="btn-primary">Projects</Link>
+            <Link href="/cv" className="btn-secondary">View CV</Link>
+            <Link href="/contact" className="btn-secondary">Contact</Link>
+          </div>
+          {cv.projects[0] && (
+            <div className="mt-8 text-xs">
+              <p className="font-semibold mb-1">Featured Project:</p>
+              <Link href="/projects" className="underline">{cv.projects[0].name}</Link> – {cv.projects[0].description}
+            </div>
+          )}
         </div>
       </Section>
       <Section title="Key Skills">

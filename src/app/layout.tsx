@@ -5,6 +5,7 @@ import SkipLink from '../components/SkipLink';
 import Footer from '../components/Footer';
 import ThemeToggle from '../components/ThemeToggle';
 import StructuredData from '../components/StructuredData';
+import Analytics from '../components/Analytics';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
@@ -18,7 +19,8 @@ export const metadata: Metadata = {
   keywords: ['Nimuthu', 'Ganegoda', 'Software Engineer', 'Portfolio', 'CV'],
   authors: [{ name: 'Nimuthu Ganegoda' }],
   creator: 'Nimuthu Ganegoda',
-  metadataBase: new URL('https://example.com'),
+  // Update to actual deployment URL (GitHub Pages project path)
+  metadataBase: new URL('https://nimuthuganegoda.github.io/NimuthuGanegoda'),
   openGraph: {
     title: 'Nimuthu Ganegoda | Portfolio',
     description: 'Professional experience, projects, skills and contact information.',
@@ -43,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <ThemeToggle />
         <StructuredData />
+        <Analytics />
       </body>
     </html>
   );
