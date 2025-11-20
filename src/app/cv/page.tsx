@@ -52,6 +52,34 @@ export default function CVPage() {
           {cv.certifications.map(c => <li key={c.name}>{c.name} – {c.issuer} ({c.year})</li>)}
         </ul>
       </section>
+      {cv.currentlyLearning && cv.currentlyLearning.length > 0 && (
+        <section className="mb-6">
+          <h2>Currently Learning</h2>
+          <ul className="text-sm">
+            {cv.currentlyLearning.map(item => <li key={item}>{item}</li>)}
+          </ul>
+        </section>
+      )}
+      {cv.goals && cv.goals.length > 0 && (
+        <section className="mb-6">
+          <h2>Developer Goals</h2>
+          <ul className="text-sm">
+            {cv.goals.map(g => <li key={g}>{g}</li>)}
+          </ul>
+        </section>
+      )}
+      {cv.socials && cv.socials.length > 0 && (
+        <section className="mb-8">
+          <h2>Socials</h2>
+          <p className="text-sm flex flex-wrap gap-3 m-0">
+            {cv.socials.map(s => (
+              <a key={s.name} href={s.url} target="_blank" rel="noopener" className="underline">
+                {s.name}
+              </a>
+            ))}
+          </p>
+        </section>
+      )}
       <button onClick={() => window.print()} className="btn-primary print:hidden">Print / Save as PDF</button>
     </div>
   );

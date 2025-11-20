@@ -48,6 +48,9 @@ export interface CVData {
   education: EducationItem[];
   skills: SkillGroup[];
   certifications: CertificationItem[];
+  goals?: string[];
+  currentlyLearning?: string[];
+  socials?: { name: string; url: string }[];
 }
 
 export const cv: CVData = {
@@ -98,5 +101,28 @@ export const cv: CVData = {
   ],
   certifications: [
     { name: 'CompTIA Security+ (Preparation)', issuer: 'CompTIA', year: 2024 }
+  ],
+  goals: [
+    'Upload first Flutter app repository',
+    'Share security-focused developer tools and scripts',
+    'Collaborate on open-source projects with real-world impact',
+    'Build portfolio for developer internship with security edge'
+  ],
+  currentlyLearning: [
+    'CompTIA Security+ certification prep',
+    'Advanced Flutter development with Dart',
+    'AI in cybersecurity and secure app architecture',
+    'Building reusable components and CI/CD pipelines'
+  ],
+  socials: [
+    { name: 'LinkedIn', url: 'https://linkedin.com/in/nimuthu-ganegoda' },
+    { name: 'GitHub', url: 'https://github.com/NimuthuGanegoda' },
+    { name: 'Instagram', url: 'https://instagram.com/nimuthumethsenganegoda' },
+    { name: 'X', url: 'https://x.com/NimuthuG' },
+    { name: 'Discord', url: 'https://discord.gg/ZdbHjfsvKg' },
+    { name: 'Stack Overflow', url: 'https://stackoverflow.com/users/22270128' },
+    { name: 'Reddit', url: 'https://reddit.com/user/Efficient_Sir_4576' },
+    { name: 'Twitch', url: 'https://www.twitch.tv/nimnosekai' },
+    { name: 'Email', url: 'mailto:nimuthuganegoda@gmail.com' }
   ]
 };

@@ -39,24 +39,26 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-4 mb-6">
             <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
               <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Focus</p>
-              <p className="text-xs leading-relaxed">Mobile App Security, Network Protocols, and Secure Coding Practices.</p>
+              <p className="text-xs leading-relaxed">Mobile App Security, Network Protocols, Secure Coding Practices.</p>
             </div>
             <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
               <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Strengths</p>
-              <p className="text-xs leading-relaxed">Flutter Development, Python Scripting, Debugging & Troubleshooting.</p>
+              <p className="text-xs leading-relaxed">Flutter, Python, Debugging & Troubleshooting.</p>
             </div>
             <div className="p-3 rounded-md bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-              <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Currently</p>
-              <p className="text-xs leading-relaxed">Preparing for CompTIA Security+ and exploring AI in Cybersecurity.</p>
+              <p className="text-xs font-semibold mb-1 uppercase tracking-wide">Learning</p>
+              <p className="text-xs leading-relaxed">{cv.currentlyLearning?.slice(0,2).join(' • ')}</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-3">
             <Link href="/cv" className="btn-primary">View CV</Link>
           </div>
-          {cv.projects[0] && (
+          {cv.goals && (
             <div className="mt-8 text-xs">
-              <p className="font-semibold mb-1">Featured Project:</p>
-              <Link href="/projects" className="underline">{cv.projects[0].name}</Link> – {cv.projects[0].description}
+              <p className="font-semibold mb-1">Goals:</p>
+              <ul className="list-disc list-inside space-y-1">
+                {cv.goals.slice(0,3).map(g => <li key={g}>{g}</li>)}
+              </ul>
             </div>
           )}
         </div>
