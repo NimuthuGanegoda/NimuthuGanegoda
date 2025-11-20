@@ -8,8 +8,8 @@ describe('Skills filter', () => {
   it('filters skills when typing query', () => {
     render(<SkillsPage />);
     const input = screen.getByPlaceholderText(/Type to filter/i);
-    fireEvent.change(input, { target: { value: 'react' } });
-    // react not in placeholder data -> expect no groups or message
+    fireEvent.change(input, { target: { value: 'reactzzz' } });
+    // use a non-existent term to trigger empty state
     expect(screen.getByText(/No skills match/)).toBeInTheDocument();
     fireEvent.change(input, { target: { value: '' } });
     expect(screen.queryByText(/No skills match/)).not.toBeInTheDocument();
