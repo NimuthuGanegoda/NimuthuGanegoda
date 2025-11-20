@@ -1,4 +1,5 @@
 import Section from '../../components/Section';
+import ScrollReveal from '../../components/ScrollReveal';
 import Link from 'next/link';
 
 export const metadata = { title: 'About Me' };
@@ -16,18 +17,21 @@ const socials = [
 export default function AboutPage() {
   return (
     <div className="space-y-12">
-      <Section title="Hi, I'm Nimuthu">
-        <div className="card space-y-4 text-sm leading-relaxed">
-          <p><strong>Computer Science Undergraduate (Cybersecurity Major)</strong> @ Edith Cowan University, Sri Lanka.</p>
-          <p>Cybersecurity enthusiast & developer passionate about secure mobile apps (Flutter / Android Studio), anime & Japanese music with a goal to study & work in Japan.</p>
-          <ul className="list-disc list-inside space-y-1">
-            <li>Foundation in software development, mobile app security & network protocols.</li>
-            <li>Experience with Flutter, Python, Dart, MATLAB, Android Studio.</li>
-            <li>Focus on security, performance, UX; debugging & cross-platform troubleshooting.</li>
-          </ul>
-        </div>
-      </Section>
-      <Section title="Tech Stack & Tools">
+      <ScrollReveal>
+        <Section title="Hi, I'm Nimuthu">
+          <div className="card space-y-4 text-sm leading-relaxed">
+            <p><strong>Computer Science Undergraduate (Cybersecurity Major)</strong> @ Edith Cowan University, Sri Lanka.</p>
+            <p>Cybersecurity enthusiast & developer passionate about secure mobile apps (Flutter / Android Studio), anime & Japanese music with a goal to study & work in Japan.</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Foundation in software development, mobile app security & network protocols.</li>
+              <li>Experience with Flutter, Python, Dart, MATLAB, Android Studio.</li>
+              <li>Focus on security, performance, UX; debugging & cross-platform troubleshooting.</li>
+            </ul>
+          </div>
+        </Section>
+      </ScrollReveal>
+      <ScrollReveal delay={100}>
+        <Section title="Tech Stack & Tools">
         <div className="card grid md:grid-cols-2 gap-4 text-xs">
           <div>
             <p className="font-semibold mb-1">Languages & Frameworks</p>
@@ -51,6 +55,8 @@ export default function AboutPage() {
           </div>
         </div>
       </Section>
+      </ScrollReveal>
+      <ScrollReveal delay={200}>
       <Section title="Education">
         <div className="card text-xs space-y-2">
           <p><strong>Edith Cowan University</strong> – BSc Computer Science (Cybersecurity), 3rd Year</p>
@@ -60,6 +66,8 @@ export default function AboutPage() {
           <p><strong>ECC Kandy</strong> – Former student</p>
         </div>
       </Section>
+      </ScrollReveal>
+      <ScrollReveal delay={300}>
       <Section title="Currently Learning">
         <div className="card text-xs space-y-1">
           <p>Advanced Flutter with Dart</p>
@@ -67,6 +75,8 @@ export default function AboutPage() {
           <p>Reusable components & CI/CD pipelines</p>
         </div>
       </Section>
+      </ScrollReveal>
+      <ScrollReveal delay={400}>
       <Section title="Developer Goals">
         <div className="card text-xs space-y-1">
           <p>Upload first Flutter app repository</p>
@@ -75,11 +85,15 @@ export default function AboutPage() {
           <p>Build internship-ready portfolio with security edge</p>
         </div>
       </Section>
+      </ScrollReveal>
+      <ScrollReveal delay={500}>
       <Section title="Technical Skills">
         <div className="card text-xs space-y-1">
           <p>Mobile App Security, Debugging & Troubleshooting, Secure Coding, CI/CD, AI Security Tools, Network Protocols, Documentation</p>
         </div>
       </Section>
+      </ScrollReveal>
+      <ScrollReveal delay={600}>
       <Section title="A Little About Me">
         <div className="card text-xs space-y-2">
           <p>🌍 Love traveling and exploring new cultures and places.</p>
@@ -90,6 +104,8 @@ export default function AboutPage() {
           <p>🌏 From Sri Lanka → aspiring journey to Japan, blending tech & culture.</p>
         </div>
       </Section>
+      </ScrollReveal>
+      <ScrollReveal delay={700}>
       <Section title="Contact & Socials">
         <div className="card text-xs space-y-3">
           <p>Email: <a href="mailto:nimuthuganegoda@gmail.com" className="underline">nimuthuganegoda@gmail.com</a></p>
@@ -98,11 +114,14 @@ export default function AboutPage() {
           </div>
         </div>
       </Section>
+      </ScrollReveal>
+      <ScrollReveal delay={800}>
       <Section title="Note">
         <div className="card text-xs">
           <p>This page mirrors README content. For full CV details from the provided PDF, please supply the raw text so it can be integrated structurally into the site data model (education history, achievements, etc.).</p>
         </div>
       </Section>
+      </ScrollReveal>
     </div>
   );
 }

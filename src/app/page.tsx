@@ -1,5 +1,6 @@
 'use client';
 import Section from '../components/Section';
+import ScrollReveal from '../components/ScrollReveal';
 import TranslationNotice from '../components/TranslationNotice';
 import { cv } from '../data/cv';
 import Link from 'next/link';
@@ -41,61 +42,69 @@ export default function HomePage() {
 
       {/* Currently Learning */}
       {cv.currentlyLearning && cv.currentlyLearning.length > 0 && (
-        <Section title={t('home.currentlyLearning')}>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {cv.currentlyLearning.map((item, idx) => (
-              <div key={idx} className="card text-center">
-                <p className="text-lg font-medium text-gray-900 dark:text-gray-100">{item}</p>
-              </div>
-            ))}
-          </div>
-        </Section>
+        <ScrollReveal>
+          <Section title={t('home.currentlyLearning')}>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {cv.currentlyLearning.map((item, idx) => (
+                <div key={idx} className="card text-center">
+                  <p className="text-lg font-medium text-gray-900 dark:text-gray-100">{item}</p>
+                </div>
+              ))}
+            </div>
+          </Section>
+        </ScrollReveal>
       )}
 
       {/* Goals */}
       {cv.goals && cv.goals.length > 0 && (
-        <Section title={t('home.developerGoals')}>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {cv.goals.map((goal, idx) => (
-              <div key={idx} className="card">
-                <div className="text-4xl mb-4">🎯</div>
-                <p className="text-base text-gray-700 dark:text-gray-300">{goal}</p>
-              </div>
-            ))}
-          </div>
-        </Section>
+        <ScrollReveal delay={100}>
+          <Section title={t('home.developerGoals')}>
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {cv.goals.map((goal, idx) => (
+                <div key={idx} className="card">
+                  <div className="text-4xl mb-4">🎯</div>
+                  <p className="text-base text-gray-700 dark:text-gray-300">{goal}</p>
+                </div>
+              ))}
+            </div>
+          </Section>
+        </ScrollReveal>
       )}
 
       {/* Skills Grid */}
-      <Section title={t('home.technicalSkills')}>
-        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {cv.skills.map(group => (
-            <div key={group.category} className="card">
-              <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">{group.category}</h3>
-              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                {group.items.map(item => (
-                  <li key={item} className="flex items-center gap-2">
-                    <span className="text-blue-600 dark:text-blue-400">●</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      {/* Interests & Hobbies */}
-      {cv.interests && cv.interests.length > 0 && (
-        <Section title={t('home.beyondCode')}>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {cv.interests.map((interest, idx) => (
-              <div key={idx} className="card text-center">
-                <p className="text-base text-gray-700 dark:text-gray-300">{interest}</p>
+      <ScrollReveal delay={200}>
+        <Section title={t('home.technicalSkills')}>
+          <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {cv.skills.map(group => (
+              <div key={group.category} className="card">
+                <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">{group.category}</h3>
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                  {group.items.map(item => (
+                    <li key={item} className="flex items-center gap-2">
+                      <span className="text-blue-600 dark:text-blue-400">●</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </Section>
+      </ScrollReveal>
+
+      {/* Interests & Hobbies */}
+      {cv.interests && cv.interests.length > 0 && (
+        <ScrollReveal delay={300}>
+          <Section title={t('home.beyondCode')}>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {cv.interests.map((interest, idx) => (
+                <div key={idx} className="card text-center">
+                  <p className="text-base text-gray-700 dark:text-gray-300">{interest}</p>
+                </div>
+              ))}
+            </div>
+          </Section>
+        </ScrollReveal>
       )}
     </>
   );
