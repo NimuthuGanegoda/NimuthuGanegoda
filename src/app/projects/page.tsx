@@ -2,6 +2,7 @@ import Section from '../../components/Section';
 import { cv } from '../../data/cv';
 import Link from 'next/link';
 import Image from 'next/image';
+import githubRepos from '../../data/github_repos.json';
 
 export default function ProjectsPage() {
   return (
@@ -38,5 +39,23 @@ export default function ProjectsPage() {
         ))}
       </div>
     </Section>
+      <Section title="All GitHub Repos">
+        <div className="grid md:grid-cols-2 gap-6">
+          {githubRepos.map(r => (
+            <div key={r.name} className="card flex flex-col">
+              <h3 className="font-semibold text-lg mb-1">{r.name}</h3>
+              <p className="text-sm leading-relaxed mb-3">{r.description}</p>
+              <div className="flex flex-wrap gap-2 text-xs mb-3">
+                {r.language && <span className="px-2 py-1 bg-brand-100 dark:bg-gray-800 rounded-md">{r.language}</span>}
+                {r.topics?.map(t => <span key={t} className="px-2 py-1 bg-purple-100 dark:bg-purple-900/40 rounded-md">#{t}</span>)}
+              </div>
+              <div className="mt-auto flex gap-3">
+                <Link href={r.url} target="_blank" rel="noopener" className="btn-primary">Repo</Link>
+                {r.homepage && <Link href={r.homepage} target="_blank" rel="noopener" className="btn-secondary">Live</Link>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
   );
 }

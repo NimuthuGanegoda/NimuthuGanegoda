@@ -9,6 +9,7 @@
     "lint": "next lint",
     "export": "next build",
     "deploy": "GITHUB_PAGES=true next build",
+    "fetch-repos": "node ./scripts/fetch-github-repos.js",
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
