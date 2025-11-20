@@ -1,8 +1,8 @@
+'use client';
 import Section from '../../components/Section';
 import ScrollReveal from '../../components/ScrollReveal';
 import Link from 'next/link';
-
-export const metadata = { title: 'About Me' };
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const socials = [
   { label: 'LinkedIn', url: 'https://linkedin.com/in/nimuthu-ganegoda' },
@@ -15,100 +15,102 @@ const socials = [
 ];
 
 export default function AboutPage() {
+  const { t } = useLanguage();
+  
   return (
     <div className="space-y-12">
       <ScrollReveal>
-        <Section title="Hi, I'm Nimuthu">
+        <Section title={t('about.title')}>
           <div className="card space-y-4 text-sm leading-relaxed">
-            <p><strong>Computer Science Undergraduate (Cybersecurity Major)</strong> @ Edith Cowan University, Sri Lanka.</p>
-            <p>Cybersecurity enthusiast & developer passionate about secure mobile apps (Flutter / Android Studio), anime & Japanese music with a goal to study & work in Japan.</p>
+            <p><strong>{t('about.intro1')}</strong></p>
+            <p>{t('about.intro2')}</p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Foundation in software development, mobile app security & network protocols.</li>
-              <li>Experience with Flutter, Python, Dart, MATLAB, Android Studio.</li>
-              <li>Focus on security, performance, UX; debugging & cross-platform troubleshooting.</li>
+              <li>{t('about.bullet1')}</li>
+              <li>{t('about.bullet2')}</li>
+              <li>{t('about.bullet3')}</li>
             </ul>
           </div>
         </Section>
       </ScrollReveal>
       <ScrollReveal delay={100}>
-        <Section title="Tech Stack & Tools">
+        <Section title={t('about.techStack')}>
         <div className="card grid md:grid-cols-2 gap-4 text-xs">
           <div>
-            <p className="font-semibold mb-1">Languages & Frameworks</p>
-            <p>Python, Dart, HTML, MATLAB, Flutter</p>
+            <p className="font-semibold mb-1">{t('about.languages')}</p>
+            <p>{t('about.languagesText')}</p>
           </div>
           <div>
-            <p className="font-semibold mb-1">Security Tools</p>
-            <p>Kali Linux, Wireshark, Nmap, Metasploit, Splunk</p>
+            <p className="font-semibold mb-1">{t('about.security')}</p>
+            <p>{t('about.securityText')}</p>
           </div>
           <div>
-            <p className="font-semibold mb-1">Mobile Dev</p>
-            <p>Android Studio, Firebase</p>
+            <p className="font-semibold mb-1">{t('about.mobile')}</p>
+            <p>{t('about.mobileText')}</p>
           </div>
           <div>
-            <p className="font-semibold mb-1">SysAdmin & Infra</p>
-            <p>Linux/Windows Admin, iptables, MS SQL, Cisco Packet Tracer</p>
+            <p className="font-semibold mb-1">{t('about.sysadmin')}</p>
+            <p>{t('about.sysadminText')}</p>
           </div>
           <div className="md:col-span-2">
-            <p className="font-semibold mb-1">AI & Automation</p>
-            <p>Exploring AI-powered security tooling & automation scripts.</p>
+            <p className="font-semibold mb-1">{t('about.ai')}</p>
+            <p>{t('about.aiText')}</p>
           </div>
         </div>
       </Section>
       </ScrollReveal>
       <ScrollReveal delay={200}>
-      <Section title="Education">
+      <Section title={t('about.education')}>
         <div className="card text-xs space-y-2">
-          <p><strong>Edith Cowan University</strong> – BSc Computer Science (Cybersecurity), 3rd Year</p>
-          <p><strong>Edith Cowan College</strong> – Diploma in Computer Science</p>
-          <p><strong>Australian College of Business and Technology</strong> – Foundation of Computing</p>
-          <p><strong>Lyceum International School</strong> – Cambridge A-Level & O-Level</p>
-          <p><strong>ECC Kandy</strong> – Former student</p>
+          <p>{t('about.edu1')}</p>
+          <p>{t('about.edu2')}</p>
+          <p>{t('about.edu3')}</p>
+          <p>{t('about.edu4')}</p>
+          <p>{t('about.edu5')}</p>
         </div>
       </Section>
       </ScrollReveal>
       <ScrollReveal delay={300}>
-      <Section title="Currently Learning">
+      <Section title={t('about.currentlyLearning')}>
         <div className="card text-xs space-y-1">
-          <p>Advanced Flutter with Dart</p>
-          <p>AI in cybersecurity & secure app architecture</p>
-          <p>Reusable components & CI/CD pipelines</p>
+          <p>{t('about.learning1')}</p>
+          <p>{t('about.learning2')}</p>
+          <p>{t('about.learning3')}</p>
         </div>
       </Section>
       </ScrollReveal>
       <ScrollReveal delay={400}>
-      <Section title="Developer Goals">
+      <Section title={t('about.developerGoals')}>
         <div className="card text-xs space-y-1">
-          <p>Upload first Flutter app repository</p>
-          <p>Share security-focused tools & scripts</p>
-          <p>Collaborate on impactful open-source projects</p>
-          <p>Build internship-ready portfolio with security edge</p>
+          <p>{t('about.goal1')}</p>
+          <p>{t('about.goal2')}</p>
+          <p>{t('about.goal3')}</p>
+          <p>{t('about.goal4')}</p>
         </div>
       </Section>
       </ScrollReveal>
       <ScrollReveal delay={500}>
-      <Section title="Technical Skills">
+      <Section title={t('about.technicalSkills')}>
         <div className="card text-xs space-y-1">
-          <p>Mobile App Security, Debugging & Troubleshooting, Secure Coding, CI/CD, AI Security Tools, Network Protocols, Documentation</p>
+          <p>{t('about.skillsText')}</p>
         </div>
       </Section>
       </ScrollReveal>
       <ScrollReveal delay={600}>
-      <Section title="A Little About Me">
+      <Section title={t('about.aboutMe')}>
         <div className="card text-xs space-y-2">
-          <p>🌍 Love traveling and exploring new cultures and places.</p>
-          <p>📚 Passionate about historical research – studying world history outside of my course just because I find it fascinating.</p>
-          <p>🎮 Avid gamer: Playing Genshin Impact, Wuthering Waves, Zenless Zone Zero, and Honkai Star Rail.</p>
-          <p>🎶 Fan of VTuber music, Japanese & Korean tracks.</p>
-          <p>📺 Watching Solo Leveling & revisiting anime classics.</p>
-          <p>🌏 From Sri Lanka → aspiring journey to Japan, blending tech & culture.</p>
+          <p>{t('about.interest1')}</p>
+          <p>{t('about.interest2')}</p>
+          <p>{t('about.interest3')}</p>
+          <p>{t('about.interest4')}</p>
+          <p>{t('about.interest5')}</p>
+          <p>{t('about.interest6')}</p>
         </div>
       </Section>
       </ScrollReveal>
       <ScrollReveal delay={700}>
-      <Section title="Contact & Socials">
+      <Section title={t('about.contactSocials')}>
         <div className="card text-xs space-y-3">
-          <p>Email: <a href="mailto:nimuthuganegoda@gmail.com" className="underline">nimuthuganegoda@gmail.com</a></p>
+          <p>{t('about.email')} <a href="mailto:nimuthuganegoda@gmail.com" className="underline">nimuthuganegoda@gmail.com</a></p>
           <div className="flex flex-wrap gap-2">
             {socials.map(s => <Link key={s.label} href={s.url} target="_blank" className="px-2 py-1 rounded bg-brand-100 dark:bg-gray-800">{s.label}</Link>)}
           </div>
@@ -116,9 +118,9 @@ export default function AboutPage() {
       </Section>
       </ScrollReveal>
       <ScrollReveal delay={800}>
-      <Section title="Note">
+      <Section title={t('about.note')}>
         <div className="card text-xs">
-          <p>This page mirrors README content. For full CV details from the provided PDF, please supply the raw text so it can be integrated structurally into the site data model (education history, achievements, etc.).</p>
+          <p>{t('about.noteText')}</p>
         </div>
       </Section>
       </ScrollReveal>
