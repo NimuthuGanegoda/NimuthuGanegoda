@@ -73,6 +73,18 @@ export const cv: CVData = {
   summary: 'Aspiring Cybersecurity Specialist with hands-on experience in penetration testing, vulnerability assessment, and network security analysis. Proficient in Kali Linux, Wireshark, and Metasploit, with a demonstrated ability to identify and mitigate security threats. Currently in 3rd year of Bachelor of Computer Science (Cybersecurity) at Edith Cowan University. Seeking a cybersecurity internship to apply technical skills in protecting digital infrastructure and developing proactive security solutions.',
   experiences: [
     {
+      role: 'Database Manager',
+      company: 'BusGo (Online Bus Travelling Management)',
+      period: 'February 2026 – Present',
+      summary: 'Leading database design and management for a comprehensive bus transit ecosystem.',
+      achievements: [
+        'Designed and implemented scalable PostgreSQL schema using Supabase',
+        'Ensured data integrity and optimized query performance for real-time tracking',
+        'Collaborated with backend and mobile teams for seamless API integration'
+      ],
+      tech: ['PostgreSQL', 'Supabase', 'Database Design', 'Data Integrity']
+    },
+    {
       role: 'Computer Science Student',
       company: 'Edith Cowan University',
       period: 'Present',
@@ -87,6 +99,54 @@ export const cv: CVData = {
   ],
   projects: [
     {
+      name: 'BusGo: Online Bus Travelling Management',
+      description: 'A comprehensive suite of applications for modern bus management and passenger tracking in Sri Lanka.',
+      link: 'https://github.com/NimuthuGanegoda/BusGo',
+      stack: ['Node.js', 'Express', 'Supabase', 'Flutter', 'React', 'Python'],
+      highlights: [
+        'Real-time bus tracking and trip management',
+        'Dedicated mobile apps for passengers and drivers',
+        'AI-powered ETA estimation and emergency triage',
+        'Admin dashboard for system-wide oversight'
+      ],
+      tags: ['transit', 'mobile', 'ai', 'fullstack']
+    },
+    {
+      name: 'Aether',
+      description: 'AirDrop re-engineering project exploring wireless protocols and secure file transmission analysis.',
+      stack: ['Wireless Protocols', 'Security Analysis', 'Network Engineering'],
+      highlights: [
+        'Analyzing secure file transmission methods',
+        'Reverse engineering wireless discovery protocols',
+        'Exploring alternative peer-to-peer sharing solutions'
+      ],
+      tags: ['security', 'network', 'research']
+    },
+    {
+      name: 'Rosetta-Browser',
+      description: 'A modern browser project focusing on performance, privacy, and web standards.',
+      link: 'https://github.com/NimuthuGanegoda/Rosetta-Browser',
+      stack: ['Python', 'Webkit', 'PyQt', 'Privacy Tools'],
+      highlights: [
+        'High-performance browsing engine',
+        'Integrated privacy and security features',
+        'Modern user interface design'
+      ],
+      tags: ['web', 'browser', 'python']
+    },
+    {
+      name: 'PilotHub',
+      description: 'A comprehensive system tool for advanced management and integration.',
+      link: 'https://github.com/NimuthuGanegoda/PilotHub',
+      stack: ['Python', 'System API', 'Automation'],
+      highlights: [
+        'System management and automation utilities',
+        'Integration with various hardware and software APIs',
+        'Streamlined workflow management'
+      ],
+      tags: ['tools', 'system', 'automation']
+    },
+    {
       name: 'Multi-Service Linux Server',
       description: 'A comprehensive home server running multiple network services with remote access capabilities and performance optimizations.',
       stack: ['Linux', 'Tailscale', 'SSH', 'RDP', 'Liquorix Kernel', 'Zram-swap'],
@@ -94,23 +154,9 @@ export const cv: CVData = {
         'Network printing via CUPS server',
         'File sharing with Samba (SMB)',
         'Network scanning using SANE daemon',
-        'AirPlay audio streaming with Shairport-sync',
-        'Bluetooth speaker integration',
-        'VS Code Server for remote development',
-        'Secure remote access via Tailscale VPN, SSH, and RDP',
-        'Performance tuning with Liquorix Kernel and Zram-swap'
+        'Secure remote access via Tailscale VPN, SSH, and RDP'
       ],
       tags: ['linux', 'server', 'networking', 'homelab']
-    },
-    {
-      name: 'GitHub Portfolio',
-      description: 'A collection of my open source projects and contributions.',
-      link: 'https://github.com/NimuthuGanegoda',
-      demo: 'https://nimuthuganegoda.github.io/NimuthuGanegoda/',
-      image: '/images/projects/placeholder.svg',
-      stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-      highlights: ['Portfolio Website', 'Automated Repo Fetching', 'CI/CD Deployment'],
-      tags: ['portfolio', 'web', 'react']
     }
   ],
   education: [

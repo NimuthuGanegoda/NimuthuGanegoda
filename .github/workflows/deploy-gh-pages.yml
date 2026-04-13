@@ -25,6 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
@@ -34,7 +35,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run fetch-repos
 
-      - name: Build static site
+      - name: Build and generate CV
         env:
           GITHUB_PAGES: 'true'
           NEXT_PUBLIC_PLAUSIBLE_DOMAIN: ${{ secrets.PLAUSIBLE_DOMAIN }}
@@ -44,6 +45,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+
+      - name: Upload CV PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: ./out/cv.pdf
 
   deploy:
     needs: build

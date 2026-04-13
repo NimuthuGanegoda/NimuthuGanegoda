@@ -10,6 +10,9 @@ My passion lies at the intersection of **Security & Development**. I have experi
 
 ## 🚀 Current Projects
 
+### 🚌 BusGo: Online Bus Travelling Management
+> **Database Manager.** A comprehensive ecosystem for bus management and passenger tracking in Sri Lanka, featuring mobile apps, AI-powered ETA predictions, and a centralized admin dashboard.
+
 ### 📡 Aether
 > **AirDrop re-engineering project.** exploring wireless protocols and secure file transmission analysis.
 
