@@ -15,7 +15,8 @@ describe('NavBar', () => {
       </LanguageProvider>
     );
     expect(screen.getByRole('banner')).toBeInTheDocument();
-    const links = ['Home', 'About', 'Experience', 'Projects', 'Skills', 'Contact', 'Privacy'];
+    // New links in the redesigned single-page portfolio
+    const links = ['About', 'Projects', 'Experience', 'Contact', 'CV'];
     links.forEach(label => {
       expect(screen.getByText(label)).toBeInTheDocument();
     });
