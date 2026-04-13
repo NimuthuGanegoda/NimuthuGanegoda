@@ -55,11 +55,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LanguageProvider>
           <SkipLink />
           <NavBar />
-          <main id="main" className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
+          <main id="main" className="flex-1 w-full">
             {children}
           </main>
           <Footer />
-          <ThemeToggle />
           <StructuredData />
           <Analytics />
         </LanguageProvider>
