@@ -13,14 +13,20 @@ My passion lies at the intersection of **Security & Development**. I have experi
 ### 🚌 BusGo: Online Bus Travelling Management
 > **Database Manager.** A comprehensive ecosystem for bus management and passenger tracking in Sri Lanka, featuring mobile apps, AI-powered ETA predictions, and a centralized admin dashboard.
 
-### 📡 Aether
-> **AirDrop re-engineering project.** exploring wireless protocols and secure file transmission analysis.
+### 📡 ZeroAir (Aether)
+> **Open AirDrop Implementation.** Enabling Windows to iPhone/Android cross-platform file transfers via Apple AirDrop and Google Quick Share protocols.
 
 ### 🌐 Rosetta-Browser
-> **Lead Developer.** A browser project focusing on performance and modern web standards.
+> **Lead Developer.** A "next-level" browser data migration tool bridging Chromium, Firefox, and WebKit engines with forensic session continuity.
 
 ### 🚁 PilotHub
-> **System Tool.** Developing comprehensive tools for system management and integration.
+> **AI Integration Tool.** A unified interface to seamlessly interact with multiple AI providers like ChatGPT, DeepSeek, and Grok.
+
+### 🏛️ World History Archive
+> **Full-Stack Developer.** A Next.js web application for cataloging and visualizing the history of kingdoms, monarchs, and archaeological sites.
+
+### 🖨️ Sane-Windows
+> **C Developer.** A port of the SANE core and WIA backend allowing Windows applications to access SANE scanners.
 
 ---
 

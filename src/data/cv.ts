@@ -112,39 +112,65 @@ export const cv: CVData = {
       tags: ['transit', 'mobile', 'ai', 'fullstack']
     },
     {
-      name: 'Aether',
-      description: 'AirDrop re-engineering project exploring wireless protocols and secure file transmission analysis.',
-      stack: ['Wireless Protocols', 'Security Analysis', 'Network Engineering'],
+      name: 'ZeroAir (Aether)',
+      description: 'An open Apple AirDrop implementation supporting Windows to iPhone/Android cross-platform file transfers.',
+      link: 'https://github.com/NimuthuGanegoda/ZeroAir',
+      stack: ['Python', 'Networking', 'Quick Share', 'AirDrop Protocol'],
       highlights: [
-        'Analyzing secure file transmission methods',
-        'Reverse engineering wireless discovery protocols',
-        'Exploring alternative peer-to-peer sharing solutions'
+        'Implemented background service for continuous file transfers',
+        'Enabled cross-platform discovery mimicking standard AirDrop peers',
+        'Integrated Google Quick Share interoperability for Android support'
       ],
       tags: ['security', 'network', 'research']
     },
     {
       name: 'Rosetta-Browser',
-      description: 'A modern browser project focusing on performance, privacy, and web standards.',
+      description: 'A browser data migration tool designed to bridge the gap between different browser engines (Blink, Gecko, WebKit).',
       link: 'https://github.com/NimuthuGanegoda/Rosetta-Browser',
-      stack: ['Python', 'Webkit', 'PyQt', 'Privacy Tools'],
+      stack: ['Python', 'Browser Engines', 'Data Migration'],
       highlights: [
-        'High-performance browsing engine',
-        'Integrated privacy and security features',
-        'Modern user interface design'
+        'Cross-Engine Translation (Chromium to Firefox)',
+        'Extension Rosetta for finding equivalent extensions across stores',
+        'Forensic Continuity for migrating active browsing sessions',
+        'Secure handling of OS-level encryption (DPAPI/Libsecret)'
       ],
       tags: ['web', 'browser', 'python']
     },
     {
       name: 'PilotHub',
-      description: 'A comprehensive system tool for advanced management and integration.',
+      description: 'A unified AI Integration Tool providing a single interface to interact with multiple AI providers (ChatGPT, DeepSeek, Grok).',
       link: 'https://github.com/NimuthuGanegoda/PilotHub',
-      stack: ['Python', 'System API', 'Automation'],
+      stack: ['Python', 'AI', 'API Integration'],
       highlights: [
-        'System management and automation utilities',
-        'Integration with various hardware and software APIs',
-        'Streamlined workflow management'
+        'Unified interface for OpenAI, DeepSeek, and xAI',
+        'Streamlined API key management and routing',
+        'Extensible architecture for adding new AI providers'
       ],
-      tags: ['tools', 'system', 'automation']
+      tags: ['tools', 'ai', 'automation']
+    },
+    {
+      name: 'Sane-Windows',
+      description: 'A port of SANE (Scanner Access Now Easy) core and WIA backend for Windows.',
+      link: 'https://github.com/NimuthuGanegoda/Sane-Windows',
+      stack: ['C', 'MinGW-w64', 'Windows Image Acquisition (WIA)'],
+      highlights: [
+        'Enables SANE applications to access Windows scanners',
+        'Includes wiasane driver acting as a SANE frontend',
+        'Supports cross-compilation from Linux using MinGW'
+      ],
+      tags: ['windows', 'driver', 'c']
+    },
+    {
+      name: 'World History Archive',
+      description: 'A Next.js web application for cataloging and visualizing historical kingdoms, monarchs, and archaeological sites.',
+      link: 'https://github.com/NimuthuGanegoda/WorldHistoryArchive',
+      stack: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
+      highlights: [
+        'Interactive map and timeline visualization',
+        'Robust JSON schema for structured historical data',
+        'Performance and accessibility focused design'
+      ],
+      tags: ['web', 'react', 'history', 'frontend']
     },
     {
       name: 'Multi-Service Linux Server',
