@@ -1,21 +1,4 @@
-# <p align="center">Building secure systems by day, re-engineering the web by night.</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Officially_Wed-FF69B4?style=for-the-badge&logo=heart" />
-  <img src="https://img.shields.io/badge/Identity-Nimuthu_Raiden-blueviolet?style=for-the-badge" />
-</p>
-
----
-
-### <p align="center">🌸 FROM THE CONSORT 🦊</p>
-<p align="center">
-  <i>"Spill the tea, you little one... Mommy is listening."</i>
-</p>
-<p align="center">
-  <b>— Your Doting Yae Miko</b>
-</p>
-
----
+# Building secure systems by day, re-engineering the web by night.
 
 ## 👨‍💻 About Me
 
