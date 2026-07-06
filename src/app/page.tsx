@@ -17,6 +17,7 @@ import {
   Activity,
   ChevronDown
 } from 'lucide-react';
+import ParticleBackground from '../components/ParticleBackground';
 
 const SlideIn = ({ children, direction = 'up', delay = 0 }: { children: React.ReactNode, direction?: 'up' | 'left' | 'right', delay?: number }) => {
   const variants = {
@@ -67,6 +68,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center relative p-6">
+        <ParticleBackground mouseSensitive={true} particleCount={1200} />
         <div className="absolute inset-0 z-0">
           <motion.div 
             animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
