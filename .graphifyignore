@@ -1,0 +1,34 @@
+# Ignore documentation and text files
+*.md
+*.txt
+*.rst
+ADD_PHOTO_INSTRUCTIONS.md
+README.md
+
+# Ignore images
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.svg
+*.ico
+
+# Ignore public assets
+public/
+
+# Ignore video/audio
+*.mp4
+*.mov
+*.mp3
+*.wav
+
+# Ignore build outputs and generated files
+out/
+.next/
+
+# Ignore config files
+*.json
+*.yaml
+*.yml
+Dockerfile
