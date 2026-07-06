@@ -1,1 +1,17 @@
-{"0": "LanguageContext.tsx", "1": "cv.ts", "2": "layout.tsx", "3": "page.tsx", "4": "generate-cv-pdf.js", "5": "fetch-github-repos.js", "6": "jest.config.ts", "7": "ScrollReveal.tsx", "8": "not-found.tsx", "9": "Section.tsx", "10": "jest.setup.ts", "11": "next.config.js", "12": "next-env.d.ts", "13": "postcss.config.js", "14": "tailwind.config.js"}
+{
+  "0": "LanguageContext.tsx",
+  "1": "cv.ts",
+  "2": "layout.tsx",
+  "3": "page.tsx",
+  "4": "generate-cv-pdf.js",
+  "5": "fetch-github-repos.js",
+  "6": "jest.config.ts",
+  "7": "ScrollReveal.tsx",
+  "8": "not-found.tsx",
+  "9": "Section.tsx",
+  "10": "jest.setup.ts",
+  "11": "next.config.js",
+  "12": "next-env.d.ts",
+  "13": "postcss.config.js",
+  "14": "tailwind.config.js"
+}
