@@ -1,7 +1,73 @@
-node_modules
-.next
-out
-src/data/github_repos.json
-.DS_Store
+```
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
 *.log
-.env*
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Package managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+.mypy_cache/
+.pytest_cache/
+.jest/
+
+# Distribution / packaging
+*.tar.gz
+*.egg-info/
+.eggs/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Transpiled JavaScript
+*.js.map
+*.jsx.map
+*.ts.map
+*.tsx.map
+
+# Lock files (if not needed in version control)
+# package-lock.json (not ignored since it was mentioned in changes)
+```
