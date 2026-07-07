@@ -664,20 +664,10 @@
       "norm_label": "certificationitem"
     },
     {
-      "label": "LanguageItem",
-      "file_type": "code",
-      "source_file": "src/data/cv.ts",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "src_data_cv_languageitem",
-      "community": 1,
-      "norm_label": "languageitem"
-    },
-    {
       "label": "ReferenceItem",
       "file_type": "code",
       "source_file": "src/data/cv.ts",
-      "source_location": "L43",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "src_data_cv_referenceitem",
       "community": 1,
@@ -687,7 +677,7 @@
       "label": "CVData",
       "file_type": "code",
       "source_file": "src/data/cv.ts",
-      "source_location": "L51",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "src_data_cv_cvdata",
       "community": 1,
@@ -697,7 +687,7 @@
       "label": "cv",
       "file_type": "code",
       "source_file": "src/data/cv.ts",
-      "source_location": "L72",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "src_data_cv_cv",
       "community": 1,
@@ -1606,7 +1596,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/cv.ts",
-      "source_location": "L72",
+      "source_location": "L66",
       "weight": 1.0,
       "source": "src_data_cv",
       "target": "src_data_cv_cv",
@@ -1616,7 +1606,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/cv.ts",
-      "source_location": "L51",
+      "source_location": "L46",
       "weight": 1.0,
       "source": "src_data_cv",
       "target": "src_data_cv_cvdata",
@@ -1646,16 +1636,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/cv.ts",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "src_data_cv",
-      "target": "src_data_cv_languageitem",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/cv.ts",
       "source_location": "L10",
       "weight": 1.0,
       "source": "src_data_cv",
@@ -1666,7 +1646,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/cv.ts",
-      "source_location": "L43",
+      "source_location": "L38",
       "weight": 1.0,
       "source": "src_data_cv",
       "target": "src_data_cv_referenceitem",
@@ -1684,5 +1664,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a7a0fe21f8829d32caaab95e10d64b2e423dfecc"
+  "built_at_commit": "0a2d3d25390848f100f6de95bcc9d7498dd1fb78"
 }
