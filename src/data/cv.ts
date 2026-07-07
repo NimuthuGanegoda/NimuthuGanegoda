@@ -35,6 +35,11 @@ export interface CertificationItem {
   year: number;
 }
 
+export interface LanguageItem {
+  name: string;
+  proficiency: string;
+}
+
 export interface ReferenceItem {
   name: string;
   title: string;
@@ -49,7 +54,7 @@ export interface CVData {
   location: string;
   email: string;
   website?: string;
-  photo?: string; // path under /public
+  photo?: string;
   summary: string;
   experiences: ExperienceItem[];
   projects: ProjectItem[];
@@ -58,6 +63,7 @@ export interface CVData {
   certifications: CertificationItem[];
   goals?: string[];
   currentlyLearning?: string[];
+  languages?: LanguageItem[];
   socials?: { name: string; url: string }[];
   interests?: string[];
   references?: ReferenceItem[];
@@ -65,13 +71,26 @@ export interface CVData {
 
 export const cv: CVData = {
   name: 'Nimuthu Ganegoda',
-  title: 'Computer Science Undergraduate (Cybersecurity Major)',
-  location: 'Sri Lanka',
+  title: 'Final Year BSc Computer Science (Cybersecurity) | Aspiring Cybersecurity Analyst',
+  location: 'Nittambuwa, Sri Lanka',
   email: 'NimuthuGanegoda@gmail.com',
   website: 'https://nimuthuganegoda.github.io/NimuthuGanegoda/',
   photo: 'images/profile.jpg',
-  summary: 'Aspiring Cybersecurity Specialist with hands-on experience in penetration testing, vulnerability assessment, and network security analysis. Proficient in Kali Linux, Wireshark, and Metasploit, with a demonstrated ability to identify and mitigate security threats. Currently in 3rd year of Bachelor of Computer Science (Cybersecurity) at Edith Cowan University. Seeking a cybersecurity internship to apply technical skills in protecting digital infrastructure and developing proactive security solutions.',
+  summary: 'I am a final-year Bachelor of Computer Science undergraduate majoring in Cybersecurity at Edith Cowan University (Sri Lanka campus), with a strong interest in digital security, threat analysis, and ethical hacking. My academic and personal pursuits reflect a deep commitment to understanding the evolving landscape of cyber threats and digital risk management. I am currently applying my knowledge in real-world contexts through an internship at MillenniumIT ESP as a Managed Security Services Engineer, focusing on network security, vulnerability assessment, and secure system design. I plan to pursue postgraduate studies in cybersecurity, with long-term aspirations to contribute to international security environments — particularly in Japan, a nation I admire for its technology leadership and innovation.',
   experiences: [
+    {
+      role: 'Managed Security Services Engineer',
+      company: 'MillenniumIT ESP',
+      period: 'April 2026 – Present',
+      summary: 'Internship role in a Security Operations Center (SOC) environment, monitoring and protecting enterprise security infrastructure.',
+      achievements: [
+        'Monitoring and analyzing security events in a 24/7 SOC environment',
+        'Triaging and escalating security incidents to ensure timely response',
+        'Supporting threat detection and vulnerability assessments for enterprise clients',
+        'Collaborating with senior analysts to improve security monitoring procedures'
+      ],
+      tech: ['SIEM', 'Threat Detection', 'Incident Response', 'SOC Operations', 'Network Security']
+    },
     {
       role: 'Database Manager',
       company: 'BusGo (Online Bus Travelling Management)',
@@ -83,18 +102,6 @@ export const cv: CVData = {
         'Collaborated with backend and mobile teams for seamless API integration'
       ],
       tech: ['PostgreSQL', 'Supabase', 'Database Design', 'Data Integrity']
-    },
-    {
-      role: 'Computer Science Student',
-      company: 'Edith Cowan University',
-      period: 'Present',
-      summary: 'Pursuing BSc in Computer Science (Cybersecurity).',
-      achievements: [
-        'Developing secure mobile apps with Flutter & Android Studio',
-        'Exploring AI-powered security tools and automation scripts',
-        'Building reusable components and CI/CD pipelines'
-      ],
-      tech: ['Python', 'Dart', 'Flutter', 'Cybersecurity']
     }
   ],
   projects: [
@@ -186,34 +193,41 @@ export const cv: CVData = {
     }
   ],
   education: [
-    { institution: 'Edith Cowan University, Rajagiriya', degree: 'Bachelor of Computer Science (Cybersecurity) - 3rd Year', period: 'July 2025 – Present' },
-    { institution: 'Edith Cowan University, Rajagiriya', degree: 'Bachelor of Computer Science (Cybersecurity) - 2nd Year', period: 'November 2024 – May 2025' },
-    { institution: 'Edith Cowan College, Rajagiriya', degree: 'Diploma of Computer Science', period: 'January 2024 – September 2024' },
-    { institution: 'Australian College of Business and Technology, Kandy', degree: 'Foundation of Computing', period: 'October 2022 – September 2023' },
-    { institution: 'Lyceum International School, Nugegoda & Wattala', degree: 'Cambridge A-Level', period: 'June 2021 – August 2022' },
-    { institution: 'Lyceum International School, Gampaha', degree: 'Cambridge O-Level', period: 'September 2011 – June 2021' }
+    { institution: 'Edith Cowan University, Rajagiriya', degree: 'Bachelor of Computer Science (Cybersecurity) - Final Year', period: '2024 – 2026' },
+    { institution: 'Edith Cowan College, Rajagiriya', degree: 'Diploma of Computer Science', period: '2024 – 2024' },
+    { institution: 'Australian College of Business and Technology, Kandy', degree: 'Foundation of Computing', period: '2022 – 2023' },
+    { institution: 'Lyceum International School, Nugegoda & Wattala', degree: 'Cambridge A-Level Computer Science', period: '2021 – 2022' },
+    { institution: 'Lyceum International School, Gampaha', degree: 'Cambridge O-Level Science', period: '2011 – 2021' }
   ],
   skills: [
     { category: 'Languages', items: ['Python', 'Dart', 'HTML', 'MATLAB', 'C++', 'C#', 'Bash'] },
     { category: 'Mobile Development', items: ['Flutter', 'Android Studio', 'Firebase'] },
-    { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk'] },
+    { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk', 'SIEM'] },
     { category: 'Forensic Tools', items: ['Autopsy', 'FTK Imager', 'SANS Workstation'] },
     { category: 'Infrastructure & Tools', items: ['Linux', 'Git', 'GitHub Actions', 'Azure', 'Docker'] }
   ],
   certifications: [
-    { name: 'IT Security Foundations: Network Security', issuer: 'LinkedIn Learning', year: 2024 }
+    { name: 'Advent of Cyber 2025', issuer: 'TryHackMe', year: 2025 },
+    { name: 'IT Security Foundations: Network Security', issuer: 'LinkedIn Learning', year: 2025 }
   ],
-
   goals: [
-    'Upload first Flutter app repository',
-    'Share security-focused developer tools and scripts',
-    'Collaborate on open-source projects with real-world impact',
-    'Build portfolio for developer internship with security edge'
+    'Deepen expertise in SOC operations and incident response',
+    'Contribute to open-source security tools and frameworks',
+    'Pursue postgraduate studies in cybersecurity',
+    'Build a career in international security environments, targeting Japan'
   ],
   currentlyLearning: [
-    'Advanced Flutter development with Dart',
-    'AI in cybersecurity and secure app architecture',
-    'Building reusable components and CI/CD pipelines'
+    'SOC operations and SIEM tools in an enterprise environment',
+    'Advanced threat detection and incident response workflows',
+    'Vulnerability assessment and penetration testing methodologies',
+    'Japanese language and culture for future aspirations in Japan'
+  ],
+  languages: [
+    { name: 'English', proficiency: 'Native or bilingual proficiency' },
+    { name: 'Sinhala', proficiency: 'Elementary proficiency' },
+    { name: 'Japanese', proficiency: 'Limited working proficiency' },
+    { name: 'Korean', proficiency: 'Elementary proficiency' },
+    { name: 'German', proficiency: 'Elementary proficiency' }
   ],
   socials: [
     { name: 'LinkedIn', url: 'https://linkedin.com/in/nimuthu-ganegoda' },
@@ -227,7 +241,9 @@ export const cv: CVData = {
     { name: 'Email', url: 'mailto:nimuthuganegoda@gmail.com' }
   ],
   interests: [
-    'Traveling and exploring new places',
+    'Information Security and threat analysis',
+    'Network infrastructure protection and cyber policy',
+    'Traveling and exploring new cultures and places',
     'Historical research and studying world history',
     'Gaming: Genshin Impact, Wuthering Waves, Zenless Zone Zero, Honkai Star Rail',
     'Japanese culture and anime',

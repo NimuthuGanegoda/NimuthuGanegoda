@@ -43,8 +43,8 @@
   },
   "about": {
     "title": "Hallo, ich bin Nimuthu",
-    "intro1": "Informatikstudent (Cybersecurity-Schwerpunkt) @ Edith Cowan University, Sri Lanka.",
-    "intro2": "Cybersecurity-Enthusiast & Entwickler mit Leidenschaft für sichere Mobile Apps (Flutter / Android Studio), Anime & japanische Musik mit dem Ziel, in Japan zu studieren & zu arbeiten.",
+    "intro1": "Informatikstudent im Abschlussjahr (Cybersecurity-Schwerpunkt) @ Edith Cowan University, Sri Lanka.",
+    "intro2": "Angehender Cybersecurity-Analyst & SOC-Ingenieur @ MillenniumIT ESP. Leidenschaftlich für Bedrohungserkennung, Netzwerksicherheit und ethisches Hacken — mit dem Ziel, in Japan zu arbeiten.",
     "bullet1": "Grundlagen in Softwareentwicklung, Mobile-App-Sicherheit & Netzwerkprotokollen.",
     "bullet2": "Erfahrung mit Flutter, Python, Dart, MATLAB, Android Studio.",
     "bullet3": "Fokus auf Sicherheit, Performance, UX; Debugging & plattformübergreifende Fehlerbehebung.",
@@ -90,9 +90,9 @@
   },
   "profile": {
     "name": "Nimuthu Ganegoda",
-    "title": "Informatikstudent (Cybersecurity-Schwerpunkt)",
-    "location": "Sri Lanka",
-    "summary": "Angehender Cybersecurity-Spezialist mit praktischer Erfahrung in Penetrationstests, Schwachstellenbewertung und Netzwerksicherheitsanalyse. Versiert in Kali Linux, Wireshark und Metasploit, mit nachgewiesener Fähigkeit zur Identifizierung und Minderung von Sicherheitsbedrohungen. Derzeit im 3. Jahr des Bachelor of Computer Science (Cybersecurity) an der Edith Cowan University. Auf der Suche nach einem Cybersecurity-Praktikum, um technische Fähigkeiten zum Schutz der digitalen Infrastruktur und zur Entwicklung proaktiver Sicherheitslösungen anzuwenden."
+    "title": "Abschlussjahr BSc Informatik (Cybersecurity) | Angehender Cybersecurity-Analyst",
+    "location": "Nittambuwa, Sri Lanka",
+    "summary": "Ich bin im Abschlussjahr meines Bachelor-Studiums der Informatik mit Schwerpunkt Cybersecurity an der Edith Cowan University (Sri Lanka-Campus) mit starkem Interesse an digitaler Sicherheit, Bedrohungsanalyse und ethischem Hacking. Derzeit absolviere ich ein Praktikum bei MillenniumIT ESP als Managed Security Services Engineer mit Fokus auf Netzwerksicherheit, Schwachstellenbewertung und sicheres Systemdesign."
   },
   "meta": {
     "autoTranslateNotice": "Diese Seite kann automatisch übersetzt werden."

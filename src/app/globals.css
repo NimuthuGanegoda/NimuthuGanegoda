@@ -21,6 +21,21 @@
     @apply bg-[#020202] text-white selection:bg-cyan-500/30;
     overflow-x: hidden;
   }
+
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
 }
 
 @layer components {
@@ -33,11 +48,13 @@
   }
 
   .text-glow-cyan {
-    text-shadow: 0 0 30px rgba(0, 242, 255, 0.5);
+    text-shadow: 0 0 30px rgba(0, 242, 255, 0.5),
+                 0 0 60px rgba(0, 242, 255, 0.2);
   }
 
   .text-glow-violet {
-    text-shadow: 0 0 30px rgba(112, 0, 255, 0.5);
+    text-shadow: 0 0 30px rgba(112, 0, 255, 0.5),
+                 0 0 60px rgba(112, 0, 255, 0.2);
   }
 
   .cyber-card {
@@ -62,7 +79,28 @@
   }
 
   .btn-neon-outline {
-    @apply relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 bg-transparent border-2 border-white/10 rounded-xl hover:border-cyan-500 hover:text-cyan-400 active:scale-95;
+    @apply relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 bg-transparent border-2 border-white/10 rounded-xl hover:border-cyan-500 hover:text-cyan-400 hover:shadow-[0_0_20px_rgba(0,242,255,0.2)] active:scale-95;
+  }
+
+  .skill-chip {
+    @apply px-3 py-1.5 bg-white/[0.02] border border-white/5 rounded-lg text-xs text-slate-400 
+           hover:text-cyan-400 hover:border-cyan-500/30 hover:bg-cyan-500/5 
+           hover:shadow-[0_0_15px_rgba(0,242,255,0.1)]
+           transition-all duration-300 cursor-default;
+  }
+
+  .language-badge {
+    @apply flex items-center gap-3 px-4 py-3 bg-white/[0.02] border border-white/5 rounded-xl
+           hover:border-violet-500/30 hover:bg-violet-500/5
+           transition-all duration-300;
+  }
+
+  .progress-bar {
+    @apply h-1.5 rounded-full bg-white/5 overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 transition-all duration-1000;
   }
 
   ::-webkit-scrollbar {
@@ -100,5 +138,6 @@
 }
 
 .glow-blob {
-  @apply absolute blur-[150px] opacity-20 -z-10 animate-pulse;
+  @apply absolute blur-[150px] opacity-20 -z-10;
+  animation: breathe 8s ease-in-out infinite;
 }

@@ -55,6 +55,14 @@ export default function CVPage() {
           {cv.certifications.map(c => <li key={c.name}>{c.name} – {c.issuer} ({c.year})</li>)}
         </ul>
       </section>
+      {cv.languages && cv.languages.length > 0 && (
+        <section className="mb-6">
+          <h2>Languages</h2>
+          <ul className="text-sm">
+            {cv.languages.map(l => <li key={l.name}>{l.name} – {l.proficiency}</li>)}
+          </ul>
+        </section>
+      )}
       {cv.currentlyLearning && cv.currentlyLearning.length > 0 && (
         <section className="mb-6">
           <h2>{t('cv.currentlyLearning')}</h2>
