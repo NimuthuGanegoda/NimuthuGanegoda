@@ -10,6 +10,21 @@ My passion lies at the intersection of **Security & Development**. I have experi
 
 ## 🚀 Current Projects
 
+### 💠 Eien-no-Kiroku (Eternal Record)
+> **AI Referencing Tool.** A next-generation, AI-powered referencing tool designed to bring absolute order to the chaos of academic research with 100% accurate, fully automated metadata detection.
+
+### 📖 Codex of Faith
+> **Open-Source Archive.** A curated, open-source archive documenting the foundational beliefs, histories, practices, and stories of the world's major religions, served via a React and TypeScript application.
+
+### 🐧 NeOS (Next Evolution Operating System)
+> **Arch Linux Distribution.** A curated, snapshot-based Arch Linux desktop distribution engineered for predictable behavior, system stability, and a refined KDE Plasma 6 experience.
+
+### 🔐 Tailscale Client for Windows
+> **Windows Client.** A modern, high-performance WinUI3-based Tailscale client for Windows. Provides a clean, native alternative to the official client.
+
+### 🌸 EasyVtuber
+> **Browser VTubing.** A 100% browser-based VTubing application based on Talking-head-anime 3, eliminating the need for complex local backends.
+
 ### 🚌 BusGo: Online Bus Travelling Management
 > **Database Manager.** A comprehensive ecosystem for bus management and passenger tracking in Sri Lanka, featuring mobile apps, AI-powered ETA predictions, and a centralized admin dashboard.
 
