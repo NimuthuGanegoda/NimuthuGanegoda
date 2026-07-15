@@ -1,7 +1,7 @@
-# Graph Report - NimuthuGanegoda  (2026-07-15)
+# Graph Report - NimuthuGanegoda  (2026-07-07)
 
 ## Corpus Check
-- 26 files · ~5,645 words
+- 26 files · ~5,352 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,20 +10,20 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e12ba044`
+- Built from commit: `a7a0fe21`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- LanguageContext.tsx
-- cv.ts
-- layout.tsx
-- page.tsx
-- generate-cv-pdf.js
-- fetch-github-repos.js
-- jest.config.ts
-- ScrollReveal.tsx
-- next-env.d.ts
+- [[_COMMUNITY_LanguageContext.tsx|LanguageContext.tsx]]
+- [[_COMMUNITY_cv.ts|cv.ts]]
+- [[_COMMUNITY_layout.tsx|layout.tsx]]
+- [[_COMMUNITY_page.tsx|page.tsx]]
+- [[_COMMUNITY_generate-cv-pdf.js|generate-cv-pdf.js]]
+- [[_COMMUNITY_fetch-github-repos.js|fetch-github-repos.js]]
+- [[_COMMUNITY_jest.config.ts|jest.config.ts]]
+- [[_COMMUNITY_ScrollReveal.tsx|ScrollReveal.tsx]]
+- [[_COMMUNITY_next-env.d.ts|next-env.d.ts]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useLanguage()` - 15 edges
@@ -88,5 +88,5 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Why does `LanguageProvider()` connect `LanguageContext.tsx` to `layout.tsx`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `createJestConfig`, `config`, `fs` to the rest of the system?**
-  _23 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `createJestConfig`, `config`, `NOTE: This file should not be edited` to the rest of the system?**
+  _24 weakly-connected nodes found - possible documentation gaps or missing edges._
