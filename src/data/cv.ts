@@ -106,6 +106,67 @@ export const cv: CVData = {
   ],
   projects: [
     {
+      name: 'Eien-no-Kiroku',
+      description: 'A next-generation, AI-powered referencing tool with automated metadata detection and 100% accuracy.',
+      link: 'https://github.com/NimuthuGanegoda/Eien-no-Kiroku',
+      stack: ['Python', 'FastAPI', 'React', 'TypeScript', 'Vite', 'GROBID'],
+      highlights: [
+        'Smart Detection of DOI, ISBN, or URL for perfect metadata extraction',
+        'Advanced PDF parsing to identify authors, titles, and citations',
+        'AI Verification via LLMs to ensure data accuracy',
+        'Export to BibTeX, APA, MLA, and more'
+      ],
+      tags: ['ai', 'tools', 'web']
+    },
+    {
+      name: 'Codex of Faith',
+      description: 'A curated, open-source archive documenting the foundational beliefs, histories, practices, and stories of the world\'s major religions.',
+      link: 'https://github.com/NimuthuGanegoda/Codex-of-Faith',
+      stack: ['React', 'TypeScript', 'Vite', 'Markdown'],
+      highlights: [
+        'Comprehensive summaries of major religions',
+        'Sleek, responsive frontend built with React & TypeScript',
+        'Dynamic, styled text rendering from the core archive'
+      ],
+      tags: ['web', 'react']
+    },
+    {
+      name: 'NeOS',
+      description: 'A curated, snapshot-based Arch Linux desktop distribution engineered for predictable behavior, system stability, and a refined KDE Plasma 6 experience.',
+      link: 'https://github.com/NimuthuGanegoda/NeOS',
+      stack: ['Linux', 'Arch Linux', 'Shell', 'KDE Plasma'],
+      highlights: [
+        'Snapshot-Gated Stability via Btrfs snapshots',
+        'Automated Hardware Optimization for NVIDIA, AMD, and Intel',
+        'Pre-configured UFW, systemd service sandboxing, and Secure Boot helpers'
+      ],
+      tags: ['linux', 'os', 'system']
+    },
+    {
+      name: 'Tailscale Client for Windows',
+      description: 'A modern, high-performance WinUI3-based Tailscale client for Windows, providing a clean, native alternative to the official client.',
+      link: 'https://github.com/NimuthuGanegoda/tailscale-client',
+      stack: ['C#', 'WinUI3', 'Windows'],
+      highlights: [
+        'Multi-Account Management and QR Code Authentication',
+        'Visual Network Map to manage all devices',
+        'VPN Integration for external VPN protocols'
+      ],
+      tags: ['windows', 'networking', 'c#']
+    },
+    {
+      name: 'EasyVtuber',
+      description: 'A 100% browser-based VTubing application based on Talking-head-anime 3.',
+      link: 'https://github.com/NimuthuGanegoda/EasyVtuber',
+      stack: ['Python', 'Web', 'AI'],
+      highlights: [
+        'Pure web experience with no heavy local backend needed',
+        'Hardware acceleration support via WebGPU/WebGL',
+        'Connects to Discord, Zoom, or OBS'
+      ],
+      tags: ['web', 'ai', 'tools']
+    },
+    {
       name: 'BusGo: Online Bus Travelling Management',
       description: 'A comprehensive suite of applications for modern bus management and passenger tracking in Sri Lanka.',
       link: 'https://github.com/NimuthuGanegoda/BusGo',
