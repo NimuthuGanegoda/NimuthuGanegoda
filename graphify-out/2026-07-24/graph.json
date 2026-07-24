@@ -202,7 +202,7 @@
       "norm_label": "generatecv()"
     },
     {
-      "label": "cv/page.tsx",
+      "label": "page.tsx",
       "file_type": "code",
       "source_file": "src/app/cv/page.tsx",
       "source_location": "L1",
@@ -210,7 +210,7 @@
       "id": "src_app_cv_page",
       "community": 1,
       "community_name": "cv.ts",
-      "norm_label": "cv/page.tsx"
+      "norm_label": "page.tsx"
     },
     {
       "label": "CVPage()",
@@ -290,7 +290,7 @@
       "norm_label": "notfound()"
     },
     {
-      "label": "app/page.tsx",
+      "label": "page.tsx",
       "file_type": "code",
       "source_file": "src/app/page.tsx",
       "source_location": "L1",
@@ -298,7 +298,7 @@
       "id": "src_app_page",
       "community": 3,
       "community_name": "page.tsx",
-      "norm_label": "app/page.tsx"
+      "norm_label": "page.tsx"
     },
     {
       "label": "SlideIn()",
@@ -794,9 +794,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_navbar_test",
-      "target": "src_components_navbar",
-      "confidence_score": 1.0
+      "target": "src_components_navbar"
     },
     {
       "relation": "imports_from",
@@ -806,9 +806,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_navbar_test",
-      "target": "src_contexts_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext"
     },
     {
       "relation": "imports",
@@ -818,9 +818,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_navbar_test",
-      "target": "src_contexts_languagecontext_languageprovider",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_languageprovider"
     },
     {
       "relation": "contains",
@@ -829,9 +829,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "jest_config",
-      "target": "jest_config_config",
-      "confidence_score": 1.0
+      "target": "jest_config_config"
     },
     {
       "relation": "contains",
@@ -840,9 +840,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "jest_config",
-      "target": "jest_config_createjestconfig",
-      "confidence_score": 1.0
+      "target": "jest_config_createjestconfig"
     },
     {
       "relation": "rationale_for",
@@ -851,9 +851,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "next_env_d_rationale_4",
-      "target": "next_env_d",
-      "confidence_score": 1.0
+      "target": "next_env_d"
     },
     {
       "relation": "contains",
@@ -862,9 +862,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "scripts_fetch_github_repos",
-      "target": "scripts_fetch_github_repos_fs",
-      "confidence_score": 1.0
+      "target": "scripts_fetch_github_repos_fs"
     },
     {
       "relation": "contains",
@@ -873,9 +873,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "scripts_fetch_github_repos",
-      "target": "scripts_fetch_github_repos_path",
-      "confidence_score": 1.0
+      "target": "scripts_fetch_github_repos_path"
     },
     {
       "relation": "contains",
@@ -884,9 +884,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "scripts_fetch_github_repos",
-      "target": "scripts_fetch_github_repos_run",
-      "confidence_score": 1.0
+      "target": "scripts_fetch_github_repos_run"
     },
     {
       "relation": "contains",
@@ -895,9 +895,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "scripts_generate_cv_pdf",
-      "target": "scripts_generate_cv_pdf_fs",
-      "confidence_score": 1.0
+      "target": "scripts_generate_cv_pdf_fs"
     },
     {
       "relation": "contains",
@@ -906,9 +906,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "scripts_generate_cv_pdf",
-      "target": "scripts_generate_cv_pdf_generatecv",
-      "confidence_score": 1.0
+      "target": "scripts_generate_cv_pdf_generatecv"
     },
     {
       "relation": "contains",
@@ -917,9 +917,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "scripts_generate_cv_pdf",
-      "target": "scripts_generate_cv_pdf_path",
-      "confidence_score": 1.0
+      "target": "scripts_generate_cv_pdf_path"
     },
     {
       "relation": "contains",
@@ -928,9 +928,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "scripts_generate_cv_pdf",
-      "target": "scripts_generate_cv_pdf_puppeteer",
-      "confidence_score": 1.0
+      "target": "scripts_generate_cv_pdf_puppeteer"
     },
     {
       "relation": "contains",
@@ -939,9 +939,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_cv_page",
-      "target": "src_app_cv_page_cvpage",
-      "confidence_score": 1.0
+      "target": "src_app_cv_page_cvpage"
     },
     {
       "relation": "imports_from",
@@ -951,9 +951,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_cv_page",
-      "target": "src_contexts_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext"
     },
     {
       "relation": "imports",
@@ -963,9 +963,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_cv_page",
-      "target": "src_contexts_languagecontext_uselanguage",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_uselanguage"
     },
     {
       "relation": "imports_from",
@@ -975,9 +975,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_cv_page",
-      "target": "src_data_cv",
-      "confidence_score": 1.0
+      "target": "src_data_cv"
     },
     {
       "relation": "imports",
@@ -987,9 +987,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_cv_page",
-      "target": "src_data_cv_cv",
-      "confidence_score": 1.0
+      "target": "src_data_cv_cv"
     },
     {
       "relation": "calls",
@@ -1010,9 +1010,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_app_layout_inter",
-      "confidence_score": 1.0
+      "target": "src_app_layout_inter"
     },
     {
       "relation": "contains",
@@ -1021,9 +1021,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_app_layout_metadata",
-      "confidence_score": 1.0
+      "target": "src_app_layout_metadata"
     },
     {
       "relation": "contains",
@@ -1032,9 +1032,9 @@
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_app_layout_rootlayout",
-      "confidence_score": 1.0
+      "target": "src_app_layout_rootlayout"
     },
     {
       "relation": "imports_from",
@@ -1044,9 +1044,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_components_analytics",
-      "confidence_score": 1.0
+      "target": "src_components_analytics"
     },
     {
       "relation": "imports",
@@ -1056,9 +1056,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_components_analytics_analytics",
-      "confidence_score": 1.0
+      "target": "src_components_analytics_analytics"
     },
     {
       "relation": "imports_from",
@@ -1068,9 +1068,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_components_footer",
-      "confidence_score": 1.0
+      "target": "src_components_footer"
     },
     {
       "relation": "imports_from",
@@ -1080,9 +1080,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_components_navbar",
-      "confidence_score": 1.0
+      "target": "src_components_navbar"
     },
     {
       "relation": "imports_from",
@@ -1092,9 +1092,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_components_skiplink",
-      "confidence_score": 1.0
+      "target": "src_components_skiplink"
     },
     {
       "relation": "imports",
@@ -1104,9 +1104,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_components_skiplink_skiplink",
-      "confidence_score": 1.0
+      "target": "src_components_skiplink_skiplink"
     },
     {
       "relation": "imports_from",
@@ -1116,9 +1116,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_components_structureddata",
-      "confidence_score": 1.0
+      "target": "src_components_structureddata"
     },
     {
       "relation": "imports",
@@ -1128,9 +1128,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_components_structureddata_structureddata",
-      "confidence_score": 1.0
+      "target": "src_components_structureddata_structureddata"
     },
     {
       "relation": "imports_from",
@@ -1140,9 +1140,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_components_themetoggle",
-      "confidence_score": 1.0
+      "target": "src_components_themetoggle"
     },
     {
       "relation": "imports_from",
@@ -1152,9 +1152,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_contexts_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext"
     },
     {
       "relation": "imports",
@@ -1164,9 +1164,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_layout",
-      "target": "src_contexts_languagecontext_languageprovider",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_languageprovider"
     },
     {
       "relation": "contains",
@@ -1175,9 +1175,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_not_found",
-      "target": "src_app_not_found_notfound",
-      "confidence_score": 1.0
+      "target": "src_app_not_found_notfound"
     },
     {
       "relation": "contains",
@@ -1186,9 +1186,9 @@
       "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_page",
-      "target": "src_app_page_homepage",
-      "confidence_score": 1.0
+      "target": "src_app_page_homepage"
     },
     {
       "relation": "contains",
@@ -1197,9 +1197,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_page",
-      "target": "src_app_page_slidein",
-      "confidence_score": 1.0
+      "target": "src_app_page_slidein"
     },
     {
       "relation": "imports_from",
@@ -1209,9 +1209,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_page",
-      "target": "src_components_particlebackground",
-      "confidence_score": 1.0
+      "target": "src_components_particlebackground"
     },
     {
       "relation": "imports",
@@ -1221,9 +1221,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_page",
-      "target": "src_components_particlebackground_particlebackground",
-      "confidence_score": 1.0
+      "target": "src_components_particlebackground_particlebackground"
     },
     {
       "relation": "imports_from",
@@ -1233,9 +1233,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_page",
-      "target": "src_contexts_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext"
     },
     {
       "relation": "imports",
@@ -1245,9 +1245,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_page",
-      "target": "src_contexts_languagecontext_uselanguage",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_uselanguage"
     },
     {
       "relation": "imports_from",
@@ -1257,9 +1257,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_page",
-      "target": "src_data_cv",
-      "confidence_score": 1.0
+      "target": "src_data_cv"
     },
     {
       "relation": "imports",
@@ -1269,9 +1269,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_page",
-      "target": "src_data_cv_cv",
-      "confidence_score": 1.0
+      "target": "src_data_cv_cv"
     },
     {
       "relation": "calls",
@@ -1292,9 +1292,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_analytics",
-      "target": "src_components_analytics_analytics",
-      "confidence_score": 1.0
+      "target": "src_components_analytics_analytics"
     },
     {
       "relation": "contains",
@@ -1303,9 +1303,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_footer",
-      "target": "src_components_footer_footer",
-      "confidence_score": 1.0
+      "target": "src_components_footer_footer"
     },
     {
       "relation": "imports_from",
@@ -1315,9 +1315,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_footer",
-      "target": "src_contexts_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext"
     },
     {
       "relation": "imports",
@@ -1327,9 +1327,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_footer",
-      "target": "src_contexts_languagecontext_uselanguage",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_uselanguage"
     },
     {
       "relation": "imports_from",
@@ -1339,9 +1339,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_footer",
-      "target": "src_data_cv",
-      "confidence_score": 1.0
+      "target": "src_data_cv"
     },
     {
       "relation": "imports",
@@ -1351,9 +1351,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_footer",
-      "target": "src_data_cv_cv",
-      "confidence_score": 1.0
+      "target": "src_data_cv_cv"
     },
     {
       "relation": "calls",
@@ -1374,9 +1374,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_languageselector",
-      "target": "src_components_languageselector_languageselector",
-      "confidence_score": 1.0
+      "target": "src_components_languageselector_languageselector"
     },
     {
       "relation": "imports_from",
@@ -1386,9 +1386,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_languageselector",
-      "target": "src_contexts_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext"
     },
     {
       "relation": "imports",
@@ -1398,9 +1398,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_languageselector",
-      "target": "src_contexts_languagecontext_uselanguage",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_uselanguage"
     },
     {
       "relation": "imports_from",
@@ -1410,9 +1410,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_navbar",
-      "target": "src_components_languageselector",
-      "confidence_score": 1.0
+      "target": "src_components_languageselector"
     },
     {
       "relation": "calls",
@@ -1433,9 +1433,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_navbar",
-      "target": "src_components_navbar_navbar",
-      "confidence_score": 1.0
+      "target": "src_components_navbar_navbar"
     },
     {
       "relation": "imports_from",
@@ -1445,9 +1445,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_navbar",
-      "target": "src_components_themetoggle",
-      "confidence_score": 1.0
+      "target": "src_components_themetoggle"
     },
     {
       "relation": "imports_from",
@@ -1457,9 +1457,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_navbar",
-      "target": "src_contexts_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext"
     },
     {
       "relation": "imports",
@@ -1469,9 +1469,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_navbar",
-      "target": "src_contexts_languagecontext_uselanguage",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_uselanguage"
     },
     {
       "relation": "calls",
@@ -1492,9 +1492,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_particlebackground",
-      "target": "src_components_particlebackground_particlebackground",
-      "confidence_score": 1.0
+      "target": "src_components_particlebackground_particlebackground"
     },
     {
       "relation": "contains",
@@ -1503,9 +1503,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_particlebackground",
-      "target": "src_components_particlebackground_particlebackgroundprops",
-      "confidence_score": 1.0
+      "target": "src_components_particlebackground_particlebackgroundprops"
     },
     {
       "relation": "contains",
@@ -1514,9 +1514,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_scrollreveal",
-      "target": "src_components_scrollreveal_scrollreveal",
-      "confidence_score": 1.0
+      "target": "src_components_scrollreveal_scrollreveal"
     },
     {
       "relation": "contains",
@@ -1525,9 +1525,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_scrollreveal",
-      "target": "src_components_scrollreveal_scrollrevealprops",
-      "confidence_score": 1.0
+      "target": "src_components_scrollreveal_scrollrevealprops"
     },
     {
       "relation": "contains",
@@ -1536,9 +1536,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_section",
-      "target": "src_components_section_section",
-      "confidence_score": 1.0
+      "target": "src_components_section_section"
     },
     {
       "relation": "contains",
@@ -1547,9 +1547,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_skiplink",
-      "target": "src_components_skiplink_skiplink",
-      "confidence_score": 1.0
+      "target": "src_components_skiplink_skiplink"
     },
     {
       "relation": "contains",
@@ -1558,9 +1558,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_structureddata",
-      "target": "src_components_structureddata_structureddata",
-      "confidence_score": 1.0
+      "target": "src_components_structureddata_structureddata"
     },
     {
       "relation": "imports_from",
@@ -1570,9 +1570,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_structureddata",
-      "target": "src_data_cv",
-      "confidence_score": 1.0
+      "target": "src_data_cv"
     },
     {
       "relation": "imports",
@@ -1582,9 +1582,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_structureddata",
-      "target": "src_data_cv_cv",
-      "confidence_score": 1.0
+      "target": "src_data_cv_cv"
     },
     {
       "relation": "contains",
@@ -1593,9 +1593,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_themetoggle",
-      "target": "src_components_themetoggle_themetoggle",
-      "confidence_score": 1.0
+      "target": "src_components_themetoggle_themetoggle"
     },
     {
       "relation": "imports_from",
@@ -1605,9 +1605,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_themetoggle",
-      "target": "src_contexts_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext"
     },
     {
       "relation": "imports",
@@ -1617,9 +1617,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_themetoggle",
-      "target": "src_contexts_languagecontext_uselanguage",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_uselanguage"
     },
     {
       "relation": "calls",
@@ -1640,9 +1640,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_translationnotice",
-      "target": "src_components_translationnotice_translationnotice",
-      "confidence_score": 1.0
+      "target": "src_components_translationnotice_translationnotice"
     },
     {
       "relation": "imports_from",
@@ -1652,9 +1652,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_translationnotice",
-      "target": "src_contexts_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext"
     },
     {
       "relation": "imports",
@@ -1664,9 +1664,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_translationnotice",
-      "target": "src_contexts_languagecontext_uselanguage",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_uselanguage"
     },
     {
       "relation": "calls",
@@ -1687,9 +1687,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_contexts_languagecontext",
-      "target": "src_contexts_languagecontext_language",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_language"
     },
     {
       "relation": "contains",
@@ -1698,9 +1698,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_contexts_languagecontext",
-      "target": "src_contexts_languagecontext_languagecontext",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_languagecontext"
     },
     {
       "relation": "contains",
@@ -1709,9 +1709,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_contexts_languagecontext",
-      "target": "src_contexts_languagecontext_languagecontexttype",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_languagecontexttype"
     },
     {
       "relation": "contains",
@@ -1720,9 +1720,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_contexts_languagecontext",
-      "target": "src_contexts_languagecontext_languageprovider",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_languageprovider"
     },
     {
       "relation": "contains",
@@ -1731,9 +1731,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_contexts_languagecontext",
-      "target": "src_contexts_languagecontext_translations",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_translations"
     },
     {
       "relation": "contains",
@@ -1742,9 +1742,9 @@
       "source_location": "L62",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_contexts_languagecontext",
-      "target": "src_contexts_languagecontext_uselanguage",
-      "confidence_score": 1.0
+      "target": "src_contexts_languagecontext_uselanguage"
     },
     {
       "relation": "contains",
@@ -1753,9 +1753,9 @@
       "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_data_cv",
-      "target": "src_data_cv_certificationitem",
-      "confidence_score": 1.0
+      "target": "src_data_cv_certificationitem"
     },
     {
       "relation": "contains",
@@ -1764,9 +1764,9 @@
       "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_data_cv",
-      "target": "src_data_cv_cv",
-      "confidence_score": 1.0
+      "target": "src_data_cv_cv"
     },
     {
       "relation": "contains",
@@ -1775,9 +1775,9 @@
       "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_data_cv",
-      "target": "src_data_cv_cvdata",
-      "confidence_score": 1.0
+      "target": "src_data_cv_cvdata"
     },
     {
       "relation": "contains",
@@ -1786,9 +1786,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_data_cv",
-      "target": "src_data_cv_educationitem",
-      "confidence_score": 1.0
+      "target": "src_data_cv_educationitem"
     },
     {
       "relation": "contains",
@@ -1797,9 +1797,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_data_cv",
-      "target": "src_data_cv_experienceitem",
-      "confidence_score": 1.0
+      "target": "src_data_cv_experienceitem"
     },
     {
       "relation": "contains",
@@ -1808,9 +1808,9 @@
       "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_data_cv",
-      "target": "src_data_cv_languageitem",
-      "confidence_score": 1.0
+      "target": "src_data_cv_languageitem"
     },
     {
       "relation": "contains",
@@ -1819,9 +1819,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_data_cv",
-      "target": "src_data_cv_projectitem",
-      "confidence_score": 1.0
+      "target": "src_data_cv_projectitem"
     },
     {
       "relation": "contains",
@@ -1830,9 +1830,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_data_cv",
-      "target": "src_data_cv_referenceitem",
-      "confidence_score": 1.0
+      "target": "src_data_cv_referenceitem"
     },
     {
       "relation": "contains",
@@ -1841,11 +1841,11 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_data_cv",
-      "target": "src_data_cv_skillgroup",
-      "confidence_score": 1.0
+      "target": "src_data_cv_skillgroup"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "108fc58b0ad80002a194bb9a0ccf7c44dccdca65"
+  "built_at_commit": "e12ba044e3ac822d70c9fe7e1ccf395fc9a0aad0"
 }
