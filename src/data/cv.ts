@@ -76,32 +76,20 @@ export const cv: CVData = {
   email: 'NimuthuGanegoda@gmail.com',
   website: 'https://nimuthuganegoda.github.io/NimuthuGanegoda/',
   photo: 'images/profile.jpg',
-  summary: 'I am a final-year Bachelor of Computer Science undergraduate majoring in Cybersecurity at Edith Cowan University (Sri Lanka campus), with a strong interest in digital security, threat analysis, and ethical hacking. My academic and personal pursuits reflect a deep commitment to understanding the evolving landscape of cyber threats and digital risk management. I am currently applying my knowledge in real-world contexts through an internship at MillenniumIT ESP as a Managed Security Services Engineer, focusing on network security, vulnerability assessment, and secure system design. I plan to pursue postgraduate studies in cybersecurity, with long-term aspirations to contribute to international security environments — particularly in Japan, a nation I admire for its technology leadership and innovation.',
+  summary: 'I am a final-year Bachelor of Computer Science undergraduate majoring in Cybersecurity at Edith Cowan University (Sri Lanka campus), with a strong interest in digital security, threat analysis, and ethical hacking. My academic and personal pursuits reflect a deep commitment to understanding the evolving landscape of cyber threats and digital risk management. I am currently applying my knowledge in real-world contexts through my role at MillenniumIT ESP, working in the Network Operations Center (NOC) — monitoring enterprise networks, triaging incidents, and supporting vulnerability assessment and secure system design. I plan to pursue postgraduate studies in cybersecurity, with long-term aspirations to contribute to international security environments — particularly in Japan, a nation I admire for its technology leadership and innovation.',
   experiences: [
     {
-      role: 'Managed Security Services Engineer',
+      role: 'Network Operations Center (NOC) Engineer',
       company: 'MillenniumIT ESP',
       period: 'April 2026 – Present',
-      summary: 'Internship role in a Security Operations Center (SOC) environment, monitoring and protecting enterprise security infrastructure.',
+      summary: 'Working in a 24/7 Network Operations Center, keeping enterprise networks monitored, healthy and escalated on time.',
       achievements: [
-        'Monitoring and analyzing security events in a 24/7 SOC environment',
-        'Triaging and escalating security incidents to ensure timely response',
-        'Supporting threat detection and vulnerability assessments for enterprise clients',
-        'Collaborating with senior analysts to improve security monitoring procedures'
+        'Monitoring network health, links and security events across enterprise client environments',
+        'Triaging alerts and escalating incidents through to resolution with senior engineers',
+        'Supporting threat detection and vulnerability assessment alongside the security team',
+        'Keeping shift handovers, runbooks and uptime reporting tight'
       ],
-      tech: ['SIEM', 'Threat Detection', 'Incident Response', 'SOC Operations', 'Network Security']
-    },
-    {
-      role: 'Database Manager',
-      company: 'BusGo (Online Bus Travelling Management)',
-      period: 'February 2026 – Present',
-      summary: 'Leading database design and management for a comprehensive bus transit ecosystem.',
-      achievements: [
-        'Designed and implemented scalable PostgreSQL schema using Supabase',
-        'Ensured data integrity and optimized query performance for real-time tracking',
-        'Collaborated with backend and mobile teams for seamless API integration'
-      ],
-      tech: ['PostgreSQL', 'Supabase', 'Database Design', 'Data Integrity']
+      tech: ['NOC Operations', 'Network Monitoring', 'SIEM', 'Incident Response', 'Network Security']
     }
   ],
   projects: [
@@ -109,6 +97,7 @@ export const cv: CVData = {
       name: 'Eien-no-Kiroku',
       description: 'A next-generation, AI-powered referencing tool with automated metadata detection and 100% accuracy.',
       link: 'https://github.com/NimuthuGanegoda/Eien-no-Kiroku',
+      image: '/images/projects/eien-no-kiroku.jpg',
       stack: ['Python', 'FastAPI', 'React', 'TypeScript', 'Vite', 'GROBID'],
       highlights: [
         'Smart Detection of DOI, ISBN, or URL for perfect metadata extraction',
@@ -119,9 +108,59 @@ export const cv: CVData = {
       tags: ['ai', 'tools', 'web']
     },
     {
+      name: 'Mirai-Koyomi',
+      description: 'An asynchronous FastAPI service providing accurate Sri Lanka public, bank, and mercantile holiday data with Redis caching.',
+      link: 'https://github.com/NimuthuGanegoda/Mirai-Koyomi',
+      image: '/images/projects/mirai-koyomi.jpg',
+      stack: ['Python', 'FastAPI', 'Redis', 'AsyncIO'],
+      highlights: [
+        'Accurate public, bank, and mercantile holiday data for Sri Lanka',
+        'Asynchronous FastAPI endpoints built for high throughput',
+        'Redis caching layer to keep repeated lookups fast and cheap'
+      ],
+      tags: ['api', 'python', 'tools']
+    },
+    {
+      name: 'Kitsune-Gaze',
+      description: 'A sleek, gothic-inspired tool to track down personal data breaches, built with a React/Vite frontend and a FastAPI backend.',
+      link: 'https://github.com/NimuthuGanegoda/Kitsune-Gaze',
+      image: '/images/projects/kitsune-gaze.jpg',
+      stack: ['React', 'Vite', 'TypeScript', 'FastAPI'],
+      highlights: [
+        'Checks personal identifiers against known breach corpora',
+        'Gothic-styled, responsive frontend built with React and Vite',
+        'FastAPI service layer for fast, structured lookups'
+      ],
+      tags: ['security', 'web', 'privacy']
+    },
+    {
+      name: 'riko_project',
+      description: 'The public release of the Riko Project — the most-starred repository on the account.',
+      link: 'https://github.com/NimuthuGanegoda/riko_project',
+      stack: ['Python'],
+      highlights: [
+        'Public build of the Riko Project toolchain',
+        'Most-starred repository on the account'
+      ],
+      tags: ['python', 'tools']
+    },
+    {
+      name: 'ride-hailing-dissection',
+      description: 'Technical dissection of ride-hailing app architectures (Bolt, Grab, Uber, PickMe) via APK binary analysis.',
+      link: 'https://github.com/NimuthuGanegoda/ride-hailing-dissection',
+      stack: ['APK Analysis', 'Reverse Engineering', 'Mobile Security'],
+      highlights: [
+        'Static analysis of ride-hailing APKs and their embedded SDKs',
+        'Documents transport, auth, and telemetry patterns across apps',
+        'Reverse engineering notes intended as a learning resource'
+      ],
+      tags: ['security', 'research', 'mobile']
+    },
+    {
       name: 'Codex of Faith',
       description: 'A curated, open-source archive documenting the foundational beliefs, histories, practices, and stories of the world\'s major religions.',
       link: 'https://github.com/NimuthuGanegoda/Codex-of-Faith',
+      image: '/images/projects/codex-of-faith.jpg',
       stack: ['React', 'TypeScript', 'Vite', 'Markdown'],
       highlights: [
         'Comprehensive summaries of major religions',
@@ -134,6 +173,7 @@ export const cv: CVData = {
       name: 'NeOS',
       description: 'A curated, snapshot-based Arch Linux desktop distribution engineered for predictable behavior, system stability, and a refined KDE Plasma 6 experience.',
       link: 'https://github.com/NimuthuGanegoda/NeOS',
+      image: '/images/projects/neos.jpg',
       stack: ['Linux', 'Arch Linux', 'Shell', 'KDE Plasma'],
       highlights: [
         'Snapshot-Gated Stability via Btrfs snapshots',
@@ -167,22 +207,10 @@ export const cv: CVData = {
       tags: ['web', 'ai', 'tools']
     },
     {
-      name: 'BusGo: Online Bus Travelling Management',
-      description: 'A comprehensive suite of applications for modern bus management and passenger tracking in Sri Lanka.',
-      link: 'https://github.com/NimuthuGanegoda/BusGo',
-      stack: ['Node.js', 'Express', 'Supabase', 'Flutter', 'React', 'Python'],
-      highlights: [
-        'Real-time bus tracking and trip management',
-        'Dedicated mobile apps for passengers and drivers',
-        'AI-powered ETA estimation and emergency triage',
-        'Admin dashboard for system-wide oversight'
-      ],
-      tags: ['transit', 'mobile', 'ai', 'fullstack']
-    },
-    {
       name: 'ZeroAir (Aether)',
       description: 'An open Apple AirDrop implementation supporting Windows to iPhone/Android cross-platform file transfers.',
       link: 'https://github.com/NimuthuGanegoda/ZeroAir',
+      image: '/images/projects/zeroair.jpg',
       stack: ['Python', 'Networking', 'Quick Share', 'AirDrop Protocol'],
       highlights: [
         'Implemented background service for continuous file transfers',
@@ -195,6 +223,7 @@ export const cv: CVData = {
       name: 'Rosetta-Browser',
       description: 'A browser data migration tool designed to bridge the gap between different browser engines (Blink, Gecko, WebKit).',
       link: 'https://github.com/NimuthuGanegoda/Rosetta-Browser',
+      image: '/images/projects/rosetta-browser.jpg',
       stack: ['Python', 'Browser Engines', 'Data Migration'],
       highlights: [
         'Cross-Engine Translation (Chromium to Firefox)',
@@ -208,6 +237,7 @@ export const cv: CVData = {
       name: 'PilotHub',
       description: 'A unified AI Integration Tool providing a single interface to interact with multiple AI providers (ChatGPT, DeepSeek, Grok).',
       link: 'https://github.com/NimuthuGanegoda/PilotHub',
+      image: '/images/projects/pilothub.jpg',
       stack: ['Python', 'AI', 'API Integration'],
       highlights: [
         'Unified interface for OpenAI, DeepSeek, and xAI',
@@ -230,11 +260,12 @@ export const cv: CVData = {
     },
     {
       name: 'World History Archive',
-      description: 'A Next.js web application for cataloging and visualizing historical kingdoms, monarchs, and archaeological sites.',
+      description: 'A high-performance static Next.js knowledge platform for exploring world history, kingdoms, monarchs, and archaeological sites through interactive maps and timelines.',
       link: 'https://github.com/NimuthuGanegoda/WorldHistoryArchive',
-      stack: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
+      stack: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'Go'],
       highlights: [
         'Interactive map and timeline visualization',
+        'Static, high-performance build with a Go toolchain',
         'Robust JSON schema for structured historical data',
         'Performance and accessibility focused design'
       ],
@@ -261,25 +292,26 @@ export const cv: CVData = {
     { institution: 'Lyceum International School, Gampaha', degree: 'Cambridge O-Level Science', period: '2011 – 2021' }
   ],
   skills: [
-    { category: 'Languages', items: ['Python', 'Dart', 'HTML', 'MATLAB', 'C++', 'C#', 'Bash'] },
+    { category: 'Languages', items: ['Python', 'TypeScript', 'Go', 'Rust', 'C++', 'C#', 'Dart', 'Bash', 'HTML', 'MATLAB'] },
     { category: 'Mobile Development', items: ['Flutter', 'Android Studio', 'Firebase'] },
-    { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk', 'SIEM'] },
+    { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk', 'SIEM', 'Reverse Engineering'] },
     { category: 'Forensic Tools', items: ['Autopsy', 'FTK Imager', 'SANS Workstation'] },
-    { category: 'Infrastructure & Tools', items: ['Linux', 'Git', 'GitHub Actions', 'Azure', 'Docker'] }
+    { category: 'Data & APIs', items: ['PostgreSQL', 'Redis', 'FastAPI'] },
+    { category: 'Infrastructure & Tools', items: ['Linux', 'Git', 'GitHub Actions', 'Azure', 'Docker', 'CMake'] }
   ],
   certifications: [
     { name: 'Advent of Cyber 2025', issuer: 'TryHackMe', year: 2025 },
     { name: 'IT Security Foundations: Network Security', issuer: 'LinkedIn Learning', year: 2025 }
   ],
   goals: [
-    'Deepen expertise in SOC operations and incident response',
+    'Deepen expertise in NOC operations and incident response',
     'Contribute to open-source security tools and frameworks',
     'Pursue postgraduate studies in cybersecurity',
     'Build a career in international security environments, targeting Japan'
   ],
   currentlyLearning: [
-    'SOC operations and SIEM tools in an enterprise environment',
-    'Advanced threat detection and incident response workflows',
+    'NOC operations and network monitoring in an enterprise environment',
+    'Threat detection and incident response workflows',
     'Vulnerability assessment and penetration testing methodologies',
     'Japanese language and culture for future aspirations in Japan'
   ],

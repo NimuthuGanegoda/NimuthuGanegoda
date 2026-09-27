@@ -9,6 +9,7 @@
     "lint": "next lint",
     "export": "next build && node ./scripts/generate-cv-pdf.js",
     "fetch-repos": "node ./scripts/fetch-github-repos.js",
+    "stats": "node ./scripts/generate-profile-stats.js",
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
