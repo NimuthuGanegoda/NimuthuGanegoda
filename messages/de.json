@@ -46,13 +46,13 @@
     "intro1": "Informatikstudent im Abschlussjahr (Cybersecurity-Schwerpunkt) @ Edith Cowan University, Sri Lanka.",
     "intro2": "Angehender Cybersecurity-Analyst & NOC-Ingenieur @ MillenniumIT ESP. Leidenschaftlich für Bedrohungserkennung, Netzwerksicherheit und ethisches Hacken — mit dem Ziel, in Japan zu arbeiten.",
     "bullet1": "Grundlagen in Softwareentwicklung, Mobile-App-Sicherheit & Netzwerkprotokollen.",
-    "bullet2": "Erfahrung mit Flutter, Python, Dart, MATLAB, Android Studio.",
+    "bullet2": "Erfahrung mit Python, TypeScript, Go, C++, Flutter und Android Studio.",
     "bullet3": "Fokus auf Sicherheit, Performance, UX; Debugging & plattformübergreifende Fehlerbehebung.",
     "techStack": "Tech Stack & Tools",
     "languages": "Sprachen & Frameworks",
-    "languagesText": "Python, Dart, HTML, MATLAB, Flutter",
+    "languagesText": "Python, TypeScript, Go, Rust, C++, C#, Dart",
     "security": "Sicherheitstools",
-    "securityText": "Kali Linux, Wireshark, Nmap, Metasploit, Splunk",
+    "securityText": "Kali Linux, Wireshark, Nmap, Metasploit, Splunk, SIEM",
     "mobile": "Mobile-Entwicklung",
     "mobileText": "Android Studio, Firebase",
     "sysadmin": "Systemadministration & Infrastruktur",
@@ -60,7 +60,7 @@
     "ai": "KI & Automatisierung",
     "aiText": "Erforschung von KI-gestützten Sicherheitstools & Automatisierungsskripten.",
     "education": "Ausbildung",
-    "edu1": "Edith Cowan University – BSc Informatik (Cybersecurity), 3. Jahr",
+    "edu1": "Edith Cowan University – BSc Informatik (Cybersecurity), Abschlussjahr",
     "edu2": "Edith Cowan College – Diplom in Informatik",
     "edu3": "Australian College of Business and Technology – Foundation of Computing",
     "edu4": "Lyceum International School – Cambridge A-Level & O-Level",
@@ -92,7 +92,7 @@
     "name": "Nimuthu Ganegoda",
     "title": "Abschlussjahr BSc Informatik (Cybersecurity) | Angehender Cybersecurity-Analyst",
     "location": "Nittambuwa, Sri Lanka",
-    "summary": "Ich bin im Abschlussjahr meines Bachelor-Studiums der Informatik mit Schwerpunkt Cybersecurity an der Edith Cowan University (Sri Lanka-Campus) mit starkem Interesse an digitaler Sicherheit, Bedrohungsanalyse und ethischem Hacking. Derzeit absolviere ich ein Praktikum bei MillenniumIT ESP als Managed Security Services Engineer mit Fokus auf Netzwerksicherheit, Schwachstellenbewertung und sicheres Systemdesign."
+    "summary": "Ich bin im Abschlussjahr meines Bachelor-Studiums der Informatik mit Schwerpunkt Cybersecurity an der Edith Cowan University (Sri Lanka-Campus) mit starkem Interesse an digitaler Sicherheit, Bedrohungsanalyse und ethischem Hacking. Derzeit arbeite ich bei MillenniumIT ESP im Network Operations Center (NOC): Ich überwache Unternehmensnetzwerke, triagiere Vorfälle und unterstütze Schwachstellenbewertung sowie sicheres Systemdesign. Ich plane ein weiterführendes Studium im Bereich Cybersecurity."
   },
   "meta": {
     "autoTranslateNotice": "Diese Seite kann automatisch übersetzt werden."

@@ -46,13 +46,13 @@
     "intro1": "最終学年 コンピュータサイエンス学部生（サイバーセキュリティ専攻） @ エディスコーワン大学、スリランカ。",
     "intro2": "サイバーセキュリティアナリスト志望 & NOCエンジニア @ MillenniumIT ESP。脅威検出、ネットワークセキュリティ、倫理的ハッキングに情熱を持ち、日本での就労を目指しています。",
     "bullet1": "ソフトウェア開発、モバイルアプリセキュリティ、ネットワークプロトコルの基礎。",
-    "bullet2": "Flutter、Python、Dart、MATLAB、Android Studioの経験。",
+    "bullet2": "Python、TypeScript、Go、C++、Flutter、Android Studioの経験。",
     "bullet3": "セキュリティ、パフォーマンス、UXに焦点を当て、デバッグとクロスプラットフォームのトラブルシューティング。",
     "techStack": "技術スタックとツール",
     "languages": "言語とフレームワーク",
-    "languagesText": "Python、Dart、HTML、MATLAB、Flutter",
+    "languagesText": "Python、TypeScript、Go、Rust、C++、C#、Dart",
     "security": "セキュリティツール",
-    "securityText": "Kali Linux、Wireshark、Nmap、Metasploit、Splunk",
+    "securityText": "Kali Linux、Wireshark、Nmap、Metasploit、Splunk、SIEM",
     "mobile": "モバイル開発",
     "mobileText": "Android Studio、Firebase",
     "sysadmin": "システム管理とインフラ",
@@ -60,7 +60,7 @@
     "ai": "AIと自動化",
     "aiText": "AI駆動のセキュリティツールと自動化スクリプトの探索。",
     "education": "学歴",
-    "edu1": "エディスコーワン大学 – コンピュータサイエンス理学士（サイバーセキュリティ）、3年生",
+    "edu1": "エディスコーワン大学 – コンピュータサイエンス理学士（サイバーセキュリティ）、最終学年",
     "edu2": "エディスコーワンカレッジ – コンピュータサイエンスディプロマ",
     "edu3": "Australian College of Business and Technology – コンピューティングの基礎",
     "edu4": "Lyceum International School – ケンブリッジAレベルとOレベル",
@@ -92,7 +92,7 @@
     "name": "ニムトゥ・ガネゴダ",
     "title": "最終学年 BSc コンピュータサイエンス (サイバーセキュリティ) | サイバーセキュリティアナリスト志望",
     "location": "ニッタンブワ、スリランカ",
-    "summary": "私はエディスコーワン大学（スリランカキャンパス）のコンピュータサイエンス学士課程最終学年で、サイバーセキュリティを専攻しています。デジタルセキュリティ、脅威分析、倫理的ハッキングに強い関心を持っています。現在はMillenniumIT ESPで管理セキュリティサービスエンジニアとしてインターンシップを行い、ネットワークセキュリティ、脆弱性評価、セキュアシステム設計に取り組んでいます。"
+    "summary": "私はエディスコーワン大学（スリランカキャンパス）のコンピュータサイエンス学士課程最終学年で、サイバーセキュリティを専攻しています。デジタルセキュリティ、脅威分析、倫理的ハッキングに強い関心を持っています。現在はMillenniumIT ESPのNetwork Operations Center（NOC）で、エンタープライズネットワークの監視、インシデントのトリアージ、脆弱性評価とセキュアなシステム設計の支援に取り組んでいます。将来はサイバーセキュリティの分野で大学院進学を目指しています。"
   },
   "meta": {
     "autoTranslateNotice": "このページは自動翻訳できます。"
