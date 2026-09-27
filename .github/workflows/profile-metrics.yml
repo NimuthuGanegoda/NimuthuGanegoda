@@ -1,0 +1,48 @@
+name: Profile Metrics
+
+on:
+  schedule:
+    # refresh the profile cards four times a day
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/generate-profile-stats.js'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate profile cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: NimuthuGanegoda
+        run: node scripts/generate-profile-stats.js
+
+      - name: Commit refreshed assets
+        run: |
+          if [ -n "$(git status --porcelain assets/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/
+            git commit -m "chore: refresh profile metrics [skip ci]"
+            git push
+          else
+            echo "No profile metric changes to commit."
+          fi

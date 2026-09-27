@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="176" viewBox="0 0 470 176" role="img" aria-label="NimuthuGanegoda GitHub overview" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070b12"/>
+      <stop offset="100%" stop-color="#0e1727"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f2ff"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="469" height="175" rx="14" fill="url(#card)" stroke="#1d2b40"/>
+  <clipPath id="avatarClip"><circle cx="46" cy="46" r="22"/></clipPath>
+  <image href="https://avatars.githubusercontent.com/u/116423048?s=96&amp;u=53bbab98e2ab31550114398039a951f9fe2bd353&amp;v=4" x="24" y="24" width="44" height="44" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
+  <circle cx="46" cy="46" r="22" fill="none" stroke="#00f2ff" stroke-opacity="0.5"/>
+  <text x="80" y="43" fill="#e6edf3" font-size="16.5" font-weight="700">Nimuthu Methsen GANEGODA</text>
+  <text x="80" y="61" fill="#8b98a9" font-size="12">@NimuthuGanegoda · member since 2022</text>
+  <rect x="24" y="76" width="422" height="1" fill="#1d2b40"/>
+  <g>
+    <rect x="24" y="88" width="98" height="64" rx="10" fill="#0b1320" stroke="#1d2b40"/>
+    <text x="73" y="118" text-anchor="middle" fill="#e6edf3" font-size="19" font-weight="700">1,688</text>
+    <text x="73" y="136" text-anchor="middle" fill="#8b98a9" font-size="9.5" font-weight="600" letter-spacing="0.8">CONTRIBUTIONS</text>
+  </g>
+  <g>
+    <rect x="132" y="88" width="98" height="64" rx="10" fill="#0b1320" stroke="#1d2b40"/>
+    <text x="181" y="118" text-anchor="middle" fill="#e6edf3" font-size="19" font-weight="700">21</text>
+    <text x="181" y="136" text-anchor="middle" fill="#8b98a9" font-size="9.5" font-weight="600" letter-spacing="0.8">REPOSITORIES</text>
+  </g>
+  <g>
+    <rect x="240" y="88" width="98" height="64" rx="10" fill="#0b1320" stroke="#1d2b40"/>
+    <text x="289" y="118" text-anchor="middle" fill="#e6edf3" font-size="19" font-weight="700">6</text>
+    <text x="289" y="136" text-anchor="middle" fill="#8b98a9" font-size="9.5" font-weight="600" letter-spacing="0.8">STARS</text>
+  </g>
+  <g>
+    <rect x="348" y="88" width="98" height="64" rx="10" fill="#0b1320" stroke="#1d2b40"/>
+    <text x="397" y="118" text-anchor="middle" fill="#e6edf3" font-size="19" font-weight="700">12</text>
+    <text x="397" y="136" text-anchor="middle" fill="#8b98a9" font-size="9.5" font-weight="600" letter-spacing="0.8">FOLLOWERS</text>
+  </g>
+  <text x="24" y="170" fill="#5c6a7d" font-size="9.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">live from the GitHub GraphQL API · refreshed automatically</text>
+</svg>

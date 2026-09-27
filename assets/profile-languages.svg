@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="196" viewBox="0 0 470 196" role="img" aria-label="NimuthuGanegoda top languages" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070b12"/>
+      <stop offset="100%" stop-color="#0e1727"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f2ff"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="469" height="195" rx="14" fill="url(#card)" stroke="#1d2b40"/>
+  <text x="24" y="38" fill="#e6edf3" font-size="14" font-weight="700">Most used languages</text>
+  <text x="24" y="58" fill="#8b98a9" font-size="11">by bytes committed across public repositories</text>
+  <g clip-path="url(#barRadius)">
+    <clipPath id="barRadius"><rect x="24" y="82" width="422" height="14" rx="7"/></clipPath>
+    <rect x="24.00" y="82" width="84.31" height="14" fill="#00B4AB"><title>Dart 20.0%</title></rect>
+    <rect x="108.31" y="82" width="78.66" height="14" fill="#f34b7d"><title>C++ 18.6%</title></rect>
+    <rect x="186.97" y="82" width="67.96" height="14" fill="#DA3434"><title>CMake 16.1%</title></rect>
+    <rect x="254.93" y="82" width="53.29" height="14" fill="#3572A5"><title>Python 12.6%</title></rect>
+    <rect x="308.22" y="82" width="37.41" height="14" fill="#198CE7"><title>R 8.9%</title></rect>
+    <rect x="345.63" y="82" width="30.86" height="14" fill="#e34c26"><title>HTML 7.3%</title></rect>
+  </g>
+  <g>
+    <circle cx="29" cy="122" r="5" fill="#00B4AB"/>
+    <text x="42" y="126" fill="#e6edf3" font-size="12" font-weight="600">Dart</text>
+    <text x="140" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">20.0%</text>
+  </g>
+  <g>
+    <circle cx="247" cy="122" r="5" fill="#f34b7d"/>
+    <text x="260" y="126" fill="#e6edf3" font-size="12" font-weight="600">C++</text>
+    <text x="358" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">18.6%</text>
+  </g>
+  <g>
+    <circle cx="29" cy="146" r="5" fill="#DA3434"/>
+    <text x="42" y="150" fill="#e6edf3" font-size="12" font-weight="600">CMake</text>
+    <text x="140" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">16.1%</text>
+  </g>
+  <g>
+    <circle cx="247" cy="146" r="5" fill="#3572A5"/>
+    <text x="260" y="150" fill="#e6edf3" font-size="12" font-weight="600">Python</text>
+    <text x="358" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">12.6%</text>
+  </g>
+  <g>
+    <circle cx="29" cy="170" r="5" fill="#198CE7"/>
+    <text x="42" y="174" fill="#e6edf3" font-size="12" font-weight="600">R</text>
+    <text x="140" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">8.9%</text>
+  </g>
+  <g>
+    <circle cx="247" cy="170" r="5" fill="#e34c26"/>
+    <text x="260" y="174" fill="#e6edf3" font-size="12" font-weight="600">HTML</text>
+    <text x="358" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">7.3%</text>
+  </g>
+</svg>

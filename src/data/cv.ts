@@ -119,6 +119,53 @@ export const cv: CVData = {
       tags: ['ai', 'tools', 'web']
     },
     {
+      name: 'Mirai-Koyomi',
+      description: 'An asynchronous FastAPI service providing accurate Sri Lanka public, bank, and mercantile holiday data with Redis caching.',
+      link: 'https://github.com/NimuthuGanegoda/Mirai-Koyomi',
+      stack: ['Python', 'FastAPI', 'Redis', 'AsyncIO'],
+      highlights: [
+        'Accurate public, bank, and mercantile holiday data for Sri Lanka',
+        'Asynchronous FastAPI endpoints built for high throughput',
+        'Redis caching layer to keep repeated lookups fast and cheap'
+      ],
+      tags: ['api', 'python', 'tools']
+    },
+    {
+      name: 'Kitsune-Gaze',
+      description: 'A sleek, gothic-inspired tool to track down personal data breaches, built with a React/Vite frontend and a FastAPI backend.',
+      link: 'https://github.com/NimuthuGanegoda/Kitsune-Gaze',
+      stack: ['React', 'Vite', 'TypeScript', 'FastAPI'],
+      highlights: [
+        'Checks personal identifiers against known breach corpora',
+        'Gothic-styled, responsive frontend built with React and Vite',
+        'FastAPI service layer for fast, structured lookups'
+      ],
+      tags: ['security', 'web', 'privacy']
+    },
+    {
+      name: 'riko_project',
+      description: 'The public release of the Riko Project — the most-starred repository on the account.',
+      link: 'https://github.com/NimuthuGanegoda/riko_project',
+      stack: ['Python'],
+      highlights: [
+        'Public build of the Riko Project toolchain',
+        'Most-starred repository on the account'
+      ],
+      tags: ['python', 'tools']
+    },
+    {
+      name: 'ride-hailing-dissection',
+      description: 'Technical dissection of ride-hailing app architectures (Bolt, Grab, Uber, PickMe) via APK binary analysis.',
+      link: 'https://github.com/NimuthuGanegoda/ride-hailing-dissection',
+      stack: ['APK Analysis', 'Reverse Engineering', 'Mobile Security'],
+      highlights: [
+        'Static analysis of ride-hailing APKs and their embedded SDKs',
+        'Documents transport, auth, and telemetry patterns across apps',
+        'Reverse engineering notes intended as a learning resource'
+      ],
+      tags: ['security', 'research', 'mobile']
+    },
+    {
       name: 'Codex of Faith',
       description: 'A curated, open-source archive documenting the foundational beliefs, histories, practices, and stories of the world\'s major religions.',
       link: 'https://github.com/NimuthuGanegoda/Codex-of-Faith',
@@ -230,11 +277,12 @@ export const cv: CVData = {
     },
     {
       name: 'World History Archive',
-      description: 'A Next.js web application for cataloging and visualizing historical kingdoms, monarchs, and archaeological sites.',
+      description: 'A high-performance static Next.js knowledge platform for exploring world history, kingdoms, monarchs, and archaeological sites through interactive maps and timelines.',
       link: 'https://github.com/NimuthuGanegoda/WorldHistoryArchive',
-      stack: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
+      stack: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'Go'],
       highlights: [
         'Interactive map and timeline visualization',
+        'Static, high-performance build with a Go toolchain',
         'Robust JSON schema for structured historical data',
         'Performance and accessibility focused design'
       ],
@@ -261,11 +309,12 @@ export const cv: CVData = {
     { institution: 'Lyceum International School, Gampaha', degree: 'Cambridge O-Level Science', period: '2011 – 2021' }
   ],
   skills: [
-    { category: 'Languages', items: ['Python', 'Dart', 'HTML', 'MATLAB', 'C++', 'C#', 'Bash'] },
+    { category: 'Languages', items: ['Python', 'TypeScript', 'Go', 'Rust', 'C++', 'C#', 'Dart', 'Bash', 'HTML', 'MATLAB'] },
     { category: 'Mobile Development', items: ['Flutter', 'Android Studio', 'Firebase'] },
-    { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk', 'SIEM'] },
+    { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk', 'SIEM', 'Reverse Engineering'] },
     { category: 'Forensic Tools', items: ['Autopsy', 'FTK Imager', 'SANS Workstation'] },
-    { category: 'Infrastructure & Tools', items: ['Linux', 'Git', 'GitHub Actions', 'Azure', 'Docker'] }
+    { category: 'Data & APIs', items: ['PostgreSQL', 'Supabase', 'Redis', 'FastAPI'] },
+    { category: 'Infrastructure & Tools', items: ['Linux', 'Git', 'GitHub Actions', 'Azure', 'Docker', 'CMake'] }
   ],
   certifications: [
     { name: 'Advent of Cyber 2025', issuer: 'TryHackMe', year: 2025 },
