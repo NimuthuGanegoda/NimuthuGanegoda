@@ -20,60 +20,60 @@
   <text x="24" y="58" fill="#8b98a9" font-size="11">by bytes committed across public repositories</text>
   <g clip-path="url(#barRadius)">
     <clipPath id="barRadius"><rect x="24" y="82" width="422" height="14" rx="7"/></clipPath>
-    <rect x="24.00" y="82" width="83.23" height="14" fill="#00B4AB">
-      <title>Dart 19.7%</title>
-      <animate attributeName="width" values="0;0;83.23;83.23" keyTimes="0;0.00;0.45;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="24.00" y="82" width="81.50" height="14" fill="#00B4AB">
+      <title>Dart 19.3%</title>
+      <animate attributeName="width" values="0;0;81.50;81.50" keyTimes="0;0.00;0.45;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="107.23" y="82" width="77.66" height="14" fill="#f34b7d">
-      <title>C++ 18.4%</title>
-      <animate attributeName="width" values="0;0;77.66;77.66" keyTimes="0;0.08;0.53;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="105.50" y="82" width="76.04" height="14" fill="#f34b7d">
+      <title>C++ 18.0%</title>
+      <animate attributeName="width" values="0;0;76.04;76.04" keyTimes="0;0.08;0.53;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="184.89" y="82" width="67.10" height="14" fill="#DA3434">
-      <title>CMake 15.9%</title>
-      <animate attributeName="width" values="0;0;67.10;67.10" keyTimes="0;0.16;0.61;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="181.54" y="82" width="65.70" height="14" fill="#DA3434">
+      <title>CMake 15.6%</title>
+      <animate attributeName="width" values="0;0;65.70;65.70" keyTimes="0;0.16;0.61;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="251.99" y="82" width="52.62" height="14" fill="#3572A5">
-      <title>Python 12.5%</title>
-      <animate attributeName="width" values="0;0;52.62;52.62" keyTimes="0;0.24;0.69;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="247.24" y="82" width="54.10" height="14" fill="#3572A5">
+      <title>Python 12.8%</title>
+      <animate attributeName="width" values="0;0;54.10;54.10" keyTimes="0;0.24;0.69;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="304.61" y="82" width="36.93" height="14" fill="#198CE7">
-      <title>R 8.8%</title>
-      <animate attributeName="width" values="0;0;36.93;36.93" keyTimes="0;0.32;0.77;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="301.34" y="82" width="36.16" height="14" fill="#198CE7">
+      <title>R 8.6%</title>
+      <animate attributeName="width" values="0;0;36.16;36.16" keyTimes="0;0.32;0.77;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="341.54" y="82" width="30.47" height="14" fill="#e34c26">
-      <title>HTML 7.2%</title>
-      <animate attributeName="width" values="0;0;30.47;30.47" keyTimes="0;0.40;0.85;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="337.50" y="82" width="36.06" height="14" fill="#e34c26">
+      <title>HTML 8.5%</title>
+      <animate attributeName="width" values="0;0;36.06;36.06" keyTimes="0;0.40;0.85;1" dur="9s" repeatCount="indefinite"/>
     </rect>
   </g>
   <g>
     <circle cx="29" cy="122" r="5" fill="#00B4AB"/>
     <text x="42" y="126" fill="#e6edf3" font-size="12" font-weight="600">Dart</text>
-    <text x="140" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">19.7%</text>
+    <text x="140" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">19.3%</text>
   </g>
   <g>
     <circle cx="247" cy="122" r="5" fill="#f34b7d"/>
     <text x="260" y="126" fill="#e6edf3" font-size="12" font-weight="600">C++</text>
-    <text x="358" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">18.4%</text>
+    <text x="358" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">18.0%</text>
   </g>
   <g>
     <circle cx="29" cy="146" r="5" fill="#DA3434"/>
     <text x="42" y="150" fill="#e6edf3" font-size="12" font-weight="600">CMake</text>
-    <text x="140" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">15.9%</text>
+    <text x="140" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">15.6%</text>
   </g>
   <g>
     <circle cx="247" cy="146" r="5" fill="#3572A5"/>
     <text x="260" y="150" fill="#e6edf3" font-size="12" font-weight="600">Python</text>
-    <text x="358" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">12.5%</text>
+    <text x="358" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">12.8%</text>
   </g>
   <g>
     <circle cx="29" cy="170" r="5" fill="#198CE7"/>
     <text x="42" y="174" fill="#e6edf3" font-size="12" font-weight="600">R</text>
-    <text x="140" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">8.8%</text>
+    <text x="140" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">8.6%</text>
   </g>
   <g>
     <circle cx="247" cy="170" r="5" fill="#e34c26"/>
     <text x="260" y="174" fill="#e6edf3" font-size="12" font-weight="600">HTML</text>
-    <text x="358" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">7.2%</text>
+    <text x="358" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">8.5%</text>
   </g>
   <g clip-path="url(#cardClip)">
     <rect x="-170" y="0" width="170" height="196" fill="url(#sweep)" opacity="0.07">
