@@ -112,6 +112,35 @@ async function fetchProfile() {
   return json.data.user;
 }
 
+/**
+ * Inlines the avatar as a base64 data URI. Browsers refuse to load external
+ * images referenced from an SVG that is itself rendered in an <img> tag, so the
+ * picture has to travel inside the file.
+ */
+async function fetchAvatar(url) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`avatar ${res.status}`);
+    const buffer = Buffer.from(await res.arrayBuffer());
+    const type = res.headers.get('content-type') || 'image/jpeg';
+    return `data:${type};base64,${buffer.toString('base64')}`;
+  } catch (err) {
+    // Some environments sit behind a TLS-intercepting proxy that Node refuses to
+    // trust; curl is still fine there, so try it before giving up.
+    try {
+      const buffer = execFileSync('curl', ['-sL', '--max-time', '25', url], {
+        maxBuffer: 8 * 1024 * 1024,
+        stdio: ['ignore', 'pipe', 'ignore'],
+      });
+      if (buffer.length > 1024) return `data:image/jpeg;base64,${buffer.toString('base64')}`;
+    } catch (curlErr) {
+      /* ignore */
+    }
+    console.warn(`! could not inline the avatar (${err.message}); falling back to initials`);
+    return null;
+  }
+}
+
 function computeStats(user) {
   const calendar = user.contributionsCollection.contributionCalendar;
   const days = calendar.weeks.flatMap((w) => w.contributionDays);
@@ -202,9 +231,20 @@ const svg = (width, height, label, body) => `<svg xmlns="http://www.w3.org/2000/
       <stop offset="0%" stop-color="${THEME.accent}"/>
       <stop offset="100%" stop-color="${THEME.violet}"/>
     </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${THEME.accent}" stop-opacity="0"/>
+      <stop offset="50%" stop-color="${THEME.accent}" stop-opacity="1"/>
+      <stop offset="100%" stop-color="${THEME.accent}" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="cardClip"><rect x="0" y="0" width="${width}" height="${height}" rx="14"/></clipPath>
   </defs>
   <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="14" fill="url(#card)" stroke="${THEME.stroke}"/>
 ${body}
+  <g clip-path="url(#cardClip)">
+    <rect x="-170" y="0" width="170" height="${height}" fill="url(#sweep)" opacity="0.07">
+      <animate attributeName="x" values="-170;${width}" dur="9s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 </svg>
 `;
 
@@ -236,18 +276,32 @@ function renderOverview(stats) {
     })
     .join('\n');
 
+  const avatar = stats.avatarDataUri
+    ? `  <clipPath id="avatarClip"><circle cx="46" cy="46" r="22"/></clipPath>
+  <image href="${stats.avatarDataUri}" x="24" y="24" width="44" height="44" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
+  <circle cx="46" cy="46" r="22" fill="none" stroke="${THEME.accent}" stroke-opacity="0.5"/>`
+    : `  <circle cx="46" cy="46" r="22" fill="#0b1320" stroke="${THEME.accent}" stroke-opacity="0.5"/>
+  <text x="46" y="53" text-anchor="middle" fill="${THEME.accent}" font-size="17" font-weight="800">${esc(
+    stats.name
+      .split(' ')
+      .filter(Boolean)
+      .map((part, i, arr) => (i === 0 || i === arr.length - 1 ? part.charAt(0) : ''))
+      .join('')
+  )}</text>`;
+
   return svg(
     W,
     H,
     `${stats.login} GitHub overview`,
-    `  <clipPath id="avatarClip"><circle cx="46" cy="46" r="22"/></clipPath>
-  <image href="${esc(stats.avatarUrl)}" x="24" y="24" width="44" height="44" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
-  <circle cx="46" cy="46" r="22" fill="none" stroke="${THEME.accent}" stroke-opacity="0.5"/>
+    `${avatar}
   <text x="80" y="43" fill="${THEME.text}" font-size="16.5" font-weight="700">${esc(stats.name)}</text>
   <text x="80" y="61" fill="${THEME.muted}" font-size="12">@${esc(stats.login)} · member since ${stats.memberSince}</text>
   <rect x="24" y="76" width="${W - 48}" height="1" fill="${THEME.stroke}"/>
 ${tileSvg}
-  <text x="24" y="170" fill="#5c6a7d" font-size="9.5" font-family="${MONO}">live from the GitHub GraphQL API · refreshed automatically</text>`
+  <circle cx="28" cy="167" r="3" fill="${THEME.accent}">
+    <animate attributeName="opacity" values="1;0.2;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="38" y="170" fill="#5c6a7d" font-size="9.5" font-family="${MONO}">live from the GitHub GraphQL API · refreshed every 6h</text>`
   );
 }
 
@@ -304,11 +358,15 @@ function renderLanguages(stats) {
 
   let cursor = 0;
   const segments = stats.languages
-    .map((lang) => {
+    .map((lang, i) => {
       const w = Math.max(4, (lang.pct / 100) * barW);
       const x = barX + cursor;
       cursor += w;
-      return `    <rect x="${x.toFixed(2)}" y="${barY}" width="${w.toFixed(2)}" height="${barH}" fill="${lang.color}"><title>${esc(lang.name)} ${lang.pct.toFixed(1)}%</title></rect>`;
+      const delay = (i * 0.08).toFixed(2);
+      return `    <rect x="${x.toFixed(2)}" y="${barY}" width="${w.toFixed(2)}" height="${barH}" fill="${lang.color}">
+      <title>${esc(lang.name)} ${lang.pct.toFixed(1)}%</title>
+      <animate attributeName="width" values="0;0;${w.toFixed(2)};${w.toFixed(2)}" keyTimes="0;${delay};${(Number(delay) + 0.45).toFixed(2)};1" dur="9s" repeatCount="indefinite"/>
+    </rect>`;
     })
     .join('\n');
 
@@ -409,6 +467,11 @@ function renderGraph(stats) {
       .map((c, i) => `<rect x="${32 + i * 15}" y="-9" width="11" height="11" rx="2.5" fill="${c}"/>`)
       .join('')}
     <text x="${32 + THEME.levels.length * 15 + 4}" y="0" fill="${THEME.muted}" font-size="9.5">More</text>
+  </g>
+  <g clip-path="url(#cardClip)">
+    <rect x="${leftPad}" y="${topPad - 6}" width="26" height="${7 * (cell + gap)}" fill="url(#sweep)" opacity="0.1">
+      <animate attributeName="x" values="${leftPad - 30};${W - 20}" dur="11s" repeatCount="indefinite"/>
+    </rect>
   </g>`
   );
 }
@@ -423,6 +486,8 @@ function renderSnake(stats) {
   const weeks = stats.weeks.slice(-52);
   const W = leftPad + weeks.length * (cell + gap) + 20;
   const H = 186;
+  const DUR = '22s';
+  const P = 1000; // normalised path length, so dash maths stays readable
 
   const levelOf = (day) =>
     ({ NONE: 0, FIRST_QUARTILE: 1, SECOND_QUARTILE: 2, THIRD_QUARTILE: 3, FOURTH_QUARTILE: 4 }[
@@ -435,7 +500,7 @@ function renderSnake(stats) {
         .map((day, di) => {
           const x = leftPad + wi * (cell + gap);
           const y = topPad + di * (cell + gap);
-          return `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2.5" fill="${THEME.levels[levelOf(day)]}" fill-opacity="0.55"><title>${day.contributionCount} contributions on ${day.date}</title></rect>`;
+          return `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2.5" fill="${THEME.levels[levelOf(day)]}" fill-opacity="0.5"><title>${day.contributionCount} contributions on ${day.date}</title></rect>`;
         })
         .join('')
     )
@@ -446,41 +511,56 @@ function renderSnake(stats) {
   weeks.forEach((week, wi) => {
     const order = wi % 2 === 0 ? [0, 1, 2, 3, 4, 5, 6] : [6, 5, 4, 3, 2, 1, 0];
     for (const di of order) {
-      points.push([
-        leftPad + wi * (cell + gap) + cell / 2,
-        topPad + di * (cell + gap) + cell / 2,
-      ]);
+      points.push([leftPad + wi * (cell + gap) + cell / 2, topPad + di * (cell + gap) + cell / 2]);
     }
   });
 
-  const path = points.map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`).join(' ');
-  const step = cell + gap;
-  const total = (points.length - 1) * step; // every hop is one cell + gap
-  const body = step * 26;
-  const dashArray = `${body.toFixed(1)} ${(total - body).toFixed(1)}`;
+  const route = points
+    .map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`)
+    .join(' ');
 
-  const snake = (width, color, opacity, glow) => `<path d="${path}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="${opacity}" stroke-dasharray="${dashArray}"${glow ? ` filter="url(#glow)"` : ''}>
-      <animate attributeName="stroke-dashoffset" from="0" to="-${total.toFixed(1)}" dur="26s" repeatCount="indefinite"/>
-    </path>`;
+  // Each layer is one dash running around the same looped path. `offset` is
+  // where the dash starts, so the segments stay glued together as a head, body
+  // and trailing tail.
+  const layers = [
+    { len: 128, offset: 128, width: cell + 5, color: THEME.accent, opacity: 0.18, glow: true },
+    { len: 60, offset: 128, width: cell - 2, color: THEME.accent, opacity: 0.32 },
+    { len: 50, offset: 68, width: cell - 2, color: THEME.accent, opacity: 0.95 },
+    { len: 18, offset: 18, width: cell - 3, color: '#eafcff', opacity: 1 },
+  ];
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Contribution snake animation" font-family="${FONT}">
+  const body = layers
+    .map(
+      (l) =>
+        `  <path d="${route}" pathLength="${P}" fill="none" stroke="${l.color}" stroke-width="${l.width}" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="${l.opacity}" stroke-dasharray="${l.len} ${P - l.len}"${l.glow ? ' filter="url(#glow)"' : ''}>
+    <animate attributeName="stroke-dashoffset" from="${l.offset}" to="${l.offset - P}" dur="${DUR}" repeatCount="indefinite"/>
+  </path>`
+    )
+    .join('\n');
+
+  const head = (r, color, opacity, glow) => `  <circle r="${r}" fill="${color}" opacity="${opacity}"${glow ? ' filter="url(#glow)"' : ''}>
+    <animateMotion dur="${DUR}" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute" xlink:href="#snakeRoute"/></animateMotion>
+  </circle>`;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Animated contribution snake" font-family="${FONT}">
   <defs>
     <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="${THEME.bgFrom}"/>
       <stop offset="100%" stop-color="${THEME.bgTo}"/>
     </linearGradient>
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <path id="snakeRoute" d="${route}"/>
   </defs>
   <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="14" fill="url(#card)" stroke="${THEME.stroke}"/>
   <text x="24" y="30" fill="${THEME.text}" font-size="14" font-weight="700">The contribution snake</text>
   <text x="${W - 24}" y="30" text-anchor="end" fill="${THEME.muted}" font-size="10.5" font-family="${MONO}">${num(stats.totalContributions)} contributions eaten</text>
   ${cells}
-  ${snake(cell + 4, THEME.accent, 0.18, true)}
-  ${snake(cell - 2, THEME.accent, 0.95, false)}
-  ${snake(2, '#eafcff', 0.9, false)}
+${body}
+${head(7, THEME.accent, 0.35, true)}
+${head(3.4, '#eafcff', 1, false)}
 </svg>
 `;
 }
@@ -550,6 +630,7 @@ ${rendered}
 async function main() {
   const user = await fetchProfile();
   const stats = computeStats(user);
+  stats.avatarDataUri = await fetchAvatar(user.avatarUrl);
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const files = {
