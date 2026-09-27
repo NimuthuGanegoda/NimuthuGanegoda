@@ -46,13 +46,13 @@
     "intro1": "Final Year Computer Science Undergraduate (Cybersecurity Major) @ Edith Cowan University, Sri Lanka.",
     "intro2": "Aspiring Cybersecurity Analyst & NOC Engineer @ MillenniumIT ESP. Passionate about threat detection, network security, and ethical hacking — with a goal to work in Japan.",
     "bullet1": "Foundation in software development, mobile app security & network protocols.",
-    "bullet2": "Experience with Flutter, Python, Dart, MATLAB, Android Studio.",
+    "bullet2": "Experience with Python, TypeScript, Go, C++, Flutter and Android Studio.",
     "bullet3": "Focus on security, performance, UX; debugging & cross-platform troubleshooting.",
     "techStack": "Tech Stack & Tools",
     "languages": "Languages & Frameworks",
-    "languagesText": "Python, Dart, HTML, MATLAB, Flutter",
+    "languagesText": "Python, TypeScript, Go, Rust, C++, C#, Dart",
     "security": "Security Tools",
-    "securityText": "Kali Linux, Wireshark, Nmap, Metasploit, Splunk",
+    "securityText": "Kali Linux, Wireshark, Nmap, Metasploit, Splunk, SIEM",
     "mobile": "Mobile Dev",
     "mobileText": "Android Studio, Firebase",
     "sysadmin": "SysAdmin & Infra",
@@ -60,7 +60,7 @@
     "ai": "AI & Automation",
     "aiText": "Exploring AI-powered security tooling & automation scripts.",
     "education": "Education",
-    "edu1": "Edith Cowan University – BSc Computer Science (Cybersecurity), 3rd Year",
+    "edu1": "Edith Cowan University – BSc Computer Science (Cybersecurity), Final Year",
     "edu2": "Edith Cowan College – Diploma in Computer Science",
     "edu3": "Australian College of Business and Technology – Foundation of Computing",
     "edu4": "Lyceum International School – Cambridge A-Level & O-Level",
@@ -92,7 +92,7 @@
     "name": "Nimuthu Ganegoda",
     "title": "Final Year BSc Computer Science (Cybersecurity) | Aspiring Cybersecurity Analyst",
     "location": "Nittambuwa, Sri Lanka",
-    "summary": "I am a final-year Bachelor of Computer Science undergraduate majoring in Cybersecurity at Edith Cowan University (Sri Lanka campus), with a strong interest in digital security, threat analysis, and ethical hacking. My academic and personal pursuits reflect a deep commitment to understanding the evolving landscape of cyber threats and digital risk management. I am currently applying my knowledge in real-world contexts through an internship at MillenniumIT ESP as a Managed Security Services Engineer, focusing on network security, vulnerability assessment, and secure system design. I plan to pursue postgraduate studies in cybersecurity, with long-term aspirations to contribute to international security environments."
+    "summary": "I am a final-year Bachelor of Computer Science undergraduate majoring in Cybersecurity at Edith Cowan University (Sri Lanka campus), with a strong interest in digital security, threat analysis, and ethical hacking. My academic and personal pursuits reflect a deep commitment to understanding the evolving landscape of cyber threats and digital risk management. I am currently applying my knowledge in real-world contexts through my role at MillenniumIT ESP, working in the Network Operations Center (NOC) — monitoring enterprise networks, triaging incidents, and supporting vulnerability assessment and secure system design. I plan to pursue postgraduate studies in cybersecurity, with long-term aspirations to contribute to international security environments."
   },
   "meta": {
     "autoTranslateNotice": "This page can be auto-translated by your browser. Enable translation in your browser settings."
