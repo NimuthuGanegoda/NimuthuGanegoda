@@ -71,3 +71,5 @@ pids/
 # Lock files (if not needed in version control)
 # package-lock.json (not ignored since it was mentioned in changes)
 ```
+# TypeScript incremental build cache
+tsconfig.tsbuildinfo
