@@ -76,32 +76,20 @@ export const cv: CVData = {
   email: 'NimuthuGanegoda@gmail.com',
   website: 'https://nimuthuganegoda.github.io/NimuthuGanegoda/',
   photo: 'images/profile.jpg',
-  summary: 'I am a final-year Bachelor of Computer Science undergraduate majoring in Cybersecurity at Edith Cowan University (Sri Lanka campus), with a strong interest in digital security, threat analysis, and ethical hacking. My academic and personal pursuits reflect a deep commitment to understanding the evolving landscape of cyber threats and digital risk management. I am currently applying my knowledge in real-world contexts through an internship at MillenniumIT ESP as a Managed Security Services Engineer, focusing on network security, vulnerability assessment, and secure system design. I plan to pursue postgraduate studies in cybersecurity, with long-term aspirations to contribute to international security environments — particularly in Japan, a nation I admire for its technology leadership and innovation.',
+  summary: 'I am a final-year Bachelor of Computer Science undergraduate majoring in Cybersecurity at Edith Cowan University (Sri Lanka campus), with a strong interest in digital security, threat analysis, and ethical hacking. My academic and personal pursuits reflect a deep commitment to understanding the evolving landscape of cyber threats and digital risk management. I am currently applying my knowledge in real-world contexts through my role at MillenniumIT ESP, working in the Network Operations Center (NOC) — monitoring enterprise networks, triaging incidents, and supporting vulnerability assessment and secure system design. I plan to pursue postgraduate studies in cybersecurity, with long-term aspirations to contribute to international security environments — particularly in Japan, a nation I admire for its technology leadership and innovation.',
   experiences: [
     {
-      role: 'Managed Security Services Engineer',
+      role: 'Network Operations Center (NOC) Engineer',
       company: 'MillenniumIT ESP',
       period: 'April 2026 – Present',
-      summary: 'Internship role in a Security Operations Center (SOC) environment, monitoring and protecting enterprise security infrastructure.',
+      summary: 'Working in a 24/7 Network Operations Center, keeping enterprise networks monitored, healthy and escalated on time.',
       achievements: [
-        'Monitoring and analyzing security events in a 24/7 SOC environment',
-        'Triaging and escalating security incidents to ensure timely response',
-        'Supporting threat detection and vulnerability assessments for enterprise clients',
-        'Collaborating with senior analysts to improve security monitoring procedures'
+        'Monitoring network health, links and security events across enterprise client environments',
+        'Triaging alerts and escalating incidents through to resolution with senior engineers',
+        'Supporting threat detection and vulnerability assessment alongside the security team',
+        'Keeping shift handovers, runbooks and uptime reporting tight'
       ],
-      tech: ['SIEM', 'Threat Detection', 'Incident Response', 'SOC Operations', 'Network Security']
-    },
-    {
-      role: 'Database Manager',
-      company: 'BusGo (Online Bus Travelling Management)',
-      period: 'February 2026 – Present',
-      summary: 'Leading database design and management for a comprehensive bus transit ecosystem.',
-      achievements: [
-        'Designed and implemented scalable PostgreSQL schema using Supabase',
-        'Ensured data integrity and optimized query performance for real-time tracking',
-        'Collaborated with backend and mobile teams for seamless API integration'
-      ],
-      tech: ['PostgreSQL', 'Supabase', 'Database Design', 'Data Integrity']
+      tech: ['NOC Operations', 'Network Monitoring', 'SIEM', 'Incident Response', 'Network Security']
     }
   ],
   projects: [
@@ -219,20 +207,6 @@ export const cv: CVData = {
       tags: ['web', 'ai', 'tools']
     },
     {
-      name: 'BusGo: Online Bus Travelling Management',
-      description: 'A comprehensive suite of applications for modern bus management and passenger tracking in Sri Lanka.',
-      link: 'https://github.com/NimuthuGanegoda/BusGo',
-      image: '/images/projects/busgo.jpg',
-      stack: ['Node.js', 'Express', 'Supabase', 'Flutter', 'React', 'Python'],
-      highlights: [
-        'Real-time bus tracking and trip management',
-        'Dedicated mobile apps for passengers and drivers',
-        'AI-powered ETA estimation and emergency triage',
-        'Admin dashboard for system-wide oversight'
-      ],
-      tags: ['transit', 'mobile', 'ai', 'fullstack']
-    },
-    {
       name: 'ZeroAir (Aether)',
       description: 'An open Apple AirDrop implementation supporting Windows to iPhone/Android cross-platform file transfers.',
       link: 'https://github.com/NimuthuGanegoda/ZeroAir',
@@ -322,7 +296,7 @@ export const cv: CVData = {
     { category: 'Mobile Development', items: ['Flutter', 'Android Studio', 'Firebase'] },
     { category: 'Security Tools', items: ['Kali Linux', 'Wireshark', 'Nmap', 'Metasploit', 'Splunk', 'SIEM', 'Reverse Engineering'] },
     { category: 'Forensic Tools', items: ['Autopsy', 'FTK Imager', 'SANS Workstation'] },
-    { category: 'Data & APIs', items: ['PostgreSQL', 'Supabase', 'Redis', 'FastAPI'] },
+    { category: 'Data & APIs', items: ['PostgreSQL', 'Redis', 'FastAPI'] },
     { category: 'Infrastructure & Tools', items: ['Linux', 'Git', 'GitHub Actions', 'Azure', 'Docker', 'CMake'] }
   ],
   certifications: [
@@ -330,14 +304,14 @@ export const cv: CVData = {
     { name: 'IT Security Foundations: Network Security', issuer: 'LinkedIn Learning', year: 2025 }
   ],
   goals: [
-    'Deepen expertise in SOC operations and incident response',
+    'Deepen expertise in NOC operations and incident response',
     'Contribute to open-source security tools and frameworks',
     'Pursue postgraduate studies in cybersecurity',
     'Build a career in international security environments, targeting Japan'
   ],
   currentlyLearning: [
-    'SOC operations and SIEM tools in an enterprise environment',
-    'Advanced threat detection and incident response workflows',
+    'NOC operations and network monitoring in an enterprise environment',
+    'Threat detection and incident response workflows',
     'Vulnerability assessment and penetration testing methodologies',
     'Japanese language and culture for future aspirations in Japan'
   ],

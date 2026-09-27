@@ -577,7 +577,7 @@ function renderTyping(stats) {
   const lines = [
     { text: `nimuthu@neos:~$ whoami`, color: THEME.accent, prompt: true },
     { text: `${stats.name} — Cybersecurity undergrad @ ECU`, color: THEME.text },
-    { text: `SOC Engineer Intern @ MillenniumIT ESP · Database Lead @ BusGo`, color: '#a5b4c8' },
+    { text: `NOC Engineer @ MillenniumIT ESP · building NeOS & Mirai-Koyomi`, color: '#a5b4c8' },
     { text: `shipping: NeOS · Eien-no-Kiroku · Mirai-Koyomi · Kitsune-Gaze`, color: THEME.violet },
   ];
 

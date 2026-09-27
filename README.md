@@ -4,7 +4,7 @@
 
 <img src="assets/typing-header.svg" alt="whoami" width="100%" />
 
-**Cybersecurity undergrad · SOC engineer intern · systems & tooling builder**
+**Cybersecurity undergrad · NOC engineer @ MillenniumIT ESP · systems & tooling builder**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-00f2ff?style=for-the-badge&logo=vercel&logoColor=black)](https://nimuthuganegoda.github.io/NimuthuGanegoda/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nimuthu-ganegoda)
@@ -25,8 +25,7 @@
 | **Aug 2026** | **World History Archive** — rebuilt as a high-performance static **Next.js** knowledge platform (Go toolchain) with interactive maps and timelines for kingdoms, monarchs and archaeological sites. |
 | **Aug 2026** | **Kitsune-Gaze** — a gothic-styled personal data-breach exposure tracker (React/Vite frontend, FastAPI backend). |
 | **Jul 2026** | **ride-hailing-dissection** — APK-level binary dissection of ride-hailing app architectures (Bolt, Grab, Uber, PickMe). |
-| **Apr 2026** | Joined **MillenniumIT ESP** as a **Managed Security Services Engineer (intern)** — 24/7 SOC monitoring, incident triage, threat detection and vulnerability assessment for enterprise clients. |
-| **Feb 2026** | Took over database architecture for **BusGo** — PostgreSQL/Supabase schema design, data integrity and real-time query performance. |
+| **Apr 2026** | Joined **MillenniumIT ESP** in the **Network Operations Center** — 24/7 monitoring of enterprise networks and links, alert triage, incident escalation, and vulnerability assessment alongside the security team. |
 
 ---
 
@@ -34,9 +33,9 @@
 
 I'm a **final-year BSc Computer Science (Cybersecurity)** student at Edith Cowan University, and I spend my days where **security meets systems engineering**.
 
-- 🛡️ **By day:** triaging security events and incidents in a live SOC at **MillenniumIT ESP**, learning how detections are tuned, escalated and measured in the real world.
+- 🛡️ **By day:** in the **Network Operations Center** at **MillenniumIT ESP** — watching enterprise networks and links, triaging alerts, and escalating incidents before anyone notices them.
 - 🛠️ **By night:** re-engineering the web — reverse engineering app binaries, porting Unix tooling to Windows, and shipping an Arch-based desktop OS.
-- 🗄️ **In between:** designing the PostgreSQL/Supabase backbone of **BusGo**, a Sri Lankan bus-transit ecosystem with AI-powered ETAs.
+- 🗄️ **In between:** building the tooling I wish the NOC already had — breach lookups, holiday APIs, browser forensics and an Arch-based desktop OS.
 - 🇯🇵 **North star:** postgraduate study in cybersecurity and a career in an international security environment — Japan is the goal.
 
 ---
@@ -69,9 +68,6 @@ I'm a **final-year BSc Computer Science (Cybersecurity)** student at Edith Cowan
 
 ### 🌸 EasyVtuber
 > **Browser VTubing.** A 100% browser-based VTubing app built on Talking-head-anime 3, with WebGPU/WebGL acceleration and no heavy local backend.
-
-### 🚌 BusGo: Online Bus Travelling Management
-> **Database + transit ecosystem.** Real-time bus tracking, passenger and driver mobile apps, AI-powered ETA prediction and emergency triage, plus an admin dashboard.
 
 ### 📡 ZeroAir (Aether)
 > **Open AirDrop implementation.** Windows ⇄ iPhone/Android transfers via Apple AirDrop and Google Quick Share protocols, with continuous background discovery.
@@ -132,7 +128,7 @@ I'm a **final-year BSc Computer Science (Cybersecurity)** student at Edith Cowan
 ![Nmap](https://img.shields.io/badge/Nmap-4B8BBE?style=for-the-badge&logo=nmap&logoColor=white)
 ![Metasploit](https://img.shields.io/badge/Metasploit-0B3B5C?style=for-the-badge&logo=metasploit&logoColor=white)
 ![Splunk](https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=65E000)
-![SIEM](https://img.shields.io/badge/SIEM%20%2F%20SOC-7C3AED?style=for-the-badge&logo=shield&logoColor=white)
+![SIEM](https://img.shields.io/badge/SIEM%20%2F%20NOC-7C3AED?style=for-the-badge&logo=shield&logoColor=white)
 ![Autopsy](https://img.shields.io/badge/Autopsy-1F3A5F?style=for-the-badge&logo=fortinet&logoColor=white)
 ![Reverse Engineering](https://img.shields.io/badge/Reverse%20Engineering-FF4500?style=for-the-badge&logo=ghidra&logoColor=white)
 
@@ -141,7 +137,6 @@ I'm a **final-year BSc Computer Science (Cybersecurity)** student at Edith Cowan
 ![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=black)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -201,9 +196,9 @@ third-party stats host to go dark. Generated by
 
 | 🔭 Working on | 🌱 Learning | 🎯 Aiming for |
 |:--|:--|:--|
-| NeOS · Eien-no-Kiroku · Mirai-Koyomi | SOC operations & SIEM tooling in the enterprise | Postgraduate study in cybersecurity |
-| BusGo transit database · Kitsune-Gaze | Threat detection & incident response workflows | Open-source security tooling |
-| SOC monitoring at MillenniumIT ESP | Vulnerability assessment & pentest methodology | An international security career in Japan |
+| NeOS · Eien-no-Kiroku · Mirai-Koyomi | NOC operations & network monitoring tooling | Postgraduate study in cybersecurity |
+| Kitsune-Gaze · ride-hailing-dissection | Threat detection & incident response workflows | Open-source security tooling |
+| NOC shifts at MillenniumIT ESP | Vulnerability assessment & pentest methodology | An international security career in Japan |
 
 </div>
 
