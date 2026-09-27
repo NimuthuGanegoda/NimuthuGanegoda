@@ -413,6 +413,78 @@ function renderGraph(stats) {
   );
 }
 
+/* ------------------------------------------------------- snake animation -- */
+
+function renderSnake(stats) {
+  const cell = 11;
+  const gap = 3;
+  const leftPad = 34;
+  const topPad = 52;
+  const weeks = stats.weeks.slice(-52);
+  const W = leftPad + weeks.length * (cell + gap) + 20;
+  const H = 186;
+
+  const levelOf = (day) =>
+    ({ NONE: 0, FIRST_QUARTILE: 1, SECOND_QUARTILE: 2, THIRD_QUARTILE: 3, FOURTH_QUARTILE: 4 }[
+      day.contributionLevel
+    ] ?? 0);
+
+  const cells = weeks
+    .map((week, wi) =>
+      week.contributionDays
+        .map((day, di) => {
+          const x = leftPad + wi * (cell + gap);
+          const y = topPad + di * (cell + gap);
+          return `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2.5" fill="${THEME.levels[levelOf(day)]}" fill-opacity="0.55"><title>${day.contributionCount} contributions on ${day.date}</title></rect>`;
+        })
+        .join('')
+    )
+    .join('');
+
+  // Boustrophedon route: down the first column, up the next, and so on.
+  const points = [];
+  weeks.forEach((week, wi) => {
+    const order = wi % 2 === 0 ? [0, 1, 2, 3, 4, 5, 6] : [6, 5, 4, 3, 2, 1, 0];
+    for (const di of order) {
+      points.push([
+        leftPad + wi * (cell + gap) + cell / 2,
+        topPad + di * (cell + gap) + cell / 2,
+      ]);
+    }
+  });
+
+  const path = points.map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`).join(' ');
+  const step = cell + gap;
+  const total = (points.length - 1) * step; // every hop is one cell + gap
+  const body = step * 26;
+  const dashArray = `${body.toFixed(1)} ${(total - body).toFixed(1)}`;
+
+  const snake = (width, color, opacity, glow) => `<path d="${path}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="${opacity}" stroke-dasharray="${dashArray}"${glow ? ` filter="url(#glow)"` : ''}>
+      <animate attributeName="stroke-dashoffset" from="0" to="-${total.toFixed(1)}" dur="26s" repeatCount="indefinite"/>
+    </path>`;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Contribution snake animation" font-family="${FONT}">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${THEME.bgFrom}"/>
+      <stop offset="100%" stop-color="${THEME.bgTo}"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="14" fill="url(#card)" stroke="${THEME.stroke}"/>
+  <text x="24" y="30" fill="${THEME.text}" font-size="14" font-weight="700">The contribution snake</text>
+  <text x="${W - 24}" y="30" text-anchor="end" fill="${THEME.muted}" font-size="10.5" font-family="${MONO}">${num(stats.totalContributions)} contributions eaten</text>
+  ${cells}
+  ${snake(cell + 4, THEME.accent, 0.18, true)}
+  ${snake(cell - 2, THEME.accent, 0.95, false)}
+  ${snake(2, '#eafcff', 0.9, false)}
+</svg>
+`;
+}
+
 /* ---------------------------------------------------------- typing header -- */
 
 function renderTyping(stats) {
@@ -485,6 +557,7 @@ async function main() {
     'profile-streak.svg': renderStreak(stats),
     'profile-languages.svg': renderLanguages(stats),
     'contribution-graph.svg': renderGraph(stats),
+    'contribution-snake.svg': renderSnake(stats),
     'typing-header.svg': renderTyping(stats),
   };
 

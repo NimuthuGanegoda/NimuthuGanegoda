@@ -109,6 +109,7 @@ export const cv: CVData = {
       name: 'Eien-no-Kiroku',
       description: 'A next-generation, AI-powered referencing tool with automated metadata detection and 100% accuracy.',
       link: 'https://github.com/NimuthuGanegoda/Eien-no-Kiroku',
+      image: '/images/projects/eien-no-kiroku.jpg',
       stack: ['Python', 'FastAPI', 'React', 'TypeScript', 'Vite', 'GROBID'],
       highlights: [
         'Smart Detection of DOI, ISBN, or URL for perfect metadata extraction',
@@ -122,6 +123,7 @@ export const cv: CVData = {
       name: 'Mirai-Koyomi',
       description: 'An asynchronous FastAPI service providing accurate Sri Lanka public, bank, and mercantile holiday data with Redis caching.',
       link: 'https://github.com/NimuthuGanegoda/Mirai-Koyomi',
+      image: '/images/projects/mirai-koyomi.jpg',
       stack: ['Python', 'FastAPI', 'Redis', 'AsyncIO'],
       highlights: [
         'Accurate public, bank, and mercantile holiday data for Sri Lanka',
@@ -134,6 +136,7 @@ export const cv: CVData = {
       name: 'Kitsune-Gaze',
       description: 'A sleek, gothic-inspired tool to track down personal data breaches, built with a React/Vite frontend and a FastAPI backend.',
       link: 'https://github.com/NimuthuGanegoda/Kitsune-Gaze',
+      image: '/images/projects/kitsune-gaze.jpg',
       stack: ['React', 'Vite', 'TypeScript', 'FastAPI'],
       highlights: [
         'Checks personal identifiers against known breach corpora',
@@ -169,6 +172,7 @@ export const cv: CVData = {
       name: 'Codex of Faith',
       description: 'A curated, open-source archive documenting the foundational beliefs, histories, practices, and stories of the world\'s major religions.',
       link: 'https://github.com/NimuthuGanegoda/Codex-of-Faith',
+      image: '/images/projects/codex-of-faith.jpg',
       stack: ['React', 'TypeScript', 'Vite', 'Markdown'],
       highlights: [
         'Comprehensive summaries of major religions',
@@ -181,6 +185,7 @@ export const cv: CVData = {
       name: 'NeOS',
       description: 'A curated, snapshot-based Arch Linux desktop distribution engineered for predictable behavior, system stability, and a refined KDE Plasma 6 experience.',
       link: 'https://github.com/NimuthuGanegoda/NeOS',
+      image: '/images/projects/neos.jpg',
       stack: ['Linux', 'Arch Linux', 'Shell', 'KDE Plasma'],
       highlights: [
         'Snapshot-Gated Stability via Btrfs snapshots',
@@ -217,6 +222,7 @@ export const cv: CVData = {
       name: 'BusGo: Online Bus Travelling Management',
       description: 'A comprehensive suite of applications for modern bus management and passenger tracking in Sri Lanka.',
       link: 'https://github.com/NimuthuGanegoda/BusGo',
+      image: '/images/projects/busgo.jpg',
       stack: ['Node.js', 'Express', 'Supabase', 'Flutter', 'React', 'Python'],
       highlights: [
         'Real-time bus tracking and trip management',
@@ -230,6 +236,7 @@ export const cv: CVData = {
       name: 'ZeroAir (Aether)',
       description: 'An open Apple AirDrop implementation supporting Windows to iPhone/Android cross-platform file transfers.',
       link: 'https://github.com/NimuthuGanegoda/ZeroAir',
+      image: '/images/projects/zeroair.jpg',
       stack: ['Python', 'Networking', 'Quick Share', 'AirDrop Protocol'],
       highlights: [
         'Implemented background service for continuous file transfers',
@@ -242,6 +249,7 @@ export const cv: CVData = {
       name: 'Rosetta-Browser',
       description: 'A browser data migration tool designed to bridge the gap between different browser engines (Blink, Gecko, WebKit).',
       link: 'https://github.com/NimuthuGanegoda/Rosetta-Browser',
+      image: '/images/projects/rosetta-browser.jpg',
       stack: ['Python', 'Browser Engines', 'Data Migration'],
       highlights: [
         'Cross-Engine Translation (Chromium to Firefox)',
@@ -255,6 +263,7 @@ export const cv: CVData = {
       name: 'PilotHub',
       description: 'A unified AI Integration Tool providing a single interface to interact with multiple AI providers (ChatGPT, DeepSeek, Grok).',
       link: 'https://github.com/NimuthuGanegoda/PilotHub',
+      image: '/images/projects/pilothub.jpg',
       stack: ['Python', 'AI', 'API Integration'],
       highlights: [
         'Unified interface for OpenAI, DeepSeek, and xAI',
