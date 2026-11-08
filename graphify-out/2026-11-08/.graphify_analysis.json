@@ -1,0 +1,233 @@
+{
+  "communities": {
+    "0": [
+      "src_components_languageselector",
+      "src_components_languageselector_languageselector",
+      "src_components_navbar",
+      "src_components_navbar_navbar",
+      "src_components_themetoggle",
+      "src_components_themetoggle_themetoggle",
+      "src_components_translationnotice",
+      "src_components_translationnotice_translationnotice",
+      "src_contexts_languagecontext",
+      "src_contexts_languagecontext_language",
+      "src_contexts_languagecontext_languagecontext",
+      "src_contexts_languagecontext_languagecontexttype",
+      "src_contexts_languagecontext_languageprovider",
+      "src_contexts_languagecontext_translations",
+      "src_contexts_languagecontext_uselanguage",
+      "tests_navbar_test"
+    ],
+    "1": [
+      "src_app_cv_page",
+      "src_app_cv_page_cvpage",
+      "src_components_footer",
+      "src_components_footer_footer",
+      "src_components_structureddata",
+      "src_components_structureddata_structureddata",
+      "src_data_cv",
+      "src_data_cv_certificationitem",
+      "src_data_cv_cv",
+      "src_data_cv_cvdata",
+      "src_data_cv_educationitem",
+      "src_data_cv_experienceitem",
+      "src_data_cv_projectitem",
+      "src_data_cv_referenceitem",
+      "src_data_cv_skillgroup"
+    ],
+    "2": [
+      "src_app_layout",
+      "src_app_layout_inter",
+      "src_app_layout_metadata",
+      "src_app_layout_rootlayout",
+      "src_components_analytics",
+      "src_components_analytics_analytics",
+      "src_components_skiplink",
+      "src_components_skiplink_skiplink"
+    ],
+    "3": [
+      "src_app_page",
+      "src_app_page_homepage",
+      "src_app_page_slidein",
+      "src_components_particlebackground",
+      "src_components_particlebackground_particlebackground",
+      "src_components_particlebackground_particlebackgroundprops"
+    ],
+    "4": [
+      "scripts_generate_cv_pdf",
+      "scripts_generate_cv_pdf_fs",
+      "scripts_generate_cv_pdf_generatecv",
+      "scripts_generate_cv_pdf_path",
+      "scripts_generate_cv_pdf_puppeteer"
+    ],
+    "5": [
+      "scripts_fetch_github_repos",
+      "scripts_fetch_github_repos_fs",
+      "scripts_fetch_github_repos_path",
+      "scripts_fetch_github_repos_run"
+    ],
+    "6": [
+      "jest_config",
+      "jest_config_config",
+      "jest_config_createjestconfig"
+    ],
+    "7": [
+      "src_components_scrollreveal",
+      "src_components_scrollreveal_scrollreveal",
+      "src_components_scrollreveal_scrollrevealprops"
+    ],
+    "8": [
+      "src_app_not_found",
+      "src_app_not_found_notfound"
+    ],
+    "9": [
+      "src_components_section",
+      "src_components_section_section"
+    ],
+    "10": [
+      "jest_setup"
+    ],
+    "11": [
+      "next_config"
+    ],
+    "12": [
+      "next_env_d"
+    ],
+    "13": [
+      "postcss_config"
+    ],
+    "14": [
+      "tailwind_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.225,
+    "1": 0.1619047619047619,
+    "2": 0.32142857142857145,
+    "3": 0.4,
+    "4": 0.4,
+    "5": 0.5,
+    "6": 0.6666666666666666,
+    "7": 0.6666666666666666,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_contexts_languagecontext_uselanguage",
+      "label": "useLanguage()",
+      "degree": 15
+    },
+    {
+      "id": "src_data_cv_cv",
+      "label": "cv",
+      "degree": 5
+    },
+    {
+      "id": "src_contexts_languagecontext_languageprovider",
+      "label": "LanguageProvider()",
+      "degree": 3
+    },
+    {
+      "id": "src_app_cv_page_cvpage",
+      "label": "CVPage()",
+      "degree": 2
+    },
+    {
+      "id": "src_app_page_homepage",
+      "label": "HomePage()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_analytics_analytics",
+      "label": "Analytics()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_footer_footer",
+      "label": "Footer()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_languageselector_languageselector",
+      "label": "LanguageSelector()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_navbar_navbar",
+      "label": "NavBar()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_particlebackground_particlebackground",
+      "label": "ParticleBackground()",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "CVPage()",
+      "target": "useLanguage()",
+      "source_files": [
+        "src/app/cv/page.tsx",
+        "src/contexts/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities; peripheral node `CVPage()` unexpectedly reaches hub `useLanguage()`"
+    },
+    {
+      "source": "HomePage()",
+      "target": "useLanguage()",
+      "source_files": [
+        "src/app/page.tsx",
+        "src/contexts/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities; peripheral node `HomePage()` unexpectedly reaches hub `useLanguage()`"
+    },
+    {
+      "source": "Footer()",
+      "target": "useLanguage()",
+      "source_files": [
+        "src/components/Footer.tsx",
+        "src/contexts/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities; peripheral node `Footer()` unexpectedly reaches hub `useLanguage()`"
+    },
+    {
+      "source": "LanguageSelector()",
+      "target": "useLanguage()",
+      "source_files": [
+        "src/components/LanguageSelector.tsx",
+        "src/contexts/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `LanguageSelector()` unexpectedly reaches hub `useLanguage()`"
+    },
+    {
+      "source": "NavBar()",
+      "target": "useLanguage()",
+      "source_files": [
+        "src/components/NavBar.tsx",
+        "src/contexts/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `NavBar()` unexpectedly reaches hub `useLanguage()`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
