@@ -20,60 +20,60 @@
   <text x="24" y="58" fill="#8b98a9" font-size="11">by bytes committed across public repositories</text>
   <g clip-path="url(#barRadius)">
     <clipPath id="barRadius"><rect x="24" y="82" width="422" height="14" rx="7"/></clipPath>
-    <rect x="24.00" y="82" width="68.00" height="14" fill="#e34c26">
-      <title>HTML 16.1%</title>
-      <animate attributeName="width" values="0;0;68.00;68.00" keyTimes="0;0.00;0.45;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="24.00" y="82" width="68.32" height="14" fill="#00B4AB">
+      <title>Dart 16.2%</title>
+      <animate attributeName="width" values="0;0;68.32;68.32" keyTimes="0;0.00;0.45;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="92.00" y="82" width="66.59" height="14" fill="#00B4AB">
-      <title>Dart 15.8%</title>
-      <animate attributeName="width" values="0;0;66.59;66.59" keyTimes="0;0.08;0.53;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="92.32" y="82" width="67.27" height="14" fill="#e34c26">
+      <title>HTML 15.9%</title>
+      <animate attributeName="width" values="0;0;67.27;67.27" keyTimes="0;0.08;0.53;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="158.59" y="82" width="62.13" height="14" fill="#f34b7d">
-      <title>C++ 14.7%</title>
-      <animate attributeName="width" values="0;0;62.13;62.13" keyTimes="0;0.16;0.61;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="159.59" y="82" width="63.74" height="14" fill="#f34b7d">
+      <title>C++ 15.1%</title>
+      <animate attributeName="width" values="0;0;63.74;63.74" keyTimes="0;0.16;0.61;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="220.72" y="82" width="53.68" height="14" fill="#DA3434">
-      <title>CMake 12.7%</title>
-      <animate attributeName="width" values="0;0;53.68;53.68" keyTimes="0;0.24;0.69;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="223.33" y="82" width="55.07" height="14" fill="#DA3434">
+      <title>CMake 13.1%</title>
+      <animate attributeName="width" values="0;0;55.07;55.07" keyTimes="0;0.24;0.69;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="274.40" y="82" width="44.42" height="14" fill="#3572A5">
-      <title>Python 10.5%</title>
-      <animate attributeName="width" values="0;0;44.42;44.42" keyTimes="0;0.32;0.77;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="278.40" y="82" width="40.25" height="14" fill="#00ADD8">
+      <title>Go 9.5%</title>
+      <animate attributeName="width" values="0;0;40.25;40.25" keyTimes="0;0.32;0.77;1" dur="9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="318.81" y="82" width="39.23" height="14" fill="#00ADD8">
-      <title>Go 9.3%</title>
-      <animate attributeName="width" values="0;0;39.23;39.23" keyTimes="0;0.40;0.85;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="318.65" y="82" width="37.59" height="14" fill="#3572A5">
+      <title>Python 8.9%</title>
+      <animate attributeName="width" values="0;0;37.59;37.59" keyTimes="0;0.40;0.85;1" dur="9s" repeatCount="indefinite"/>
     </rect>
   </g>
   <g>
-    <circle cx="29" cy="122" r="5" fill="#e34c26"/>
-    <text x="42" y="126" fill="#e6edf3" font-size="12" font-weight="600">HTML</text>
-    <text x="140" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">16.1%</text>
+    <circle cx="29" cy="122" r="5" fill="#00B4AB"/>
+    <text x="42" y="126" fill="#e6edf3" font-size="12" font-weight="600">Dart</text>
+    <text x="140" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">16.2%</text>
   </g>
   <g>
-    <circle cx="247" cy="122" r="5" fill="#00B4AB"/>
-    <text x="260" y="126" fill="#e6edf3" font-size="12" font-weight="600">Dart</text>
-    <text x="358" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">15.8%</text>
+    <circle cx="247" cy="122" r="5" fill="#e34c26"/>
+    <text x="260" y="126" fill="#e6edf3" font-size="12" font-weight="600">HTML</text>
+    <text x="358" y="126" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">15.9%</text>
   </g>
   <g>
     <circle cx="29" cy="146" r="5" fill="#f34b7d"/>
     <text x="42" y="150" fill="#e6edf3" font-size="12" font-weight="600">C++</text>
-    <text x="140" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">14.7%</text>
+    <text x="140" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">15.1%</text>
   </g>
   <g>
     <circle cx="247" cy="146" r="5" fill="#DA3434"/>
     <text x="260" y="150" fill="#e6edf3" font-size="12" font-weight="600">CMake</text>
-    <text x="358" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">12.7%</text>
+    <text x="358" y="150" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">13.1%</text>
   </g>
   <g>
-    <circle cx="29" cy="170" r="5" fill="#3572A5"/>
-    <text x="42" y="174" fill="#e6edf3" font-size="12" font-weight="600">Python</text>
-    <text x="140" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">10.5%</text>
+    <circle cx="29" cy="170" r="5" fill="#00ADD8"/>
+    <text x="42" y="174" fill="#e6edf3" font-size="12" font-weight="600">Go</text>
+    <text x="140" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">9.5%</text>
   </g>
   <g>
-    <circle cx="247" cy="170" r="5" fill="#00ADD8"/>
-    <text x="260" y="174" fill="#e6edf3" font-size="12" font-weight="600">Go</text>
-    <text x="358" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">9.3%</text>
+    <circle cx="247" cy="170" r="5" fill="#3572A5"/>
+    <text x="260" y="174" fill="#e6edf3" font-size="12" font-weight="600">Python</text>
+    <text x="358" y="174" fill="#8b98a9" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">8.9%</text>
   </g>
   <g clip-path="url(#cardClip)">
     <rect x="-170" y="0" width="170" height="196" fill="url(#sweep)" opacity="0.07">
